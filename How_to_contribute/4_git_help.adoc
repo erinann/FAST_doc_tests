@@ -89,5 +89,6 @@ image:Git_GitHub_workflow.png[] +
 
 
 === Why we need version control
-.Cartoon by Jorge Cham
-image::phd101212s.gif[]
+{empty} +
+
+image:phd101212s.gif[align = center]
