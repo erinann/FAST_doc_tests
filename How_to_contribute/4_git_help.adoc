@@ -83,7 +83,9 @@ There are a few terms you should have a handle on before jumping into the deep e
 * *_Pull Request_* - Also called a "PR". A pull request tells others about the changes you have made (all the commits) to the project. It is called a pull request because you are asking to pull the changes from a source to a target. You can create a pull request between branches of a single repository or between branches of different repositories. +
 {empty} +
 
+.This is a work in progress.
 image:Git_GitHub_workflow.png[] +
+{empty} +
 
 
 === Why we need version control

@@ -18,7 +18,7 @@ These instructions are for people who have not used AsciiDoc markup before.
 AsciiDoc is a lightweight markup language built around the idea that authors should spend their time writing, not messing around with finicky formatting issues. Simply put, writing in plain text syntax takes the friction out of writing because there is a consistency in that is easily lost in what-you-see-is-what-you-get (WYSIWYG) editors like Microsoft Word or OpenDocs. One linespace will always be just one linespace. Additionally, plain text can easily be translated to different outputs (HTML, HTML5, PDF, etc.) for different applications.
 
 == https://asciidoctor.org[AsciiDoc]
-image:AD_logo-fill-color-128.png[height = 40, width = 40]
+image:AD_logo-fill-color-128.png[height = 40, width = 40] +
 {empty} +
 
 === What is AsciiDoc?
@@ -30,25 +30,46 @@ AsciiDoc is two things:
 
 2. A text processor and toolchain for translating AsciiDoc documents into various formats (called backends), including HTML, DocBook, PDF and ePub.
 ____
+{empty} +
 
 === Installing AsciiDoc
-Don't. +
-{empty} +
-Unless you already work in Ruby, like diving into the guts of your operating system, or want to compile a backend on your machine, there is no need for you to install the Asciidoctor toolchain. The AsciiDoc extensions in Atom and Brackets work well to edit and preview the convention documents.
+Do not. +
+
+Unless you work in Ruby, like diving into the guts of your operating system, and you want to compile a backend on your machine, there is no need for you to install the Asciidoctor toolchain. The AsciiDoc extensions in Atom and Brackets work well to edit and preview the convention documents.
 
 [TIP]
 ====
-If you use Windows 10 and you really want to install the Asciidoctor toolchain, initiate the https://docs.microsoft.com/en-us/windows/wsl/install-win10[Windows Subsystem for Linux] (WSL) and install Ruby, Ruby Version Manager, and the Asciidoctor toolchain there.
+If you use Windows 10 and you want to install the Asciidoctor toolchain, initiate the https://docs.microsoft.com/en-us/windows/wsl/install-win10[Windows Subsystem for Linux] (WSL) and install Ruby, Ruby Version Manager, and the Asciidoctor toolchain there.
 
 The link:experienced_github_users.adoc[A quick workflow for experienced Git and GitHub users] document will get you started.
 ====
 
-=== Format Guide
+== A few quick things to get you going
+.This is the header for the metadata convention document.
+----
+ICES WGFAST Topic Group, TG-AcMeta        1
+:revnumber: 1.10                          2
+:revdate: 1 November 2016
+:toc: left
+:toclevels: 3
+:doctype: book
+:xrefstyle: short
+:source-highlighter: highlightjs
+:highlightjsdir: highlight
+:sectnumslevels: 4
+:stem: latexmath
+:eqnums:
+:bibtex-file: references.bib
+:bibtex-style: ices-journal-of-marine-science
+----
+
+btn:[fork]
+
+
+== Format Guides
 https://asciidoctor.org/docs/asciidoc-writers-guide[AsciiDoc Writer's Guide] +
-https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[AsciiDoc Syntax Quick Reference]
-
-
-
+https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[AsciiDoc Syntax Quick Reference] +
+{empty} +
 
 == AsciiDoc vs. Markdown
 Markdown is probably more familiar to many people, especially if you work in R and use RMarkdown. So, why are we using AsciiDoc instead of Markdown? Many or the formatting options in Markdown are the same or similar in AsciiDoc, but AsciiDoc syntax is more concise and it is more flexible when creating table of contents, lists, table, and admonitions (tip, notes, warnings, etc.).
