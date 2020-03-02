@@ -1,0 +1,87 @@
+= How to contribute to the AcMeta and SONAR-netCDF4 documents
+Erin LaBrecque
+:revnumber: 0.01
+:revdate: 2020-02-25
+:imagesdir: images\
+:toc: preamble
+:toclevels: 4
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+
+Welcome!
+
+If you are comfortable with Git, GitHub, and AsciiDoc markup, head over to the link:experienced_github_users.adoc[A quick workflow for experienced Git, GitHub, and Asciidoc users] document. The rest of you, please keep reading.
+
+
+== Where do I start?
+=== Here
+.Help
+If you still have questions about _how_ to contribute to the convention documents after reading through the files in the "How to contribute" directory, please submit an https://github.com/ices-eg/wg_WGFAST/issues[issue] in the `ices-eg/wg_WGFAST` repository and mention `@erinann`. +
+{empty} +
+
+.Contribute to the help documents
+These help files are a work in progress. Comments and suggestions are welcome and encouraged! Please submit an https://github.com/ices-eg/wg_WGFAST/issues[issue] in the `ices-eg/wg_WGFAST` repository and the mention `@erinann`.
+
+=== What's next?
+1. Read the rest of this page. This is a README file. It is like a homepage for GitHub repositories and directories within repositories.
+2. Read through the link:1_suggested_setup.adoc[Suggested setup to contribute to the ICES WGFAST convention documents].
+2. Read through the link:2_suggested_workflow.adoc[Suggested workflow to contribute to the ICES WGFAST convention documents].
+3. Read the individual help files when needed.
+
+[NOTE]
+====
+As of this writing, there are three directories within the wg_WGFAST repository. +
+
+* `How_to_contribute` directory - Help files on how to contribute to the convention documents. You are in this directory if you are reading this.
+* `AcMeta` directory - Holds the _A metadata convention for processed acoustic data from active acoustic systems_ document and supporting files.
+* `SONAR-netCDR` directory - Holds the _The SONAR-netCDF4 convention for sonar data, Version 1.1_ in the `docs` subdirectory.
+====
+
+Links to all the help files are at the bottom of this document.
+
+== Git and GitHub
+If do not know what Git commits are, or if you think "forking a repository" refers to dueling with cutlery, please read through the Git and GitHub help files before attempting to contribute. We will not make you a Git or GitHub expert, but we will get you sorted enough to know how to write useful commit messages, stage commits, pull updates, and submit pull requests in order to contribute to the convention documents.
+
+== AsciiDoc markup
+If you do not know what markup language is (specifically AsciiDoc markup) or how to preview markup documents, please read though the AsciiDoc help file. Again, we will not make you an expert in these things, but we will get you editing with as little pain as possible.
+
+CAUTION: Previewing AsciiDoc markup documents will require you to install browser extensions and view the documents in your web browser. Creating backends (HTML, PDF, DocBook, etc.) on your local machine will require you to install Ruby, Ruby Version Manager, and the Asciidoctor toolchain. These installations can get complicated if you are not deeply familiar with your operating system.
+
+In lieu of installing browser extensions, the Asciidoctor toolchain, and all the dependencies, we recommend using either the **Atom** or **Brackets** plain text editors to edit and preview AsciiDoc documents.
+
+== Atom and Brackets text editors
+The Atom and Brackets plain text editors can read, edit, and preview AsciiDoc documents. Both editors were also written with basic integration to Git and GitHub. Staging, committing, pushing, and pulling can all be done without working in a terminal. Read through the plain text editor help file to learn how to install and use either editor to contribute to the convention documents.
+
+WARNING: Please be aware that citations and bibliographies do not currently render in either Atom or Brackets preview. Citations and bibliographies will display properly once the full document is converted into a PDF.
+
+
+== Links To Help Files
+To link:1_suggested_setup.adoc[Suggested setup to contribute to the ICES WGFAST convention documents] +
+To link:2_suggested_workflow.adoc[Suggested workflow to contribute to the ICES WGFAST convention documents] +
+To link:3_github_help.adoc[GitHub help] +
+To link:4_git_help.adoc[Git help]  +
+To link:5_plain_text_editor_help.adoc[Plain Text Editor help]  +
+To link:6_asciidoc_help.adoc[AsciiDoc help]  +
+To link:experienced_github_users.adoc[A quick workflow for experienced Git, GitHub, and Asciidoc users] +
+{empty} +
+
+NOTE: The help files are written in AsciiDoc (.adoc) markup. If you want to take a quick peek, click on the `Raw` button.
+
+{empty} +
+
+
+.File name -> Document name
+1_suggested_setup.adoc -> Suggested setup to contribute to the ICES WGFAST convention documents +
+2_suggested_workflow.adoc -> Suggested workflow to contribute to the ICES WGFAST convention documents +
+3_github_help.adoc -> GitHub help +
+4_git_help.adoc -> Git help +
+5_plain_text_editor_help.adoc -> Plain Text Editor help +
+6_asciidoc_help.adoc -> AsciiDoc help +
+experienced_github_users.adoc -> A quick workflow for experienced Git, GitHub, and Asciidoc users +
+README.adoc -> How to contribute to the AcMeta and SONAR-netCDF4 documents +

@@ -1,0 +1,91 @@
+= Git
+Erin LaBrecque
+:revnumber: 0.01
+:revdate: 2020-02-25
+:imagesdir: images\
+:toc: preamble
+:toclevels: 4
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+Git instructions for beginners.
+
+== https://git-scm.com/[Git]
+image:Git-Icon-1788C.png[width = 50, height = 50]
+
+=== What is Git?
+https://git-scm.com/[Git] is a free and open source distributed version control system for working on group projects. Originally designed for developers to work collaboratively on large software projects, Git has been repurposed by many scientific communities to manage the evolution of projects in a structured and reproducible way.
+
+With Git, all files related to a project (images, documents, code, etc.) and their change histories are stored in a single repository. Repositories support a hierarchical directory structure, meaning folders and subfolders are allowed. The WGFAST repository is hosted on GitHub in the ICES-eg workspace.
+
+The power of Git comes from its distributed version control system (DVCS). Unlike local and centralized version control systems, in DVCSs users (clients) are able to fully mirror all files and folders in the project (repository) and see the project's full history from all users. Think of DVCS as the Track Changes feature in Microsoft Word on steroids.
+
+We are only going to use a few basic commands in Git, but if you want to dive deeper into Git and DVCSs, there are many tutorials online, including https://git-scm.com/doc[vidoes, books, and external links] on the Git website. The _Getting Started_ and _Git Basics_ chapters from the https://git-scm.com/book/en/v2[Pro Git] book (free online) is also a good place to start. +
+{empty} +
+
+=== Should I install Git?
+Yes. +
+Git is a great tool, but it has a steep learning curve. *You do not need to install Git and learn the command line version to contribute to the WGFAST convention documents.* +
+
+Git comes bundled with the Atom text editor, which is easier to install and interface with GitHub than the command line version. Atom also allows two-factor authentication in GitHub which some government agencies might require. +
+{empty} +
+
+=== Downloading and installing Git
+* You can download Git itself or bundled with other software. +
+** Download Git from the website. link:https://git-scm.com/downloads[Git Download] +
+** Bundled - download https://desktop.github.com/[GitHub Desktop] +
+** Bundled - download https://atom.io[Atom] +
+** Windows users - There is a project called https://gitforwindows.org[Git for Windows] which is separate from Git.
+{empty} +
+
+
+* How you install Git depends on your operating system. +
+** https://git-scm.com/book/en/v2/Getting-Started-Installing-Git[Installing Git] +
+{empty} +
+
+* The first time you start Git on your computer you have to https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup[configure your Git environment].
+** Git comes with a `git config` tool that lets you control the configuration variables to:
+*** Setup your user name and email address. Git uses this information to uniquely identify you in your commits.
+*** Assign your text editor. +
+{empty} +
+
+WARNING: Your Git username and GitHub username do not have to match. Your Git user email has to be linked to your GitHub account.
+
+{empty} +
+
+=== Terminology
+The https://git-scm.com/docs/gitglossary[Git Glossary] +
+This is the technical glossary of all Git terms and commands. +
+
+See the link:3_github_help.adoc[GitHub help] file for the terms you will encounter the most while contributing to the WGFAST convention documents. +
+{empty} +
+
+== Jargon
+There are a few terms you should have a handle on before jumping into the deep end of Git and GitHub.
+
+* *_Git_* - A type of version control system (software).
+* *_GitHub_* - An online (in the cloud) hosting service for Git repositories. It is built on Git so a lot of the terminology will be the same between Git and GitHub.
+* *_Repository_* - Also called a "repo". A repository is a folder for your project. It contains all the documents that comprise a project. Repos can have code file and scripts from any language, pictures, videos, text files (.doc, .docx, .adoc, .txt, .mb etc.), PDFs, etc.. If a file is part of a project, it goes in the repo.
+* *_Clone_* (n.) / _Cloning a repo_ (v.) - A cloned repository is a copy of a repository. You usually clone a repo from GitHub (hosting service) to your local machine to work on project files locally.
+* *_Fork_* (n.) / _Forking a repo_ (v.) - This is special terminology to GitHub and a few other hosting services. A fork is a cloned repository owned by someone else that you manage in your GitHub account. "Forking a repo" means to clone someone else's repository to your account. You are going to fork a copy of the `ices-eg/wg_WGFAST` repository to your own account to work on it independently before submitting any changes back to `ices-eg/wg_WGFAST`. `ices-eg` (ICES Expert Groups) is the team that owns the workspace. `wg_WGFAST` is the repository (project space) for the FAST working group.
+* *_Upstream repository_* - The repository you forked from.
+* *_Remote repository_* - The repository where your project is stored on GitHub.
+* *_Branch_* - Branches of a repository are isolated development areas. You create a branch to work on part of a project without affecting the entire project. Every repository has one default branch, usually called `master`, and can have multiple other branches. You merge branches using a pull request.
+* *_Push_* - Move changes (commits) from your local machine to a remote repository.
+* *_Fetch_* - Retrieve changes from a remote repository without merging the changes into your own branch.
+* *_Merge_* - Integrate the contents of the source branch into another branch.
+* *_Pull_* - Fetch and merge in one step.
+* *_Pull Request_* - Also called a "PR". A pull request tells others about the changes you have made (all the commits) to the project. It is called a pull request because you are asking to pull the changes from a source to a target. You can create a pull request between branches of a single repository or between branches of different repositories. +
+{empty} +
+
+image:Git_GitHub_workflow.png[] +
+
+
+=== Why we need version control
+.Cartoon by Jorge Cham
+image::phd101212s.gif[]

@@ -1,0 +1,35 @@
+= Plain text editors
+Erin LaBrecque
+:revnumber: 0.01
+:revdate: 2020-02-25
+:imagesdir: images\
+:toc: preamble
+:toclevels: 4
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+These instructions are to help contributors install and use either Atom or Brackets to edit WGFAST convention documents and push changes to GitHub.
+
+
+== What is Atom?
+image:atom-logo.svg[width = 50, height = 50]
+Git is a great tool, but it has a steep learning curve. *You do not need to install Git and learn the command line version to contribute to the WGFAST convention documents.* +
+
+Git comes bundled with the Atom text editor, which is easier to install and interface with GitHub than the command line version. Atom also allows two-factor authentication in GitHub which some government agencies might require. +
+adding packages - ascidocs all
+Cloning in Atom
+terminal-tab or termination
+
+
+== What is Brackets?
+image:Brackets_Icon.svg[width = 50, height = 50]
+ Note - if you have two-factor authentication on GH, you cannot use the git-easy thing. You'll have to push in the Git terminal.
+
+Adding brackets-git
+
+Cloning in Brackets

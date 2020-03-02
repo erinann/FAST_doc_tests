@@ -1,0 +1,56 @@
+= A quick workflow for experienced Git, GitHub, and Asciidoc users
+Erin LaBrecque
+:revnumber: 0.01
+:revdate: 2020-02-25
+:imagesdir: images\
+:toc: preamble
+:toclevels: 4
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+
+This is the general workflow to contribute to the WGFAST convention documents for those familiar with Git.
+
+== Git Workflow
+1. Fork the `ices-eg\wg_WGFAST` repository.
+2. Clone the forked repository to your local machine (or edit the forked version online).
+3. Edit the AsciiDoc files. Stage, commit, (and push if working locally) your changes.
+4. Submit a pull request to merge your edits into the `ices-eg\wg_WGFAST` repository.
+
+The https://www.sourcetreeapp.com/[Sourcetree] program for Windows and Mac is a useful tool for working with Git repositories. https://tortoisehg.bitbucket.io/[TortoiseHg] for Windows and Linux is another option. You can of course also use the Git command line interface.
+
+*Please ask first* before starting on any significant pull request, otherwise you risk spending a lot of time working on something that the convention's coordinators might not want to merge into the project.
+
+== AsciiDoc tools
+=== Real-time rendering of the document
+
+When editing the convention files, it is useful to see the rendered version of the documents as changes are made. Ways to achieve this are explained https://asciidoctor.org/docs/editing-asciidoc-with-live-preview/[here]. We find that
+https://github.com/asciidoctor/asciidoctor-browser-extension[Asciidoctor.js Live Preview] works well, but note that it does not currently do the bibliography in the AcMeta document.
+
+The plain text editors, Atom and Brackets, are explained in the  link:plain_text_editor_help.adoc[Plain Text Editor help] file.
+
+=== Off-line rendering of the document
+
+This requires installing AsciiDoctor onto your computer and can be somewhat complicated. Instructions are https://asciidoctor.org/docs/install-toolchain/[here]. Remember to also install the asciidoctor-bibtex extension. Once all installed, the conventions can be rendered in several formats with these commands.
+
+HTML files:: Generates one or more files (images are kept separate):
+
+ asciidoctor -r asciidoctor-bibtex acmeta.adoc
+
+HTML (single file):: For a single html file (including the images, which makes it easier to distribute):
+
+ asciidoctor -r asciidoctor-bibtex --backend html5 -a data-uri acmeta.adoc
+
+PDF:: Note that the asciidoctor-mathematical extension must be installed to get the mathematical equations correctly rendered:
+
+ asciidoctor-pdf -r asciidoctor-bibtex  acmeta.adoc
+
+Word (.docx):: First convert to docbook format, then install and use https://pandoc.org/[pandoc] to convert to Word:
+
+ asciidoctor -r asciidoctor-bibtex --backend docbook acmeta.adoc
+ pandoc --from docbook --to docx -o acmeta.docx acmeta.xml

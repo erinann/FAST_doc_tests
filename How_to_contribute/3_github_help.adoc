@@ -1,0 +1,67 @@
+= GitHub
+Erin LaBrecque
+:revnumber: 0.01
+:revdate: 2020-02-25
+:imagesdir: images\
+:toc: preamble
+:toclevels: 4
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+Setup a GitHub account and create your first repository!
+
+== https://github.com/[GitHub]
+image:Octocat.png[width = 50, height = 50]
+GitHub's mascot, Octocat. +
+https://octodex.github.com/[Different versions of Octocat] +
+{empty} +
+
+=== What is GitHub?
+https://github.com/[GitHub] is a web-based hosting service that manages Git repositories. +
+
+GitHub is not Git, although it is build on top of Git. Git is a distributed version control system used to manage projects while GitHub is an online service that stores the projects. +
+
+GitHub is one of the most popular hosting platforms for version control, but there are others including https://gitlab.com/[GitLab] and https://bitbucket.org/[Bitbucket]. +
+
+`wg_WGFAST` is a GitHub repository within the https://github.com/ices-eg[ICES Expert Groups] workspace. +
+
+To contribute to the WGFAST convention documents, you will have to create a free GitHub account. +
+{empty} +
+
+=== Create a GitHub account
+1. Go to https://github.com and create an account.
+2. Select the Free plan.
+3. Answer the questions GitHub askes about what you do. Or, skip this step.
+4. Verify your email address.
+5. Create your first repository!
+ - Add a repository name and short description.
+ - Keep the repository public.
+ - Initialize the repository with a README. These are initially written in Markdown and are a great way to tell people what your repository (project) is about.
+ - Add a .gitignore file if there are files in your repository you want Git to ignore.
+6. Read through https://guides.github.com/activities/hello-world/[Hello World guide]. It is a good tutorial to get you started. +
+
+
+== Jargon
+There are a few terms you should have a handle on before jumping into the deep end of Git and GitHub.
+
+* *_Git_* - A type of version control system (software).
+* *_GitHub_* - An online (in the cloud) hosting service for Git repositories. It is built on Git so a lot of the terminology will be the same between Git and GitHub.
+* *_Repository_* - Also called a "repo". A repository is a folder for your project. It contains all the documents that comprise a project. Repos can have code file and scripts from any language, pictures, videos, text files (.doc, .docx, .adoc, .txt, .mb etc.), PDFs, etc.. If a file is part of a project, it goes in the repo.
+* *_Clone_* (n.) / _Cloning a repo_ (v.) - A cloned repository is a copy of a repository. You usually clone a repo from GitHub (hosting service) to your local machine to work on project files locally.
+* *_Fork_* (n.) / _Forking a repo_ (v.) - This is special terminology to GitHub and a few other hosting services. A fork is a cloned repository owned by someone else that you manage in your GitHub account. "Forking a repo" means to clone someone else's repository to your account. You are going to fork a copy of the `ices-eg/wg_WGFAST` repository to your own account to work on it independently before submitting any changes back to `ices-eg/wg_WGFAST`. `ices-eg` (ICES Expert Groups) is the team that owns the workspace. `wg_WGFAST` is the repository (project space) for the FAST working group.
+* *_Upstream repository_* - The repository you forked from.
+* *_Remote repository_* - The repository where your project is stored on GitHub.
+* *_Branch_* - Branches of a repository are isolated development areas. You create a branch to work on part of a project without affecting the entire project. Every repository has one default branch, usually called `master`, and can have multiple other branches. You merge branches using a pull request.
+* *_Push_* - Move changes (commits) from your local machine to a remote repository.
+* *_Fetch_* - Retrieve changes from a remote repository without merging the changes into your own branch.
+* *_Merge_* - Integrate the contents of the source branch into another branch.
+* *_Pull_* - Fetch and merge in one step.
+* *_Pull Request_* - Also called a "PR". A pull request tells others about the changes you have made (all the commits) to the project. It is called a pull request because you are asking to pull the changes from a source to a target. You can create a pull request between branches of a single repository or between branches of different repositories. +
+{empty} +
+
+image:Git_GitHub_workflow.png[]
