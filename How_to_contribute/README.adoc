@@ -22,11 +22,11 @@ If you are comfortable with Git, GitHub, and AsciiDoc markup, head over to the l
 == Where do I start?
 === Here
 .Help
-If you still have questions about _how_ to contribute to the convention documents after reading through the files in the "How to contribute" directory, please submit an https://github.com/ices-eg/wg_WGFAST/issues[issue] in the `ices-eg/wg_WGFAST` repository and mention `@erinann`. +
+If you still have questions about _how_ to contribute to the convention documents after reading through the files in the "How to contribute" directory (folder), please submit your question in an https://github.com/ices-eg/wg_WGFAST/issues[issue] in the `ices-eg/wg_WGFAST` repository and mention `@erinann`. +
 {empty} +
 
 .Contribute to the help documents
-These help files are a work in progress. Comments and suggestions are welcome and encouraged! Please submit an https://github.com/ices-eg/wg_WGFAST/issues[issue] in the `ices-eg/wg_WGFAST` repository and the mention `@erinann`.
+These help files are a work in progress. Comments and suggestions are welcomed and encouraged! Please submit an https://github.com/ices-eg/wg_WGFAST/issues[issue] in the `ices-eg/wg_WGFAST` repository and the mention `@erinann` with your thoughts and updates.
 
 === What's next?
 1. Read the rest of this page. This is a README file. It is like a homepage for GitHub repositories and directories within repositories.
@@ -56,9 +56,9 @@ CAUTION: Previewing AsciiDoc markup documents will require you to install browse
 In lieu of installing browser extensions, the Asciidoctor toolchain, and all the dependencies, we recommend using either the **Atom** or **Brackets** plain text editors to edit and preview AsciiDoc documents.
 
 == Atom and Brackets text editors
-The Atom and Brackets plain text editors can read, edit, and preview AsciiDoc documents. Both editors were also written with basic integration to Git and GitHub. Staging, committing, pushing, and pulling can all be done without working in a terminal. Read through the plain text editor help file to learn how to install and use either editor to contribute to the convention documents.
+The Atom and Brackets plain text editors can read, edit, and preview AsciiDoc documents. Both editors were also written with basic integration to Git and GitHub, but please be aware the some the of extension for Git are buggy. You should direct all
 
-WARNING: Please be aware that citations and bibliographies do not currently render in either Atom or Brackets preview. Citations and bibliographies will display properly once the full document is converted into a PDF.
+WARNING: Citation preview does not currently work in Atom or Brackets. Math equation (LaTex math) preview does not currently work in Atom, but you can change the settings of the AsciiDoc Preview extension in Brackets to preview equations. +
 
 
 == Links To Help Files

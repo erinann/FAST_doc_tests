@@ -47,16 +47,18 @@ To contribute to the WGFAST convention documents, you will have to create a free
 
 
 == Jargon
-There are a few terms you should have a handle on before jumping into the deep end of Git and GitHub.
+There are a few terms you should be familiar with before jumping into the deep end of Git and GitHub.
 
 * *_Git_* - A type of version control system (software).
 * *_GitHub_* - An online (in the cloud) hosting service for Git repositories. It is built on Git so a lot of the terminology will be the same between Git and GitHub.
-* *_Repository_* - Also called a "repo". A repository is a folder for your project. It contains all the documents that comprise a project. Repos can have code file and scripts from any language, pictures, videos, text files (.doc, .docx, .adoc, .txt, .mb etc.), PDFs, etc.. If a file is part of a project, it goes in the repo.
-* *_Clone_* (n.) / _Cloning a repo_ (v.) - A cloned repository is a copy of a repository. You usually clone a repo from GitHub (hosting service) to your local machine to work on project files locally.
-* *_Fork_* (n.) / _Forking a repo_ (v.) - This is special terminology to GitHub and a few other hosting services. A fork is a cloned repository owned by someone else that you manage in your GitHub account. "Forking a repo" means to clone someone else's repository to your account. You are going to fork a copy of the `ices-eg/wg_WGFAST` repository to your own account to work on it independently before submitting any changes back to `ices-eg/wg_WGFAST`. `ices-eg` (ICES Expert Groups) is the team that owns the workspace. `wg_WGFAST` is the repository (project space) for the FAST working group.
+* *_Repository_* - Also called a "repo". A repository is a folder for your project. It contains all the project documents. Repos can have code file and scripts from any language, pictures, videos, text files (.doc, .docx, .adoc, .txt, .mb etc.), PDFs, etc.. If a file is part of a project, it goes in the repo.
+* *_Clone_* (n.) / *_Cloning a repo_* (v.) - A cloned repository is a complete copy of a repository. You usually clone a repository from GitHub (hosting service) to your local machine to work on project files locally.
+* *_Fork_* (n.) / *_Forking a repo_* (v.) - This is a special term used by GitHub and a few other hosting services. A fork is a cloned repository owned by someone else that you manage in your GitHub account. "Forking a repo" means to clone someone else's repository to your account. You are going to fork a copy of the `ices-eg/wg_WGFAST` repository to your own account to work on it independently before submitting any changes back to `ices-eg/wg_WGFAST`. `ices-eg` (ICES Expert Groups) is the team that owns the workspace. `wg_WGFAST` is the repository (project space) for the FAST working group.
 * *_Upstream repository_* - The repository you forked from.
-* *_Remote repository_* - The repository where your project is stored on GitHub.
+* *_Remote repository_* - The repository on GitHub or another hosting service.
 * *_Branch_* - Branches of a repository are isolated development areas. You create a branch to work on part of a project without affecting the entire project. Every repository has one default branch, usually called `master`, and can have multiple other branches. You merge branches using a pull request.
+* *_Add_* or *_Stage_* - Staging is the step before committing a file to a repository. It is area between your working directory and your repository. You can continue to edit files that have been staged.
+* *_Commit_* - "Checking in" a file. Committing a file takes all the changes in the staging area and moves them to the repository.
 * *_Push_* - Move changes (commits) from your local machine to a remote repository.
 * *_Fetch_* - Retrieve changes from a remote repository without merging the changes into your own branch.
 * *_Merge_* - Integrate the contents of the source branch into another branch.

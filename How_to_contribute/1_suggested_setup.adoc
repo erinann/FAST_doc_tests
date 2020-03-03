@@ -26,10 +26,7 @@ There is a lot of jargon surrounding Git and GitHub, but that is normal in any s
 == Software, accounts, and languages
 === Software to install
 *Git* - A distributed version control system. +
-*Atom* or **Brackets** - Text editors. If you prefer to work online, you will not need a text editor. However, we suggest using a text editor if you are going to do more than fix a few spelling errors. +
-
-- _Atom_ is a text editor that works directly with GitHub upon installation. You as of this writing, you will still need to use Git to update your forked repository but other commands can be done within the Atom environment. You will have to install a few packages written for Atom to work with AsciiDoc documents. +
-- _Brackets_ is a text editor that also works with Git and GitHub. You have to have Git installed, and you will have to install a few packages to preview AsciiDoc documents. +
+*Atom* or **Brackets** - Text editors. If you prefer to work online (in GitHub), you will not need a text editor. However, we suggest using a text editor if you are going to do more than fix a few spelling errors. +
 
 === Account to create
 *GitHub* - A cloud-based hosting service used to manage Git repositories. +
@@ -48,5 +45,5 @@ If you do not have any of the software or accounts listed in the section above, 
 
 1. Create a GitHub account. See the link:3_github_help.adoc[GitHub Help] file.
 2. Install Git. See the link:4_git_help.adoc[Git Help] file.
-3. Install Atom or Brackets. Install the necessary packages to read `.adoc` and `.md` files, and link to Git and GitHub. Then, sign into your GitHub account through either text editor. See the link:plain_text_editor_help.adoc[Plain Text Editor Help] file.
+3. Install Atom or Brackets and the necessary packages or extensions to read `.adoc` and `.md` files.
 4. Learn a little about AsciiDoc markup. See the link:asciidoc_help.adoc[AsciiDoc Help] file. +
