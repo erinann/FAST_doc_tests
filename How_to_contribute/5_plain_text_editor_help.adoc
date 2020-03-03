@@ -33,3 +33,5 @@ image:Brackets_Icon.svg[width = 50, height = 50]
 Adding brackets-git
 
 Cloning in Brackets
+
+Not sure is Brackets works well on Windows machines. 
