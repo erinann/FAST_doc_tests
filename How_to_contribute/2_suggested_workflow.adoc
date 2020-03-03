@@ -13,22 +13,24 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
-This workflow is to help contributors who have not used Git or GitHub get started. Specifically, this file is about working with forked repositories.
+This workflow is to help contributors who have not used Git or GitHub get started.
 
 If you work regularly with Git and GitHub, please read through the link:experienced_github_users.adoc[A quick workflow for experienced Git and GitHub users]. +
-PS - Contributions to any of the help documents are welcome.
+PS - Contributions to any of the help documents are welcome. :smile: +
 
 == Jargon
-There are a few terms you should have a handle on before jumping into the deep end of Git and GitHub.
+There are a few terms you should know and understand jumping into the deep end of Git and GitHub.
 
 * *_Git_* - A type of version control system (software).
 * *_GitHub_* - An online (in the cloud) hosting service for Git repositories. It is built on Git so a lot of the terminology will be the same between Git and GitHub.
-* *_Repository_* - Also called a "repo". A repository is a folder for your project. It contains all the documents that comprise a project. Repos can have code file and scripts from any language, pictures, videos, text files (.doc, .docx, .adoc, .txt, .mb etc.), PDFs, etc.. If a file is part of a project, it goes in the repo.
-* *_Clone_* (n.) / _Cloning a repo_ (v.) - A cloned repository is a copy of a repository. You usually clone a repo from GitHub (hosting service) to your local machine to work on project files locally.
-* *_Fork_* (n.) / _Forking a repo_ (v.) - This is special terminology to GitHub and a few other hosting services. A fork is a cloned repository owned by someone else that you manage in your GitHub account. "Forking a repo" means to clone someone else's repository to your account. You are going to fork a copy of the `ices-eg/wg_WGFAST` repository to your own account to work on it independently before submitting any changes back to `ices-eg/wg_WGFAST`. `ices-eg` (ICES Expert Groups) is the team that owns the workspace. `wg_WGFAST` is the repository (project space) for the FAST working group.
+* *_Repository_* - Also called a "repo". A repository is a folder for your project. It contains all the project documents. Repos can have code file and scripts from any language, pictures, videos, text files (.doc, .docx, .adoc, .txt, .mb etc.), PDFs, etc.. If a file is part of a project, it goes in the repo.
+* *_Clone_* (n.) / *_Cloning a repo_* (v.) - A cloned repository is a complete copy of a repository. You usually clone a repository from GitHub (hosting service) to your local machine to work on project files locally.
+* *_Fork_* (n.) / *_Forking a repo_* (v.) - This is a special term used by GitHub and a few other hosting services. A fork is a cloned repository owned by someone else that you manage in your GitHub account. "Forking a repo" means to clone someone else's repository to your account. You are going to fork a copy of the `ices-eg/wg_WGFAST` repository to your own account to work on it independently before submitting any changes back to `ices-eg/wg_WGFAST`. `ices-eg` (ICES Expert Groups) is the team that owns the workspace. `wg_WGFAST` is the repository (project space) for the FAST working group.
 * *_Upstream repository_* - The repository you forked from.
-* *_Remote repository_* - The repository where your project is stored on GitHub.
+* *_Remote repository_* - The repository on GitHub or another hosting service.
 * *_Branch_* - Branches of a repository are isolated development areas. You create a branch to work on part of a project without affecting the entire project. Every repository has one default branch, usually called `master`, and can have multiple other branches. You merge branches using a pull request.
+* *_Add_* or *_Stage_* - Staging is the step before committing a file to a repository. It is area between your working directory and your repository. You can continue to edit files that have been staged.
+* *_Commit_* - "Checking in" a file. Committing a file takes all the changes in the staging area and moves them to the repository.
 * *_Push_* - Move changes (commits) from your local machine to a remote repository.
 * *_Fetch_* - Retrieve changes from a remote repository without merging the changes into your own branch.
 * *_Merge_* - Integrate the contents of the source branch into another branch.
@@ -38,8 +40,11 @@ There are a few terms you should have a handle on before jumping into the deep e
 
 image:Git_GitHub_workflow.png[]
 
-== Workflow to contribute
-Once you have installed the software, set up your GitHub account, linked Git, GitHub, and your text editor, AND have a basic understanding of the jargon listed above, you are ready to contribute to the WGFAST convention documents!
+== Workflow
+Once you have installed the software, set up your GitHub account and linked Git, AND have a basic understanding of the jargon listed above, you are ready to contribute to the WGFAST convention documents!
+{empty} +
+
+CAUTION: You can link both Atom and Brackets with Git and GitHub and work almost fully within the text editors, but a few authentication quirks came up when testing the editors. It is best that you learn Git from the command line first. +
 {empty} +
 
 === Fork the ices-eg/wg_WGFAST repository
@@ -53,14 +58,12 @@ image:fork_page.png[]
 
 TIP: Forking and cloning both create a copy of a repository, but forking is not a Git function. Forking is only done in GitHub and other hosting services. You fork a repository from another account to work on a copy of that project without affecting the original project. After forking a repo, you can clone it to your local machine to work on it locally.
 
-Once the repository is forked to your account you can either <<Editing documents in GitHub, edit the documents directly in GitHub>> or clone the repository to your computer and work locally. We suggest cloning the repo unless you are only going to fix a couple wrongs spellings.
+Once the repository is forked to your account you can either <<Editing documents in GitHub, edit the documents directly in GitHub>> or clone the repository to your computer and work locally. *We suggest cloning the repository to your local machine unless you are only going to fix a few typographical error.*
 {empty} +
 
-=== Clone the repository to your local machine
+=== Clone the forked repository to your local machine
 * You only have to do this step once.
 ** Click on the repository to open it, then click on the clone button.
-
-A "clone" is a Git term for a complete copy of a repository - all files and their change histories. +
 
 //
 
@@ -70,39 +73,84 @@ A "clone" is a Git term for a complete copy of a repository - all files and thei
 image:clone_button.png[] +
 {empty} +
 
-There are several ways you can clone a repo to our local machine. +
+//
 
-1. Use Git:
-** Open the Git command line and navigate to folder you want to deposit the repository. Use the `cd` command. How you write the `cd` command will depend on where Git starts from.
-** Type: `git clone https://github.com/_YOUR-USERNAME_/_YOUR-REPOSITORY_` +
+1. Open the Git command line and use the `cd` command to navigate to directory (folder) you want to copy the repository to.  +
 
-Moving from the home directory to the `research_projects` directory.
+.Example: Changing working directory
 ----
 $ cd Documents/research_projects/
-$ git clone https://github.com/erinann/wg_WGFAST
 ----
+{empty} +
 
-These commands put a folder called `wg_WGFAST` in the `research_projects` directory on erinann's local machine with all the files in the wg_WGFAST repository. +
+TIP: In most systems you can type the first few characters of the folder and use `Tab` to autocomplete.
+
 {empty} +
 
 [start=2]
-. Download a zip file of the repository to your local machine and unzip it. +
+2. Clone the forked repository to your local machine. +
+Format: `git clone https://github.com/_YOUR-USERNAME_/_YOUR-REPOSITORY_.git` +
 
-//
+.Example: Cloning a repository
+----
+$ git clone https://github.com/erinann/wg_WGFAST.git
+----
 
-[start=3]
-. Use Atom or Brackets to clone a repository to your local machine.
+----
+Cloning into 'wg_WGFAST'...
+remote: Enumerating objects: 551, done.
+remote: Total 551 (delta 0), reused 0 (delta 0), pack-reused 551
+Receiving objects: 100% (551/551), 728.31 KiB | 2.13 MiB/s, done.
+Resolving deltas: 100% (316/316), done.
+----
+
+The above command puts a folder called `wg_WGFAST` in the `research_projects` directory on erinann's local machine with all the files in the wg_WGFAST repository. +
 {empty} +
+
 
 === Add the repository to a workspace in either Atom or Brackets
 * You only have to do this step once. +
 
-If you cloned the repository to your local machine using Atom or Brackets, the repository will already be in a workspace. If you downloaded and unzipped the ZIP file or cloned the repository in Git, you will need to add the repository to your workspace in either Atom or Brackets. Atom refers to repositories as "projects".
+Now that the repository is on your local machine you have add it to your workspace in either Atom or Brackets. Atom refers to repositories as "projects".
 
 *Atom*: `File > Add Project Folder...` or `Ctrl + Shift + A` +
 {empty} +
 
 *Brackets*: `File > Open Folder...` or `Ctrl + Alt + A` +
+{empty} +
+
+You will have to add packages in Atom and extensions in Brackets to preview AsciiDoc files.
+
+.*Atom*:
+* asciidoc-assistant +
+ Installs the following packages.
+** asciidoc-image-helper +
+ Provides the ability to past images from the clipboard.
+** asciidoc-preview +
+ Shows an HTML preview for the AsciiDoc content in the current editor.
+** autocomplete-asciidoc
+ AsciiDoc language autocompletions.
+** language-asciidoc +
+ Syntax highlighting and snippets for AsciiDoc.
+
+* Other packages you might want.
+** markdown-preview-plus +
+ To show and HTML preview of Markdown (`.md`) documents.
+** terminal-tab +
+ To use Git from within Atom. This is a little flakey. Closing the terminal within the editor crashes Atom.
+
+//
+
+.*Brackets*:
+* AsciiDoc Preview +
+ Live preview for AsciiDoc documents.
+* Markdown Preview
+ Live preview for Markdown documents.
+ * Brackets Git +
+ Integration of Git into Bracket. This is a little flakey. If you have two-factor authentication setup in GitHub, you cannot push commits to GitHub because the authentication fails. +
+ {empty} +
+
+NOTE: Citation preview does not currently work in Atom or Brackets. Math equation (LaTex math) preview does not currently work in Atom, but you can change the settings of the AsciiDoc Preview extension in Brackets to preview equations. +
 {empty} +
 
 === Edit
@@ -113,63 +161,36 @@ See the link:5_plain_text_editor_help.adoc[Plain Text Editor help] file if you n
 {empty} +
 
 === Stage and commit
-After you have made a series of edits, save the document, stage it, and commit it to your local repository with a useful commit message. Staging tells Git what files have been changed and commits  It's best practice to commit often to keep a record of the changes. For example, if you finish working on an introduction section, save it and commit the document. +
+After you have made a series of edits, save the document, stage it (`add` command), and commit it to your local repository with a useful commit message. Staging tells Git which files in your working directory have changed and should be commited to the repository. You can continue to edit files that have been stages. It is best practice to commit changes often to keep a record of your work. For example, if you finish working on an introduction section, save it and commit the document. +
 
 TIP: Commit early and often!
 
-*Git*:
-Stage and commit all changed files
+If you closed the Git terminal, open it and navigate to your working directory with the forked repository. +
+----
+$ cd Documents/research_projects/wg_WGFAST
+----
+
+.Example: Stage and commit all changed files
 ----
 $ git add .
 $ git commit -m "Citation updates to acmeta.adoc and ref.bib"
 ----
 
-Stage and commit individual file (acmeta.adoc)
+.Example: Stage and commit an individual file (acmeta.adoc)
 ----
-$ git add AcMeta/acmeta.adoc 
+$ git add AcMeta/acmeta.adoc
 $ git commit -m "Update Section 6.5"
 ----
 {empty} +
 
-*Atom*: +
-1. In the Git panel, right-click on the file and choose `Stage`. +
-2. Enter a useful commit message to let people know what changes you made, and click `Commit to master`. +
-{empty} +
-image:atom_stage.png[]
-image:atom_commit.png[] +
-{empty} +
-
-*Brackets*: +
-1. Click on the box next to modified document to stage it, or click on the check box next to the `Commit` button to stage all modified documents. +
-image:brackets_stage.png[] +
-{empty} +
-2. Click on the `Commit` button. +
-image:brackets_commit_1.png[] +
-{empty} +
-3.  Add a message to let people know what changes you made, and click `OK`. +
-image:brackets_commit_2.png[] +
-{empty} +
 
 === Push edits to GitHub
-Pushing to GitHub is how you update your remote repository. When finish editing the document and want to submit it to the working group, first push all commits to your forked repository. +
+Pushing to GitHub is how you update your remote repository. After you finish editing the document and committed the changes, push all commits to your forked repository. +
 
-*Git*: +
 ----
 $ git push
 ----
 {empty} +
-
-*Atom*: +
-Click on the `Push` button. In this example, three commits will be pushed to GitHub. +
-image:atom_push.png[] +
-{empty} +
-
-*Brackets*: +
-Click on the `Git Push` button. +
-image:brackets_push.png[] +
-{empty} +
-
-CAUTION: If you have two-factor authentication setup on GitHub (some government agencies require this) and use Brackets, you will have to use Git command line to push your commits to GitHub. Brackets does not currently support two-factor authentication options.
 
 === Submit a Pull Request
 Once all your edits are in your repository are on GitHub, submit a pull request to `ices-eg/wg_WGFAST`. A pull request tells others about the changes you have made (all the commits), allows the convention coordinators to approve or deny the changes, and provides an area to discuss the changes if needed. It is called a pull request because you are asking the upstream repository to pull the changes from your fork. +
@@ -185,15 +206,21 @@ image:GitHub_PR_1.png[] +
 image:GitHub_PR_2.png[] +
 {empty} +
 
-Once your pull request has been submitted, a convention coordinator will be notified and will review your edits. Your edits will either be merged into the `ices-eg/wg_WGFAST` master branch or a coordinator might reply back to you asking to clarify or update text.
+Once your pull request has been submitted, a convention coordinator will be notified and will review your edits. Your edits will either be merged into the `ices-eg/wg_WGFAST` master branch by a coordinator (you do not have that permission) or a coordinator might reply back to you asking to clarify or update text. +
 {empty} +
 
 == Updating your forked repository
-When you create a fork of a repository you only have the version of the files that are in the repository at that time. Assume you made corrections and edits to the metadata convention document and submitted a pull request that was accepted. A couple days later several other contributors submit pull requests that were accepted. Now you have an old copy of the forked repository and are out of sync with the upstream repo. To update your forked repository you have to "synchronize your fork", also known as "getting upstream updates".
+When you create a fork of a repository you only have the version of the files that are in the repository at that time. Assume you made corrections and edits to the metadata convention document and submitted a pull request that was accepted (Woo hoo! Good job!). A couple days later several other contributors submit pull requests that were accepted. Now you have an old copy of the forked repository and are out of sync with the upstream repo. To update your forked repository you have to "synchronize your fork", also known as "getting upstream updates".
 
-*Git*: +
-1. Make sure you are in the current working directory of your local project. +
-2. Configure the remote repository. This tells Git where it needs to look. +
+
+1. Open the Git terminal and navigate to the directory with your local repository.
+----
+$ cd Documents/research_projects/wg_WGFAST
+----
+{empty} +
+
+[start=2]
+2. Configure the remote repository. This tells Git where it needs to look.
 
 ** First, list the current configured remote repository for your fork. +
 ----
@@ -213,28 +240,36 @@ origin  https://github.com/erinann/wg_WGFAST.git (push)
 upstream        https://github.com/ices-eg/wg_WGFAST.git (fetch)
 upstream        https://github.com/ices-eg/wg_WGFAST.git (push)
 ----
+{empty} +
+
+[start=3]
 3. Fetch the commits from the upstream repository.
 ----
 $ git fetch upstream
 ----
-4. Check out the branch you want to put the commits in. This is usually the `master` branch of your local forked repo.
+{empty} +
+
+[start=4]
+4. Checkout the branch you want to put the commits into. This is usually the `master` branch of your local forked repo.
 ----
 $ git checkout master
 ----
-5. Merge the `upstream/master` int oyour local `master` to brink your fork's `master` branch in sync with the upstream repository.
+{empty} +
+
+[start=5]
+5. Merge the `upstream/master` into your local `master` to bring your fork's `master` branch in sync with the upstream repository.
 ----
 $ git merge upstream/master
 ----
 {empty} +
 
 
-== Alternative workflow
-=== Editing documents in GitHub
+== Editing documents in GitHub
 Editing large parts of the convention documents directly in GitHib is **not** recommended unless you are an expert in GitHub and AsciiDoc markup. +
 {empty} +
 The easiest way to edit a few typos, if you do not want to clone the repository to your local machine, is to edit the document directly in GitHub.
 
-1. After <<Fork the ices-eg/WG_FAST repository, forking>> the `ices-eg/wg_WGFAST` repository to your GitHub account, open the repository and click on the file you would like to edit.
+1. After <<Fork the ices-eg/wg_WGFAST repository, forking>> the `ices-eg/wg_WGFAST` repository to your GitHub account, open the repository and click on the file you would like to edit.
 {empty} +
 {empty} +
 image:GitHub_edit_1.png[] +
