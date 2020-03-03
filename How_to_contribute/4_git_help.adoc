@@ -87,8 +87,10 @@ There are a few terms you should have a handle on before jumping into the deep e
 image:Git_GitHub_workflow.png[] +
 {empty} +
 
-
 === Why we need version control
 {empty} +
+//image:phd101212s.gif[align = center]
 
-image:phd101212s.gif[align = center]
+++++
+<img src="images\phd101212s.gif" align="center"/>
+++++
