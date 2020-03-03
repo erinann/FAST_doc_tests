@@ -16,7 +16,8 @@ endif::[]
 This workflow is to help contributors who have not used Git or GitHub get started.
 
 If you work regularly with Git and GitHub, please read through the link:experienced_github_users.adoc[A quick workflow for experienced Git and GitHub users]. +
-PS - Contributions to any of the help documents are welcome. :smile: +
+
+Contributions to any of the help documents are welcome. :smile: +
 
 == Jargon
 There are a few terms you should know and understand jumping into the deep end of Git and GitHub.
@@ -58,7 +59,7 @@ image:fork_page.png[]
 
 TIP: Forking and cloning both create a copy of a repository, but forking is not a Git function. Forking is only done in GitHub and other hosting services. You fork a repository from another account to work on a copy of that project without affecting the original project. After forking a repo, you can clone it to your local machine to work on it locally.
 
-Once the repository is forked to your account you can either <<Editing documents in GitHub, edit the documents directly in GitHub>> or clone the repository to your computer and work locally. *We suggest cloning the repository to your local machine unless you are only going to fix a few typographical error.*
+Once the repository is forked to your account you can either <<Editing documents in GitHub, edit the documents directly in GitHub>> or clone the repository to your computer and work locally. *We suggest cloning the repository to your local machine unless you are only going to fix a few typographical errors.*
 {empty} +
 
 === Clone the forked repository to your local machine
@@ -75,7 +76,7 @@ image:clone_button.png[] +
 
 //
 
-1. Open the Git command line and use the `cd` command to navigate to directory (folder) you want to copy the repository to.  +
+1. Open the Git terminal and use the `cd` command to navigate to directory (folder) you want to copy the repository to.  +
 
 .Example: Changing working directory
 ----
@@ -83,7 +84,7 @@ $ cd Documents/research_projects/
 ----
 {empty} +
 
-TIP: In most systems you can type the first few characters of the folder and use `Tab` to autocomplete.
+TIP: In most terminals you can type the first few characters of the folder and use `Tab` to autocomplete.
 
 {empty} +
 
@@ -137,7 +138,7 @@ You will have to add packages in Atom and extensions in Brackets to preview Asci
 ** markdown-preview-plus +
  To show and HTML preview of Markdown (`.md`) documents.
 ** terminal-tab +
- To use Git from within Atom. This is a little flakey. Closing the terminal within the editor crashes Atom.
+ To use Git from within Atom. This package is a little flaky. Closing the terminal within the editor crashes Atom.
 
 //
 
@@ -147,7 +148,7 @@ You will have to add packages in Atom and extensions in Brackets to preview Asci
 * Markdown Preview
  Live preview for Markdown documents.
  * Brackets Git +
- Integration of Git into Bracket. This is a little flakey. If you have two-factor authentication setup in GitHub, you cannot push commits to GitHub because the authentication fails. +
+ Integration of Git into Bracket. This extension is a flaky. If you have two-factor authentication setup in GitHub, you cannot push commits to GitHub because the authentication fails. +
  {empty} +
 
 NOTE: Citation preview does not currently work in Atom or Brackets. Math equation (LaTex math) preview does not currently work in Atom, but you can change the settings of the AsciiDoc Preview extension in Brackets to preview equations. +
@@ -161,7 +162,7 @@ See the link:5_plain_text_editor_help.adoc[Plain Text Editor help] file if you n
 {empty} +
 
 === Stage and commit
-After you have made a series of edits, save the document, stage it (`add` command), and commit it to your local repository with a useful commit message. Staging tells Git which files in your working directory have changed and should be commited to the repository. You can continue to edit files that have been stages. It is best practice to commit changes often to keep a record of your work. For example, if you finish working on an introduction section, save it and commit the document. +
+After you have made a series of edits, save the document, stage it (`git add` command), and commit it to your local repository with a useful commit message. Staging tells Git which files in your working directory have changed and should be committed to the repository. You can continue to edit files that have been staged. It is best practice to commit changes often to keep a record of your work. For example, if you finish working on an introduction section, save it and commit the document. +
 
 TIP: Commit early and often!
 
@@ -176,11 +177,14 @@ $ git add .
 $ git commit -m "Citation updates to acmeta.adoc and ref.bib"
 ----
 
-.Example: Stage and commit an individual file (acmeta.adoc)
+.Example: Stage and commit an individual file (`acmeta.adoc`)
 ----
 $ git add AcMeta/acmeta.adoc
 $ git commit -m "Update Section 6.5"
 ----
+
+CAUTION: Notice that you have to add the `AcMeta` folder to the path to make sure you put the document in the correct correct directory.
+
 {empty} +
 
 
@@ -193,7 +197,7 @@ $ git push
 {empty} +
 
 === Submit a Pull Request
-Once all your edits are in your repository are on GitHub, submit a pull request to `ices-eg/wg_WGFAST`. A pull request tells others about the changes you have made (all the commits), allows the convention coordinators to approve or deny the changes, and provides an area to discuss the changes if needed. It is called a pull request because you are asking the upstream repository to pull the changes from your fork. +
+After all your edits are in your remote repository (GitHub), submit a pull request to `ices-eg/wg_WGFAST`. A pull request tells others about the changes you have made (all the commits), allows the convention coordinators to approve or deny the changes, and provides an area to discuss the changes if needed. It is called a pull request because you are asking the upstream repository to pull the changes from your fork. +
 
 1. Click on `Pull request` in your `wg_WGFAST` repository.
 
@@ -206,11 +210,15 @@ image:GitHub_PR_1.png[] +
 image:GitHub_PR_2.png[] +
 {empty} +
 
+
+[start=3]
+3. Add a commit message.
+
 Once your pull request has been submitted, a convention coordinator will be notified and will review your edits. Your edits will either be merged into the `ices-eg/wg_WGFAST` master branch by a coordinator (you do not have that permission) or a coordinator might reply back to you asking to clarify or update text. +
 {empty} +
 
 == Updating your forked repository
-When you create a fork of a repository you only have the version of the files that are in the repository at that time. Assume you made corrections and edits to the metadata convention document and submitted a pull request that was accepted (Woo hoo! Good job!). A couple days later several other contributors submit pull requests that were accepted. Now you have an old copy of the forked repository and are out of sync with the upstream repo. To update your forked repository you have to "synchronize your fork", also known as "getting upstream updates".
+When you create a fork of a repository you only have the version of the files that are in the repository at that time. Assume you made corrections and edits to the metadata convention document and submitted a pull request that was accepted (:tada: Good job!). A couple days later several other contributors submit pull requests that were accepted. Now you have an old copy of the forked repository and are out of sync with the upstream repo. To update your forked repository you have to "synchronize your fork", also known as "getting upstream updates".
 
 
 1. Open the Git terminal and navigate to the directory with your local repository.
