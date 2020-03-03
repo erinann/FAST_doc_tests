@@ -26,7 +26,7 @@ There is a lot of jargon surrounding Git and GitHub, but that is normal in any s
 == Software, accounts, and languages
 === Software to install
 *Git* - A distributed version control system. +
-*Atom* or **Brackets** - Text editors. If you prefer to work online (in GitHub), you will not need a text editor. However, we suggest using a text editor if you are going to do more than fix a few spelling errors. +
+*AsciidocFX* or *Atom* or *Brackets* - Modern text editors/Integrated Development Environments (IDE). If you prefer to work online (in GitHub), you will not need a text editor. However, we suggest using a text editor if you are going to do more than fix a few spelling errors. +
 
 === Account to create
 *GitHub* - A cloud-based hosting service used to manage Git repositories. +
@@ -45,5 +45,5 @@ If you do not have any of the software or accounts listed in the section above, 
 
 1. Create a GitHub account. See the link:3_github_help.adoc[GitHub Help] file.
 2. Install Git. See the link:4_git_help.adoc[Git Help] file.
-3. Install Atom or Brackets and the necessary packages or extensions to read `.adoc` and `.md` files.
+3. Install AsciidocFX or Atom or Brackets and the necessary packages or extensions to read `.adoc` and `.md` files.
 4. Learn a little about AsciiDoc markup. See the link:asciidoc_help.adoc[AsciiDoc Help] file. +
