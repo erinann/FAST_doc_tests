@@ -15,7 +15,7 @@ endif::[]
 
 These instructions are to help contributors who have not used Git, GitHub, or AsciiDoc markup get started.
 
-If you have experience in Git and GitHub, skip the setup and workflow files and read through the link:experienced_github_users.adoc[A quick workflow for experienced Git and GitHub users].
+If you have experience in Git and GitHub, skip the setup and workflow files and read through link:experienced_github_users.adoc[A quick workflow for experienced Git and GitHub users].
 
 == What have I gotten myself into?
 ++++
@@ -33,10 +33,10 @@ There is a lot of jargon surrounding Git and GitHub, but that is normal in any s
 
 === Markup languages to learn (only a little)
 *AsciiDoc* - extension `.adoc` +
-AsciiDoc is a popular and flexible plain text markup language. Both convention documents are written in (or being translated to) AsciiDoc markup. GitHub automatically renders `.adoc` files (you are reading it now). +
+AsciiDoc is a popular and flexible plain text markup language. Both convention documents are written in (or being translated to) AsciiDoc markup. GitHub automatically renders `.adoc` files into HTML (you are reading it now). +
 
 *Markdown* - extension `.md` +
-Markdown is the most popular plain text markup language but it is not as flexible as AsciiDoc. You will see a couple documents in the `wg_WGFAST` repository with `.md` extensions (eg - `README.md`). These are written in Markdown. GitHub automatically renders Markdown files.
+Markdown is the most popular plain text markup language but it is not as flexible as AsciiDoc. You will see a couple documents in the `wg_WGFAST` repository with `.md` extensions (eg - `README.md`). These are written in Markdown. GitHub automatically renders Markdown files into HTML.
 
 Both Atom and Brackets support AsciiDoc and Markdown and provide live previews for each format. +
 
