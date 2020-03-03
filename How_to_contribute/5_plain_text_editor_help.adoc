@@ -36,3 +36,5 @@ Cloning in Brackets
 
 Not sure is Brackets works well on Windows machines.
 The terminal in Atom seems to be a little flaky. Atom crashes when I close the terminal. Now going to try pushing in GitHub desktop (still editing in Atom).
+
+Okay, now going to see if I can push this in Brackets.
