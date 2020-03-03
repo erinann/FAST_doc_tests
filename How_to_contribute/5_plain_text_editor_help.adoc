@@ -41,3 +41,5 @@ Okay, now going to see if I can push this in Brackets.
 Test #2 if Brackets
 Okay test of Git terminal in Brackets. This is seriously annoying.
 2-factor authention login everytime????
+
+only if I stage and commit within Brackets then push with Bash.
