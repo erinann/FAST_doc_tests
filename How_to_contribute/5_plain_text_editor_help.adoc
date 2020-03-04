@@ -16,23 +16,32 @@ endif::[]
 These instructions are to help contributors install and use either Atom or Brackets to edit WGFAST convention documents.
 
 == Why use a text editor?
-There are three ways you can edit and view AsciiDoc documents.
-1. Install the Asciidoctor toolchain and all its dependencies to create backends (PDF, HTML, ePubs, Word docs, etc.) you can open.
-2. Install AsciiDoc browser extensions Chrom, Firefox, or Opera) and open the file in your browser.
-3. Use a modern text editor/IDE^* that supports syntax highlighting and
+There are three ways you can view and edit AsciiDoc documents. +
 
-== AsciidocFX
+. Install the Asciidoctor toolchain and all its dependencies to create backends (PDF, HTML, ePubs, Word docs, etc.). You cannot see live updates.
+. Install AsciiDoc browser extensions in Chrom, Firefox, or Opera and open files in your browser. To see live updates you will have to install and set up a system monitor to watch for file changes.
+. Use a modern text editor/IDE that supports live preview and syntax highlighting. Syntax highlighting helps differentiate between markup commands and text.
+
+*Answer*: Installing and using a modern text editor/IDE is the easiest option across multiple platforms!
+
+== https://asciidocfx.com/[AsciidocFX]
+image:AsciidocFX_logo.png[width = 45, height = 45]
+
+
+https://www.asciidocfx.com/[AsciidocFX]
+
 Weird thing - sometime scrolling does not work. Might be my Windows system.
 
 Slow to start - like really, really slow.
+Table generator does not work
 
-The scroll thing really annoying. 
+The scroll thing really annoying.
 
 * WTF this is a pain in the butt.
 
 
 
-== Atom
+== https://atom.io/[Atom]
 image:atom-logo.svg[width = 50, height = 50]
 
 === Installing Atom
@@ -56,7 +65,7 @@ image:atom_push.png[] +
 
 
 
-== Brackets
+== http://brackets.io/[Brackets]
 image:Brackets_Icon.svg[width = 50, height = 50]
 
 === Install Brackets
@@ -90,3 +99,58 @@ terminal-tab or termination
 If you're note a programmer - asciidocFX is proabaly the best beause is also gives you a style sheet. but you have to use all git commond (so what. suck it up)
 Brackets is good because is shows you math equations. 2-factor authen is messed up.
 Atom is good if you can't handle Git. Quick and easy integration with GitHub.
+
+== Pro, Cons, Quirks
+=== Windows only
+Various parts of the "How-to" documents were written using the three text editors/IDEs on a Dell XPS 15 (9560) with Micorsoft Windows 10 Pro Build 18363, 32 GB RAM. +
+
+If anyone wants to update this section for MacOS and Linux, please do!
+
+
+.Windows Text Editors Test
+[cols=4, width="100%", options = header]
+|====================
+|      | AsciidocFX | Atom | Brackets
+| *Pros*
+a|
+* Best live preview display
+* Easy link to browser preview
+* Pseudo terminal emulator for Git commands
+* Good integration with hotkeys for standard formatting
+* Spell checker
+
+a|
+* Loads quickly
+* GitHub/Git integration comes standard
+* GUI for Git/GitHub
+* Spell checker
+
+a|
+* Loads quickly
+* Live preview of math equations
+* GUI for Git/GitHub (from Brackets-Git extension)
+* Spell checker
+
+| *Cons*
+a|
+* VERY Slow to load
+* Uses a lot of memory
+
+a|
+* No live preview of citatations and math equations
+
+
+a|
+* No live preview of citations
+
+
+| *Quirks*
+a|
+* Scrolling in the text editor only works sometimes
+
+a|
+* Closing the terminal (from the Terminal-tab package) crashes Atom
+
+a|
+* Does not support two-factor authentication in GitHib - you have push to remotes using a Git terminal
+|====================
