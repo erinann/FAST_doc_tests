@@ -157,8 +157,12 @@ You will have to add packages in Atom and extensions in Brackets to preview Asci
  Live preview for AsciiDoc documents.
 * Markdown Preview
  Live preview for Markdown documents.
- * Brackets Git +
- Integration of Git into Bracket. This extension is a flaky. If you have two-factor authentication setup in GitHub, you cannot push commits to GitHub because the authentication fails. +
+* Brackets Git +
+ Integration of Git into Bracket.
+* Alice - Spell Checking +
+ Adds offline spell checking capabilities to Brackets.
+* Alice Dictionaries +
+ Provides dictionary data for the Alice spell checker. +
  {empty} +
 
 NOTE: Citation preview does not currently work in Atom or Brackets. Math equation (LaTex math) preview does not currently work in Atom, but you can change the settings of the AsciiDoc Preview extension in Brackets to preview equations. +

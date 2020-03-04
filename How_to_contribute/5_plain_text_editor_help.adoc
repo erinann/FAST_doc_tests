@@ -81,17 +81,37 @@ Brackets is supported on macOS, Windows, and Linux
 === Install Brackets
 
 ==== Extensions
+To preview AsciiDoc documents you will have to install a few extensions...
+
+* AsciiDoc Preview +
+ Live preview for AsciiDoc documents.
+* Markdown Preview
+ Live preview for Markdown documents.
+* Brackets Git +
+ Integration of Git into Bracket.
+* Alice - Spell Checking +
+ Adds offline spell checking capabilities to Brackets.
+* Alice Dictionaries +
+ Provides dictionary data for the Alice spell checker. +
+{empty} +
 
 === Integration with Git and GitHub
-
 Note - if you have two-factor authentication on GH, you cannot use the git-easy thing. You'll have to push in the Git terminal.
+Actually this was fixed by not putting my credential in. Have to read the fine print.
 
-Adding brackets-git
+
+can set git bash to use as terminal/
+
+=== Panes
+image:Brackets_panes.png[] +
+
+- To enable the AsciiDoc Preview and Git extensions you have to select the respective icons on the right. The AsciiDoc preview icon will only show up if an `.adoc` file is selected.
+- The live preview pane can be un-docked if you do not like its default location on the bottom of the screen.
 
 
 == Pro, Cons, Quirks
-=== Windows only
-Various parts of the "How-to" documents were written using the three text editors/IDEs on a Dell XPS 15 (9560) with Micorsoft Windows 10 Pro Build 18363, 32 GB RAM. +
+.Windows only
+Various parts of the "How-to" documents were written using the three text editors/IDEs on a Dell XPS 15 (9560) with Microsoft Windows 10 Pro Build 18363, 32 GB RAM. +
 
 If anyone wants to update this section for macOS and Linux, please do!
 
@@ -111,29 +131,30 @@ a|
 a|
 * Loads quickly
 * GitHub/Git integration comes standard
-* GUI for Git/GitHub
-* GUI can handle two-factor authentication
+* GUI and terminal for Git/GitHub
 * Easy to see staged changes in Git panel
 * Spell checker
 
 a|
 * Loads quickly
 * Live preview of math equations
-* GUI for Git/GitHub (from Brackets-Git extension)
-* Spell checker
+* GUI and terminal for Git/GitHub (from Brackets-Git extension)
+* Synchronization of text editing and live preview is the best of the three editors/IDEs
 
 | *Cons*
 a|
 * VERY Slow to load
 * Uses a lot of memory
-* Not all of the shortcuts work
+* Not all the shortcuts work
 
 a|
 * No live preview of citations and math equations
+* Synchronizing the live preview pane to the text editor does not work well
 
 
 a|
 * No live preview of citations
+* Live preview pane only docks at the bottom of the screen (but it can float)
 
 
 | *Quirks*
@@ -143,8 +164,9 @@ a|
 
 a|
 * Closing the terminal (from the Terminal-tab package) crashes Atom
-* Synchronizing the live preview pane does not work well if there are images.
+
 
 a|
-* Does not support two-factor authentication in GitHib - you have push to remotes using a Git terminal
+* Had a few Git authentication errors initially, and not exactly sure how they were fixed
+* No internal spell checker - you have to install an extension that you cannot configure
 |====================

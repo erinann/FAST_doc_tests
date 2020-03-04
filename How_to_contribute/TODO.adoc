@@ -1,15 +1,18 @@
-* [x] Come up with a better explanation of "repository". +
+Not sure why the previewer will not read this doc.
+
+* [x] Come up with a better explanation of "repository".
 * [ ] *Make sure Suggested Workflow, GitHub, and Git files are updated with the same jargon section.*
+* [ ] Find out if WORKFLOW is one word or two
 * [ ] Plain text editor - Atom section
 * [ ] Plain text editor - Brackets section
 * [ ] AsciiDoc help file
 
-*** What basic vocab needs to be explained?
-    ** [ ] Attributes
-    ** [ ] Macros
-    ** [ ] Sections
-    ** [ ] Blocks
-    ** [ ] Admonitions
-    ** [ ] Text formatting - punctuation
-    ** [ ] escaping punctuation
-    ** [ ] inline marcos
+What basic vocab needs to be explained?
+** [ ] Attributes
+** [ ] Macros
+** [ ] Sections
+** [ ] Blocks
+** [ ] Admonitions
+** [ ] Text formatting - punctuation
+** [ ] escaping punctuation
+** [ ] inline macros
