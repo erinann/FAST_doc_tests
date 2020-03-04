@@ -29,7 +29,7 @@ image:AsciidocFX_logo.png[width = 45, height = 45] +
 AsciidocFX is supported on macOS, Windows, and Linux.
 
 === Installing AsciidocFX
-The easiest way to install AsciidocFX is to go to the installation section of the AsciidocFX website and download the installer for your system.
+The easiest way to install AsciidocFX is to go to the installation section of the AsciidocFX website and download the installer for your system and run it.
 
 https://www.asciidocfx.com/#truehow-to-install-asciidocfx[How to Install AsciidocFX]
 
@@ -88,35 +88,12 @@ Note - if you have two-factor authentication on GH, you cannot use the git-easy 
 
 Adding brackets-git
 
-Cloning in Brackets
-
-Not sure is Brackets works well on Windows machines.
-The terminal in Atom seems to be a little flaky. Atom crashes when I close the terminal. Now going to try pushing in GitHub desktop (still editing in Atom).
-
-
-_Atom_ is a text editor that works directly with GitHub upon installation. You as of this writing, you will still need to use Git to update your forked repository but other commands can be done within the Atom environment. You will have to install a few packages written for Atom to work with AsciiDoc documents. +
-- _Brackets_ is a text editor that also works with Git and GitHub. You have to have Git installed, and you will have to install a few packages to preview AsciiDoc documents. +
-
-
-Git is a great tool, but it has a steep learning curve. *You do not need to install Git and learn the command line version to contribute to the WGFAST convention documents.* +
-
-Git comes bundled with the Atom text editor, which is easier to install and interface with GitHub than the command line version. Atom also allows two-factor authentication in GitHub which some government agencies might require. +
-adding packages - ascidocs all
-Cloning in Atom
-terminal-tab or termination
-where an I typing???
-where am I typing now???
-
-
-If you're note a programmer - asciidocFX is proabaly the best beause is also gives you a style sheet. but you have to use all git commond (so what. suck it up)
-Brackets is good because is shows you math equations. 2-factor authen is messed up.
-Atom is good if you can't handle Git. Quick and easy integration with GitHub.
 
 == Pro, Cons, Quirks
 === Windows only
 Various parts of the "How-to" documents were written using the three text editors/IDEs on a Dell XPS 15 (9560) with Micorsoft Windows 10 Pro Build 18363, 32 GB RAM. +
 
-If anyone wants to update this section for MacOS and Linux, please do!
+If anyone wants to update this section for macOS and Linux, please do!
 
 
 .Windows Text Editors Test
@@ -135,6 +112,8 @@ a|
 * Loads quickly
 * GitHub/Git integration comes standard
 * GUI for Git/GitHub
+* GUI can handle two-factor authentication
+* Easy to see staged changes in Git panel
 * Spell checker
 
 a|
@@ -159,11 +138,12 @@ a|
 
 | *Quirks*
 a|
-* Scrolling in the text editor only works sometimes
-* Sometimes you have to restart the program for setting updates to work
+* Scrolling in the text editor does not work all the time
+* Sometimes you have to restart the program to update settings
 
 a|
 * Closing the terminal (from the Terminal-tab package) crashes Atom
+* Synchronizing the live preview pane does not work well if there are images.
 
 a|
 * Does not support two-factor authentication in GitHib - you have push to remotes using a Git terminal
