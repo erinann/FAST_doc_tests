@@ -1,2 +1,15 @@
-* Come up with a better explanation of "repository". +
-** Make sure Suggested Workflow, GitHub, and Git files are updated with the same jargon section.
+* [x] Come up with a better explanation of "repository". +
+* [ ] *Make sure Suggested Workflow, GitHub, and Git files are updated with the same jargon section.*
+* [ ] Plain text editor - Atom section
+* [ ] Plain text editor - Brackets section
+* [ ] AsciiDoc help file
+
+*** What basic vocab needs to be explained?
+    ** [ ] Attributes
+    ** [ ] Macros
+    ** [ ] Sections
+    ** [ ] Blocks
+    ** [ ] Admonitions
+    ** [ ] Text formatting - punctuation
+    ** [ ] escaping punctuation
+    ** [ ] inline marcos
