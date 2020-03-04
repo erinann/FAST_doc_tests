@@ -18,35 +18,44 @@ These instructions are to help contributors install and use either Atom or Brack
 == Why use a text editor?
 There are three ways you can view and edit AsciiDoc documents. +
 
-. Install the Asciidoctor toolchain and all its dependencies to create backends (PDF, HTML, ePubs, Word docs, etc.). You cannot see live updates.
-. Install AsciiDoc browser extensions in Chrom, Firefox, or Opera and open files in your browser. To see live updates you will have to install and set up a system monitor to watch for file changes.
-. Use a modern text editor/IDE that supports live preview and syntax highlighting. Syntax highlighting helps differentiate between markup commands and text.
+. Install the Asciidoctor toolchain and all its dependencies to create backends (PDF, HTML, ePubs, Word docs, etc.). Requires https://www.ruby-lang.org/en/[Ruby]. You cannot see live updates as you edit.
+. Install AsciiDoc browser extensions in Chrome, Firefox, or Opera and open files in your browser. Preview only. To see live updates you will have to install and set up a system monitor to watch for file changes.
+. Use a modern text editor/IDE that supports live preview and syntax highlighting of AsciiDoc documents. Syntax highlighting helps differentiate between markup commands and text.
 
-*Answer*: Installing and using a modern text editor/IDE is the easiest option across multiple platforms!
+*Answer*: Installing and using a modern text editor/IDE is the easiest option to edit and preview AsciiDoc documents across multiple platforms!
 
 == https://asciidocfx.com/[AsciidocFX]
-image:AsciidocFX_logo.png[width = 45, height = 45]
+image:AsciidocFX_logo.png[width = 45, height = 45] +
+AsciidocFX is supported on macOS, Windows, and Linux.
 
+=== Installing AsciidocFX
+The easiest way to install AsciidocFX is to go to the installation section of the AsciidocFX website and download the installer for your system.
 
-https://www.asciidocfx.com/[AsciidocFX]
+https://www.asciidocfx.com/#truehow-to-install-asciidocfx[How to Install AsciidocFX]
 
-Weird thing - sometime scrolling does not work. Might be my Windows system.
+=== Integration with Git and GitHub
+There is no Git/GitHub GUI, but there is a terminal emulator. This means that while working in AsciidocFX, you can open the terminal emulator and run Git commands. The terminal will open in the directory you are in.
 
-Slow to start - like really, really slow.
-Table generator does not work
+To change what terminal is used, update the settings in `Settings -> Terminal Settings` tab (left side of the screen).
 
-The scroll thing really annoying.
+TIP: Windows users, you might want to change the path from the Window's command prompt to the path for Git Bash. The path to Git Bash will depend on where you installed Git. The path to Git Bash under a default installation would be: `C:\Program Files\Git\bin\bash.exe`
 
-* WTF this is a pain in the butt.
+=== Panes
+image:AsciidocFX_panes.png[]
 
-
+Note: The default editor theme has a white background. You can change the theme to "Dark" in `Settings -> Editor Settings` tab.
 
 == https://atom.io/[Atom]
-image:atom-logo.svg[width = 50, height = 50]
+image:atom-logo.svg[width = 50, height = 50] +
+Atom is supported on macOS, Windows, and Linux.
 
 === Installing Atom
+Click the big, yellow Download button at https://atom.io/[Atom.io]. If the operating system listed above the Download button is not your operating system, you can find other builds and releases at https://github.com/atom/atom (scroll down).
 
 ==== Packages
+ctrl-shift-a or cmd-shift-a.
+Synchronize the preview pane: synchronize the preview pane with the AsciiDoc source pane.
+WARNING: The scroll position on the preview pane does not automatically scroll the AsciiDoc source pane.
 
 === Integration with Git and GitHub
 
@@ -66,7 +75,8 @@ image:atom_push.png[] +
 
 
 == http://brackets.io/[Brackets]
-image:Brackets_Icon.svg[width = 50, height = 50]
+image:Brackets_Icon.svg[width = 50, height = 50] +
+Brackets is supported on macOS, Windows, and Linux
 
 === Install Brackets
 
@@ -94,6 +104,8 @@ Git comes bundled with the Atom text editor, which is easier to install and inte
 adding packages - ascidocs all
 Cloning in Atom
 terminal-tab or termination
+where an I typing???
+where am I typing now???
 
 
 If you're note a programmer - asciidocFX is proabaly the best beause is also gives you a style sheet. but you have to use all git commond (so what. suck it up)
@@ -116,7 +128,7 @@ a|
 * Best live preview display
 * Easy link to browser preview
 * Pseudo terminal emulator for Git commands
-* Good integration with hotkeys for standard formatting
+* Good integration of hotkeys for standard text formatting
 * Spell checker
 
 a|
@@ -135,9 +147,10 @@ a|
 a|
 * VERY Slow to load
 * Uses a lot of memory
+* Not all of the shortcuts work
 
 a|
-* No live preview of citatations and math equations
+* No live preview of citations and math equations
 
 
 a|
@@ -147,6 +160,7 @@ a|
 | *Quirks*
 a|
 * Scrolling in the text editor only works sometimes
+* Sometimes you have to restart the program for setting updates to work
 
 a|
 * Closing the terminal (from the Terminal-tab package) crashes Atom
