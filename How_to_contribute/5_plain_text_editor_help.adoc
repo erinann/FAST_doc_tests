@@ -23,7 +23,14 @@ There are three ways you can edit and view AsciiDoc documents.
 
 == AsciidocFX
 Weird thing - sometime scrolling does not work. Might be my Windows system.
+
 Slow to start - like really, really slow.
+
+The scroll thing really annoying. 
+
+* WTF this is a pain in the butt.
+
+
 
 == Atom
 image:atom-logo.svg[width = 50, height = 50]
