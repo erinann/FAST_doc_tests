@@ -29,8 +29,11 @@ We are only going to use a few core commands in Git, but if you want to dive dee
 {empty} +
 
 
-=== Downloading and installing Git
+=== Download Git
 Download Git from the Git website. link:https://git-scm.com/downloads[Git Download] +
+
+=== Install Git
+How you install Git depends on your operating system.
 
 ==== Linux
 .From the https://git-scm.com/book/en/v2/Getting-Started-Installing-Git[Getting Started - Installing Git] section of _Pro Git_
@@ -60,7 +63,34 @@ Git comes with a `git config` tool that lets you control the configuration varia
 * Assign your text editor. +
 {empty} +
 
-WARNING: Your Git username and GitHub username do not have to match. Your Git user email has to be linked to your GitHub account.
+You can view all your settings and where they come from using:
+----
+$ git congif --list --show-origin
+----
+
+You will probably have to hit `Enter` or the space bar to scroll through the list if your terminal is not large enough to see all the output on one screen. Type `q` to exit once you are at the end of the list.
+
+If the output looks like a lot of gobbledygook to you, try:
+
+----
+$ git config -l
+----
+
+Again, you might have to hit `Enter` or the space bar to scroll through the list. Type `q` to exit when you are at the end of the list.
+
+
+==== You! (Your idenity)
+*These settings have to be set for you to interact with GitHub.*
+(It is in bold - pay attention!)
+
+1. Set a user name.
+2. Set your email.
+----
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+----
+
+WARNING: Your Git username and GitHub username do not have to match. *Your Git user email has to be linked to your GitHub account*.
 
 {empty} +
 
@@ -68,11 +98,7 @@ WARNING: Your Git username and GitHub username do not have to match. Your Git us
 The https://git-scm.com/docs/gitglossary[Git Glossary] +
 This is the technical glossary of all Git terms and commands. +
 
-See the link:3_github_help.adoc[GitHub help] file for the terms you will encounter the most while contributing to the WGFAST convention documents. +
-{empty} +
-
-== Jargon
-There are a few terms you should be familiar with before jumping into the deep end of Git and GitHub.
+These are a few terms you should be familiar with before jumping into the deep end of Git and GitHub.
 
 * *_Git_* - A type of version control system (software).
 * *_GitHub_* - An online (in the cloud) hosting service for Git repositories. It is built on Git so a lot of the terminology will be the same between Git and GitHub.
