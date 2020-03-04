@@ -139,7 +139,7 @@ You will have to add packages in Atom and extensions in Brackets to preview Asci
  Provides the ability to past images from the clipboard.
 ** asciidoc-preview +
  Shows an HTML preview for the AsciiDoc content in the current editor.
-** autocomplete-asciidoc
+** autocomplete-asciidoc +
  AsciiDoc language autocompletions.
 ** language-asciidoc +
  Syntax highlighting and snippets for AsciiDoc.
@@ -148,7 +148,7 @@ You will have to add packages in Atom and extensions in Brackets to preview Asci
 ** markdown-preview-plus +
  To show and HTML preview of Markdown (`.md`) documents.
 ** terminal-tab +
- To use Git from within Atom. This package is a little flaky. Closing the terminal within the editor crashes Atom.
+ To use a Git terminal from within Atom. This package is a little flaky - closing the terminal within the editor crashes Atom.
 
 //
 
@@ -206,7 +206,6 @@ Untracked files:
         How_to_contribute/7_Atom.adoc
         How_to_contribute/8_Brackets.adoc
 no changes added to commit (use "git add" and/or "git commit -a")
-
 ----
 
 In this example, two commits have been made locally but not pushed to the remote repository (GitHub), three files have been modified but not staged, and two files have been added to the project but not staged.
