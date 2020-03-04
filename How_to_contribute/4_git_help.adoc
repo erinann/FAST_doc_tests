@@ -39,7 +39,7 @@ image:GitInstall_Linux.png[]
 ==== MacOS
 .From the https://git-scm.com/book/en/v2/Getting-Started-Installing-Git[Getting Started - Installing Git] section of _Pro Git_
 
-image:GitInstall_MacOS_1.png[] 
+image:GitInstall_MacOS_1.png[] +
 image:GitInstall_MacOs_2.png[]
 
 ==== Windows
