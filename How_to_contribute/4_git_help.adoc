@@ -33,17 +33,17 @@ We are only going to use a few core commands in Git, but if you want to dive dee
 Download Git from the Git website. link:https://git-scm.com/downloads[Git Download] +
 
 ==== Linux
-.From the https://git-scm.com/book/en/v2/Getting-Started-Installing-Git[Gettin Started - Installing Git] section of _Pro Git_
+.From the https://git-scm.com/book/en/v2/Getting-Started-Installing-Git[Getting Started - Installing Git] section of _Pro Git_
 image:GitInstall_Linux.png[]
 
 ==== MacOS
-.From the https://git-scm.com/book/en/v2/Getting-Started-Installing-Git[Gettin Started - Installing Git] section of _Pro Git_
+.From the https://git-scm.com/book/en/v2/Getting-Started-Installing-Git[Getting Started - Installing Git] section of _Pro Git_
 
-image:GitInstall_MacOs_1.png[] 
+image:GitInstall_MacOS_1.png[] 
 image:GitInstall_MacOs_2.png[]
 
 ==== Windows
-.From the https://git-scm.com/book/en/v2/Getting-Started-Installing-Git[Gettin Started - Installing Git] section of _Pro Git_
+.From the https://git-scm.com/book/en/v2/Getting-Started-Installing-Git[Getting Started - Installing Git] section of _Pro Git_
 image:GitInstall_Win10.png[]
 
 
