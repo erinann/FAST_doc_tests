@@ -1,0 +1,2 @@
+* Come up with a better explanation of "repository". +
+** Make sure Suggested Workflow, GitHub, and Git files are updated with the same jargon section.

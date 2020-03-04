@@ -13,22 +13,52 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
-These instructions are to help contributors install and use either Atom or Brackets to edit WGFAST convention documents and push changes to GitHub.
+These instructions are to help contributors install and use either Atom or Brackets to edit WGFAST convention documents.
 
+== Why use a text editor?
+There are three ways you can edit and view AsciiDoc documents.
+1. Install the Asciidoctor toolchain and all its dependencies to create backends (PDF, HTML, ePubs, Word docs, etc.) you can open.
+2. Install AsciiDoc browser extensions Chrom, Firefox, or Opera) and open the file in your browser.
+3. Use a modern text editor/IDE^* that supports syntax highlighting and
 
-== What is Atom?
+== AsciidocFX
+Weird thing - sometime scrolling does not work. Might be my Windows system.
+Slow to start - like really, really slow.
+
+== Atom
 image:atom-logo.svg[width = 50, height = 50]
-Git is a great tool, but it has a steep learning curve. *You do not need to install Git and learn the command line version to contribute to the WGFAST convention documents.* +
 
-Git comes bundled with the Atom text editor, which is easier to install and interface with GitHub than the command line version. Atom also allows two-factor authentication in GitHub which some government agencies might require. +
-adding packages - ascidocs all
-Cloning in Atom
-terminal-tab or termination
+=== Installing Atom
+
+==== Packages
+
+=== Integration with Git and GitHub
+
+==== Staging and commits
+1. In the Git panel, right-click on the file and choose `Stage`. +
+2. Enter a useful commit message to let people know what changes you made, and click `Commit to master`. +
+{empty} +
+image:atom_stage.png[]
+image:atom_commit.png[] +
+{empty} +
+
+==== Pushing to GitHub
+Click on the `Push` button. In this example, three commits will be pushed to GitHub. +
+image:atom_push.png[] +
+{empty} +
 
 
-== What is Brackets?
+
+== Brackets
 image:Brackets_Icon.svg[width = 50, height = 50]
- Note - if you have two-factor authentication on GH, you cannot use the git-easy thing. You'll have to push in the Git terminal.
+
+=== Install Brackets
+
+==== Extensions
+
+=== Integration with Git and GitHub
+
+Note - if you have two-factor authentication on GH, you cannot use the git-easy thing. You'll have to push in the Git terminal.
 
 Adding brackets-git
 
@@ -37,9 +67,19 @@ Cloning in Brackets
 Not sure is Brackets works well on Windows machines.
 The terminal in Atom seems to be a little flaky. Atom crashes when I close the terminal. Now going to try pushing in GitHub desktop (still editing in Atom).
 
-Okay, now going to see if I can push this in Brackets.
-Test #2 if Brackets
-Okay test of Git terminal in Brackets. This is seriously annoying.
-2-factor authention login everytime????
 
-only if I stage and commit within Brackets then push with Bash.
+_Atom_ is a text editor that works directly with GitHub upon installation. You as of this writing, you will still need to use Git to update your forked repository but other commands can be done within the Atom environment. You will have to install a few packages written for Atom to work with AsciiDoc documents. +
+- _Brackets_ is a text editor that also works with Git and GitHub. You have to have Git installed, and you will have to install a few packages to preview AsciiDoc documents. +
+
+
+Git is a great tool, but it has a steep learning curve. *You do not need to install Git and learn the command line version to contribute to the WGFAST convention documents.* +
+
+Git comes bundled with the Atom text editor, which is easier to install and interface with GitHub than the command line version. Atom also allows two-factor authentication in GitHub which some government agencies might require. +
+adding packages - ascidocs all
+Cloning in Atom
+terminal-tab or termination
+
+
+If you're note a programmer - asciidocFX is proabaly the best beause is also gives you a style sheet. but you have to use all git commond (so what. suck it up)
+Brackets is good because is shows you math equations. 2-factor authen is messed up.
+Atom is good if you can't handle Git. Quick and easy integration with GitHub.

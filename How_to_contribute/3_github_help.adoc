@@ -22,13 +22,11 @@ https://octodex.github.com/[Different versions of Octocat] +
 {empty} +
 
 === What is GitHub?
-https://github.com/[GitHub] is a web-based hosting service that manages Git repositories. +
-
-GitHub is not Git, although it is build on top of Git. Git is a distributed version control system used to manage projects while GitHub is an online service that stores the projects. +
+https://github.com/[GitHub] is a web-based hosting service that manages Git repositories. GitHub is not Git, although it is build on top of Git. GitHub is the service that allows multiple contributors and collaborators access to project repositories. +  
 
 GitHub is one of the most popular hosting platforms for version control, but there are others including https://gitlab.com/[GitLab] and https://bitbucket.org/[Bitbucket]. +
 
-`wg_WGFAST` is a GitHub repository within the https://github.com/ices-eg[ICES Expert Groups] workspace. +
+`wg_WGFAST` is a Git repository within the https://github.com/ices-eg[ICES Expert Groups] GitHub workspace. +
 
 To contribute to the WGFAST convention documents, you will have to create a free GitHub account. +
 {empty} +

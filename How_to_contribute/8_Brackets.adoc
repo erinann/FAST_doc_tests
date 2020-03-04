@@ -1,0 +1,35 @@
+= Brackets
+:revnumber: 0.01
+:revdate: 2020-02-25
+:imagesdir: images\
+:toc: preamble
+:toclevels: 4
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+
+Preamble
+
+*Brackets*: +
+1. Click on the box next to modified document to stage it, or click on the check box next to the `Commit` button to stage all modified documents. +
+image:brackets_stage.png[] +
+{empty} +
+2. Click on the `Commit` button. +
+image:brackets_commit_1.png[] +
+{empty} +
+3.  Add a message to let people know what changes you made, and click `OK`. +
+image:brackets_commit_2.png[] +
+{empty} +
+
+
+*Brackets*: +
+Click on the `Git Push` button. +
+image:brackets_push.png[] +
+{empty} +
+
+CAUTION: If you have two-factor authentication setup on GitHub (some government agencies require this) and use Brackets, you will have to use Git command line to push your commits to GitHub. Brackets does not currently support two-factor authentication options.

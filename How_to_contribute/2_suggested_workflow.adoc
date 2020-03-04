@@ -15,7 +15,7 @@ endif::[]
 
 This workflow is to help contributors who have not used Git or GitHub get started.
 
-If you work regularly with Git and GitHub, please read through the link:experienced_github_users.adoc[A quick workflow for experienced Git and GitHub users]. +
+If you work regularly with Git and GitHub, please read through link:experienced_github_users.adoc[A quick workflow for experienced Git and GitHub users]. +
 
 Contributions to any of the help documents are welcome. :smile: +
 
@@ -24,7 +24,7 @@ There are a few terms you should be familiar with before jumping into the deep e
 
 * *_Git_* - A type of version control system (software).
 * *_GitHub_* - An online (in the cloud) hosting service for Git repositories. It is built on Git so a lot of the terminology will be the same between Git and GitHub.
-* *_Repository_* - Also called a "repo". A repository is a folder for your project. It contains all the project documents. Repos can have code file and scripts from any language, pictures, videos, text files (.doc, .docx, .adoc, .txt, .mb etc.), PDFs, etc.. If a file is part of a project, it goes in the repo.
+* *_Repository_* - Also called a "repo". A repository is a location where you are store all the files related to your project. A repository is a folder for your project. It contains all the project documents. Repos can have code file and scripts from any language, pictures, videos, text files (.doc, .docx, .adoc, .txt, .mb etc.), PDFs, etc.. If a file is part of a project, it goes in the repo.
 * *_Clone_* (n.) / *_Cloning a repo_* (v.) - A cloned repository is a complete copy of a repository. You usually clone a repository from GitHub (hosting service) to your local machine to work on project files locally.
 * *_Fork_* (n.) / *_Forking a repo_* (v.) - This is a special term used by GitHub and a few other hosting services. A fork is a cloned repository owned by someone else that you manage in your GitHub account. "Forking a repo" means to clone someone else's repository to your account. You are going to fork a copy of the `ices-eg/wg_WGFAST` repository to your own account to work on it independently before submitting any changes back to `ices-eg/wg_WGFAST`. `ices-eg` (ICES Expert Groups) is the team that owns the workspace. `wg_WGFAST` is the repository (project space) for the FAST working group.
 * *_Upstream repository_* - The repository you forked from.
@@ -42,11 +42,15 @@ There are a few terms you should be familiar with before jumping into the deep e
 image:Git_GitHub_workflow.png[]
 
 == Workflow
-Once you have installed the software, set up your GitHub account and linked Git, AND have a basic understanding of the jargon listed above, you are ready to contribute to the WGFAST convention documents!
+Once you have installed Git and a text editor/IDE, set up your GitHub account, AND have a basic understanding of the jargon listed above, you are ready to contribute to the WGFAST convention documents!
 {empty} +
 
-CAUTION: You can link both Atom and Brackets with Git and GitHub and work almost fully within the text editors, but a few authentication quirks came up when testing the editors. It is best that you learn Git from the command line first. +
-{empty} +
+[CAUTION]
+====
+Both Atom and Brackets provide GUIs for Git that allow you to work almost exclusively within those IDEs without using a terminal and Git commands. Atom seems more stable than Brackets, but when testing the packages and extensions that run the Git/GitHub integration, some weird authentication quirks popped up. +
+
+*It is best that you learn Git from the command line first.*
+====
 
 === Fork the ices-eg/wg_WGFAST repository
 * You only have to do this step once.
@@ -57,7 +61,7 @@ image:fork_page.png[]
 {empty} +
 {empty} +
 
-TIP: Forking and cloning both create a copy of a repository, but forking is not a Git function. Forking is only done in GitHub and other hosting services. You fork a repository from another account to work on a copy of that project without affecting the original project. After forking a repo, you can clone it to your local machine to work on it locally.
+TIP: Forking and cloning both create a copy of a repository, but forking is not a Git function. Forking is only done in GitHub and other hosting services. You fork a repository from another account to work on a copy of that project without affecting the original project. After forking a repository, you can clone it to your local machine to work on it locally.
 
 Once the repository is forked to your account you can either <<Editing documents in GitHub, edit the documents directly in GitHub>> or clone the repository to your computer and work locally. *We suggest cloning the repository to your local machine unless you are only going to fix a few typographical errors.*
 {empty} +
@@ -97,6 +101,7 @@ Format: `git clone https://github.com/_YOUR-USERNAME_/_YOUR-REPOSITORY_.git` +
 $ git clone https://github.com/erinann/wg_WGFAST.git
 ----
 
+.Output
 ----
 Cloning into 'wg_WGFAST'...
 remote: Enumerating objects: 551, done.
@@ -109,15 +114,18 @@ The above command puts a folder called `wg_WGFAST` in the `research_projects` di
 {empty} +
 
 
-=== Add the repository to a workspace in either Atom or Brackets
+=== Add the repository to a workspace in your text editor/IDE
 * You only have to do this step once. +
 
-Now that the repository is on your local machine you have add it to your workspace in either Atom or Brackets. Atom refers to repositories as "projects".
+Now that the repository is on your local machine you have add it to a workspace in your text editor.
 
-*Atom*: `File > Add Project Folder...` or `Ctrl + Shift + A` +
+*AsciidocFX*: Click on the image:ADFX_folder_icon.png[] and navigate to the folder. +
 {empty} +
 
-*Brackets*: `File > Open Folder...` or `Ctrl + Alt + A` +
+*Atom*: `File > Add Project Folder...` or `Ctrl + Shift + A` and navigate to the folder. +
+{empty} +
+
+*Brackets*: `File > Open Folder...` or `Ctrl + Alt + A` and navigate to the folder. +
 {empty} +
 
 You will have to add packages in Atom and extensions in Brackets to preview AsciiDoc files.
@@ -155,21 +163,46 @@ NOTE: Citation preview does not currently work in Atom or Brackets. Math equatio
 {empty} +
 
 === Edit
-Open an AsciiDoc document in Atom or Brackets and start editing. +
+Open an AsciiDoc document in AsciidocFX, Atom, or Brackets and start editing. +
 image:editing_2.jpg[height=150, width=150] +
 
-See the link:5_plain_text_editor_help.adoc[Plain Text Editor help] file if you need help using Atom or Brackets. +
+See the link:5_plain_text_editor_help.adoc[Plain Text Editor help] file if you need help using the text editors/IDEs. +
 {empty} +
 
 === Stage and commit
 After you have made a series of edits, save the document, stage it (`git add` command), and commit it to your local repository with a useful commit message. Staging tells Git which files in your working directory have changed and should be committed to the repository. You can continue to edit files that have been staged. It is best practice to commit changes often to keep a record of your work. For example, if you finish working on an introduction section, save it and commit the document. +
 
+You can see what files have changed with `git status`.
+
 TIP: Commit early and often!
 
-If you closed the Git terminal, open it and navigate to your working directory with the forked repository. +
+If you closed the Git terminal, open it and navigate to your working directory with the forked repository. Check to see what files were changed. +
 ----
 $ cd Documents/research_projects/wg_WGFAST
+$ git status
 ----
+
+.Output
+----
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+  
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   How_to_contribute/1_suggested_setup.adoc
+        modified:   How_to_contribute/2_suggested_workflow.adoc
+        modified:   How_to_contribute/5_plain_text_editor_help.adoc
+        
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        How_to_contribute/7_Atom.adoc
+        How_to_contribute/8_Brackets.adoc
+no changes added to commit (use "git add" and/or "git commit -a")
+
+----
+
 
 .Example: Stage and commit all changed files
 ----
@@ -183,7 +216,7 @@ $ git add AcMeta/acmeta.adoc
 $ git commit -m "Update Section 6.5"
 ----
 
-CAUTION: Notice that you have to add the `AcMeta` folder to the path to make sure you put the document in the correct correct directory.
+CAUTION: Notice that you have to add the `AcMeta` folder to the path to make sure the document in the correct directory.
 
 {empty} +
 
@@ -194,6 +227,20 @@ Pushing to GitHub is how you update your remote repository. After you finish edi
 ----
 $ git push
 ----
+
+.Potential output
+----
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 1.31 KiB | 103.00 KiB/s, done.
+Total 9 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas: 100% (6/6), completed with 4 local objects.
+To https://github.com/erinann/FAST_doc_tests.git
+   810ba2a..73c73af  master -> master
+----
+
 {empty} +
 
 === Submit a Pull Request

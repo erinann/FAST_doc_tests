@@ -26,7 +26,9 @@ There is a lot of jargon surrounding Git and GitHub, but that is normal in any s
 == Software, accounts, and languages
 === Software to install
 *Git* - A distributed version control system. +
-*AsciidocFX* or *Atom* or *Brackets* - Modern text editors/Integrated Development Environments (IDE). If you prefer to work online (in GitHub), you will not need a text editor. However, we suggest using a text editor if you are going to do more than fix a few spelling errors. +
+*AsciidocFX* or *Atom* or *Brackets* - Modern text editors/Integrated Development Environments (IDEs). AsciidocFX, Atom, and Brackets can open, edit, and live preview AsciiDoc files. +
+
+If you prefer to work online (in GitHub), you will not need a text editor. However, we suggest using a text editor if you are going to do more than fix a few spelling errors. +
 
 === Account to create
 *GitHub* - A cloud-based hosting service used to manage Git repositories. +
@@ -38,7 +40,7 @@ AsciiDoc is a popular and flexible plain text markup language. Both convention d
 *Markdown* - extension `.md` +
 Markdown is the most popular plain text markup language but it is not as flexible as AsciiDoc. You will see a couple documents in the `wg_WGFAST` repository with `.md` extensions (eg - `README.md`). These are written in Markdown. GitHub automatically renders Markdown files into HTML.
 
-Both Atom and Brackets support AsciiDoc and Markdown and provide live previews for each format. +
+AsciidocFX, Atom, and Brackets support AsciiDoc and Markdown and provide live previews for each format. +
 
 == Suggested order of setup
 If you do not have any of the software or accounts listed in the section above, this is the most painless way to get started.
