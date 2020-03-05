@@ -1,4 +1,4 @@
-``= Plain text editors
+= Plain text editors/IDEs
 Erin LaBrecque
 :revnumber: 0.01
 :revdate: 2020-02-25
@@ -36,7 +36,7 @@ The easiest way to install AsciidocFX is to go to the installation section of th
 https://www.asciidocfx.com/#truehow-to-install-asciidocfx[How to Install AsciidocFX]
 
 === Integration with Git and GitHub
-There is no Git/GitHub GUI, but there is a terminal emulator. This means that while working in AsciidocFX, you can open the terminal emulator and run Git commands. The terminal emulator will open in your current working directory.
+There is no Git/GitHub Graphical User Interface (GUI) native to AsciidocFX, but there is a terminal emulator. This means that while working in AsciidocFX, you can open the terminal emulator and run Git commands. The terminal emulator will open in your current working directory.
 
 To change what terminal is used, update the settings in the `Settings -> Terminal Settings` tab (left side of the screen).
 
@@ -76,8 +76,10 @@ From the Welcome Page you can click on `Install a Package` or go to `File -> Set
  To show an HTML preview of Markdown (`.md`) documents.
 ** atom-terminal +
  Opens a terminal in the current file's directory.
+** terminal-tab
 
-NOTE: If asciidoc-assistant failed to install autocomplete-asciidoc. You might have to install that package separately.
+
+NOTE: If asciidoc-assistant failed to install any of its dependencies, you will have to install those package separately.
 
 ==== Useful shortcuts
 * `Ctrl+Shift+P` (Linux/Windows) or `cmd+shift+P` (macOS). Opens the Command Pallet where you can find and run available commands.
@@ -96,17 +98,19 @@ image:Atom_panes_working.png[] +
 {empty} +
 
 === Integration with Git and GitHub
-Atom comes bundled with a GUI for Git and GitHub. You have to supply your GitHub login credentials the first time push to GitHub. If you want to work in a terminal, you have to install an external package. We suggest installing an external terminal package and working in the terminal to start. This will help you get familiar the underlying Git functions.
+Atom comes bundled with a GUI for Git and GitHub. You have to supply your GitHub login credentials the first time push to GitHub. +
 
-There are a number of Atom packages that give you access to a terminal from within Atom. The simplest is `atom-terminal` which is sets a pointer to your external terminal.  `terminal-tab` opens a terminal within Atom, but can be a little flaky in that closing the terminal crashes Atom.
+To work in a terminal, you have to install an external package. We suggest installing an external terminal package and working in Git from the terminal to start. This will help you get familiar the underlying Git functions.
 
-Instructions for working in a Git terminal are in the link:2_suggested_workflow.adoc[Suggested workflow to contribute to the ICES WGFAST convention documents] file.
+There are a number of Atom packages that give you access to a terminal. The simplest is `atom-terminal` which open your external terminal in the root directly of the project. `terminal-tab` opens a terminal within Atom that you can dock in different places, but the package can be a little flaky in that closing the terminal (clicking the `x` to close the tab) instead of exiting out of the terminal (typing `exit` at the command line) crashes Atom.
 
-==== Git terminal from within Atom
-If you installed terminal-tab or
+Instructions for working with Git in a terminal are in the link:2_suggested_workflow.adoc[Suggested workflow to contribute to the ICES WGFAST convention documents] file.
 
+==== Git terminal from Atom
+1. Open the setting of the terminal package you installed an make sure the path to the terminal is correct.
+2. Open the terminal when you need to stage, commit, and push to GitHub.
 
-==== Staging and commits from within Atom
+==== Staging and commits from within Atom (GUI)
 1. Open the Git panel, right-click on the file and choose `Stage`. +
 2. Enter a useful commit message to let people know what changes you made, and click `Commit to master`. +
 {empty} +
