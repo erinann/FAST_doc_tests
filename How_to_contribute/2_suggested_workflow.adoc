@@ -45,11 +45,9 @@ image:Git_GitHub_workflow.png[]
 Once you have installed Git and a text editor/IDE, set up your GitHub account, AND have a basic understanding of the jargon listed above, you are ready to contribute to the WGFAST convention documents!
 {empty} +
 
-[CAUTION]
+[NOTE]
 ====
-Both Atom and Brackets provide GUIs for Git that allow you to work almost exclusively within those IDEs without using a terminal and Git commands. Atom seems more stable than Brackets, but when testing the packages and extensions that run the Git/GitHub integration, some weird authentication quirks popped up. +
-
-*It is best that you learn Git from the command line first.*
+Both Atom and Brackets provide GUIs for Git that allow you to work almost exclusively within those IDEs without using a terminal and Git commands. *We suggest that you learn Git from the command line first because it will give you a better understanding of Git's functionality.* This workflow is written for using Git commands in a terminal.
 ====
 
 === Fork the ices-eg/wg_WGFAST repository
@@ -82,7 +80,7 @@ image:clone_button.png[] +
 
 //
 
-1. Open the Git terminal and use the `cd` command to navigate to directory (folder) you want to copy the repository to.  +
+1. Open the Git terminal and use the `cd` command to navigate to the directory (folder) you want to copy the repository to.  +
 
 .Example: Changing working directory
 ----
@@ -90,7 +88,7 @@ $ cd Documents/research_projects/
 ----
 {empty} +
 
-TIP: In most terminals you can type the first few characters of the folder and use `Tab` to autocomplete.
+TIP: In most terminals you can type the first few characters of the folder and use `Tab` to auto-complete.
 
 {empty} +
 
@@ -119,7 +117,7 @@ The above command puts a folder called `wg_WGFAST` in the `research_projects` di
 === Add the repository to a workspace in your text editor/IDE
 * You only have to do this step once. +
 
-Now that the repository is on your local machine you have add it to a workspace in your text editor.
+Now that the repository is on your local machine you have add it to a workspace in your text editor/IDE.
 
 *AsciidocFX*: Click on the image:ADFX_folder_icon.png[] and navigate to the folder. +
 {empty} +
@@ -134,7 +132,7 @@ You will have to add packages in Atom and extensions in Brackets to preview Asci
 
 .*Atom*:
 * asciidoc-assistant +
- Installs the following packages.
+ Installs the following packages:
 ** asciidoc-image-helper +
  Provides the ability to past images from the clipboard.
 ** asciidoc-preview +
@@ -144,11 +142,13 @@ You will have to add packages in Atom and extensions in Brackets to preview Asci
 ** language-asciidoc +
  Syntax highlighting and snippets for AsciiDoc.
 
-* Other packages you might want.
+* Other packages you might want
 ** markdown-preview-plus +
  To show an HTML preview of Markdown (`.md`) documents.
-** terminal-tab +
- To use a Git terminal from within Atom. This package is a little flaky - closing the terminal within the editor crashes Atom.
+** atom-terminal +
+ Opens an external terminal in the current directory. +
+** terminal-tab
+ Opens a terminal pane within Atom in the current directory.
 
 //
 
