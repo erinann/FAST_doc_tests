@@ -1,4 +1,4 @@
-= Git
+= Git help
 Erin LaBrecque
 :revnumber: 0.01
 :revdate: 2020-02-25
@@ -42,8 +42,8 @@ image:GitInstall_Linux.png[]
 ==== MacOS
 .From the https://git-scm.com/book/en/v2/Getting-Started-Installing-Git[Getting Started - Installing Git] section of _Pro Git_
 
-image:GitInstall_MacOS_1.png[] 
-{empty} + 
+image:GitInstall_MacOS_1.png[]
+{empty} +
 
 image:GitInstall_MacOS_2.png[] +
 
@@ -106,7 +106,7 @@ This is the technical glossary of all Git terms and commands. +
 These are a few terms you should be familiar with before jumping into the deep end of Git and GitHub.
 
 * *_Git_* - A type of version control system (software).
-* *_GitHub_* - An online (in the cloud) hosting service for Git repositories. 
+* *_GitHub_* - An online (in the cloud) hosting service for Git repositories.
 * *_Repository_* - Also called a "repo". A repository tracks all changes made to files in a project over time. Initializing a repository for a project creates a `.git` folder that stores the project's history. If you delete the `.git` folder, you delete the project's history.
 * *_Clone_* (n.) / *_Cloning a repo_* (v.) - A cloned repository is a complete copy of a repository. You usually clone a repository from GitHub (hosting service) to your local machine to work on project files locally.
 * *_Fork_* (n.) / *_Forking a repo_* (v.) - This is a special term used by GitHub and a few other hosting services. It is not a Git command. A fork is a cloned repository owned by someone else that you manage in your GitHub account. "Forking a repo" means to clone someone else's repository to your account. You are going to fork a copy of the `ices-eg/wg_WGFAST` repository to your own account to work on it independently before submitting any changes back to `ices-eg/wg_WGFAST`. `ices-eg` (ICES Expert Groups) is the team that owns the workspace. `wg_WGFAST` is the repository (project space) for the FAST working group.

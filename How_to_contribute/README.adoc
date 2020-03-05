@@ -16,7 +16,7 @@ endif::[]
 
 Welcome!
 
-If you are comfortable with Git, GitHub, and AsciiDoc markup, head over to the link:experienced_github_users.adoc[A quick workflow for experienced Git, GitHub, and Asciidoc users] document. The rest of you, please keep reading.
+If you are comfortable with Git and GitHub, head over to the link:experienced_github_users.adoc[A quick workflow for experienced Git, GitHub, and Asciidoc users] document. The rest of you, please keep reading.
 
 
 == Where do I start?
@@ -49,26 +49,26 @@ Links to all the help files are at the bottom of this document.
 If do not know what Git commits are, or if you think "forking a repository" refers to dueling with cutlery, please read through the Git and GitHub help files before attempting to contribute. We will not make you a Git or GitHub expert, but we will get you sorted enough to know how to write useful commit messages, stage commits, pull updates, and submit pull requests in order to contribute to the convention documents.
 
 == AsciiDoc markup
-If you do not know what markup language is (specifically AsciiDoc markup) or how to preview markup documents, please read though the AsciiDoc help file. Again, we will not make you an expert in these things, but we will get you editing with as little pain as possible.
+If you do not know what markup language is (specifically AsciiDoc markup) or how to preview markup documents, please read though the Text Editors/IDEs and AsciiDoc help file. Again, we will not make you an expert in these things, but we will get you editing with as little pain as possible.
 
 CAUTION: Previewing AsciiDoc markup documents will require you to install browser extensions and view the documents in your web browser. Creating backends (HTML, PDF, DocBook, etc.) on your local machine will require you to install Ruby, Ruby Version Manager, and the Asciidoctor toolchain. These installations can get complicated if you are not deeply familiar with your operating system.
 
-In lieu of installing browser extensions, the Asciidoctor toolchain, and all the dependencies, we recommend using either the **Atom** or **Brackets** plain text editors to edit and preview AsciiDoc documents.
+In lieu of installing browser extensions, the Asciidoctor toolchain, and all the dependencies, we recommend using a text editor/IDE that can edit and provide live previews of AsciiDoc documents. *AsciidocFX*, *Atom*, or *Brackets* are three suggested text editors/IDEs.
 
-== Atom and Brackets text editors
-The Atom and Brackets plain text editors can read, edit, and preview AsciiDoc documents. Both editors were also written with basic integration to Git and GitHub, but please be aware the some the of extension for Git are buggy. You should direct all
+== AsciidocFX, Atom, Brackets text editors/IDEs
+AsciidocFX, Atom, and Brackets are text editors/IDEs that can read, edit, and live preview AsciiDoc documents. All three editors can interact with GitHub through a terminal emulator or a GUI.
 
-WARNING: Citation preview does not currently work in Atom or Brackets. Math equation (LaTex math) preview does not currently work in Atom, but you can change the settings of the AsciiDoc Preview extension in Brackets to preview equations. +
+WARNING: Previews of citations in AsciiDoc documents do not currently work in Atom or Brackets. Previews math equation (LaTex math) in AsciiDoc documents does not currently work in Atom, but you can change the settings of the AsciiDoc Preview extension in Brackets to preview equations. +
 
 
 == Links To Help Files
-To link:1_suggested_setup.adoc[Suggested setup to contribute to the ICES WGFAST convention documents] +
-To link:2_suggested_workflow.adoc[Suggested workflow to contribute to the ICES WGFAST convention documents] +
-To link:3_github_help.adoc[GitHub help] +
-To link:4_git_help.adoc[Git help]  +
-To link:5_plain_text_editor_help.adoc[Plain Text Editor help]  +
-To link:6_asciidoc_help.adoc[AsciiDoc help]  +
-To link:experienced_github_users.adoc[A quick workflow for experienced Git, GitHub, and Asciidoc users] +
+- link:1_suggested_setup.adoc[Suggested setup to contribute to the ICES WGFAST convention documents] +
+- link:2_suggested_workflow.adoc[Suggested workflow to contribute to the ICES WGFAST convention documents] +
+- link:3_github_help.adoc[GitHub help] +
+- link:4_git_help.adoc[Git help]  +
+- link:5_plain_text_editor_help.adoc[Text editors/IDEs help]  +
+- link:6_asciidoc_help.adoc[AsciiDoc help]  +
+- link:experienced_github_users.adoc[A quick workflow for experienced Git, GitHub, and Asciidoc users] +
 {empty} +
 
 NOTE: The help files are written in AsciiDoc (.adoc) markup. If you want to take a quick peek, click on the `Raw` button.
@@ -81,7 +81,7 @@ NOTE: The help files are written in AsciiDoc (.adoc) markup. If you want to take
 2_suggested_workflow.adoc -> Suggested workflow to contribute to the ICES WGFAST convention documents +
 3_github_help.adoc -> GitHub help +
 4_git_help.adoc -> Git help +
-5_plain_text_editor_help.adoc -> Plain Text Editor help +
+5_plain_text_editor_help.adoc -> Text editors/IDEs help +
 6_asciidoc_help.adoc -> AsciiDoc help +
 experienced_github_users.adoc -> A quick workflow for experienced Git, GitHub, and Asciidoc users +
 README.adoc -> How to contribute to the AcMeta and SONAR-netCDF4 documents +
