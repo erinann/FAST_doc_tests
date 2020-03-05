@@ -26,7 +26,7 @@ If you still have questions about _how_ to contribute to the convention document
 {empty} +
 
 .Contribute to the help documents
-These help files are a work in progress. Comments and suggestions are welcomed and encouraged! Please submit an https://github.com/ices-eg/wg_WGFAST/issues[issue] in the `ices-eg/wg_WGFAST` repository and the mention `@erinann` with your thoughts and updates.
+These help files are a work in progress. Comments and suggestions are welcomed and encouraged! Please submit an https://github.com/ices-eg/wg_WGFAST/issues[issue] with your comments in the `ices-eg/wg_WGFAST` repository and mention `@erinann`.
 
 === What's next?
 1. Read the rest of this page. This is a README file. It is like a homepage for GitHub repositories and directories within repositories.
@@ -46,19 +46,19 @@ As of this writing, there are three directories within the wg_WGFAST repository.
 Links to all the help files are at the bottom of this document.
 
 == Git and GitHub
-If do not know what Git commits are, or if you think "forking a repository" refers to dueling with cutlery, please read through the Git and GitHub help files before attempting to contribute. We will not make you a Git or GitHub expert, but we will get you sorted enough to know how to write useful commit messages, stage commits, pull updates, and submit pull requests in order to contribute to the convention documents.
+If do not know what Git commits are, or if you think "forking a repository" refers to dueling with cutlery, please read through the Git and GitHub help files before attempting to contribute. We will not make you a Git or GitHub expert, but we will get you sorted enough to know how to stage commits, write useful commit messages, push those commits to your remote repository, pull updates from an upstream repository, and submit pull requests in order to contribute to the convention documents.
 
 == AsciiDoc markup
-If you do not know what markup language is (specifically AsciiDoc markup) or how to preview markup documents, please read though the Text Editors/IDEs and AsciiDoc help file. Again, we will not make you an expert in these things, but we will get you editing with as little pain as possible.
+If you do not know what markup language is (specifically AsciiDoc markup) or how to preview markup documents, please read though the Text Editors/IDEs and AsciiDoc help files. Again, we will not make you an expert in these things, but we will get you editing with as little pain as possible.
 
 CAUTION: Previewing AsciiDoc markup documents will require you to install browser extensions and view the documents in your web browser. Creating backends (HTML, PDF, DocBook, etc.) on your local machine will require you to install Ruby, Ruby Version Manager, and the Asciidoctor toolchain. These installations can get complicated if you are not deeply familiar with your operating system.
 
 In lieu of installing browser extensions, the Asciidoctor toolchain, and all the dependencies, we recommend using a text editor/IDE that can edit and provide live previews of AsciiDoc documents. *AsciidocFX*, *Atom*, or *Brackets* are three suggested text editors/IDEs.
 
 == AsciidocFX, Atom, Brackets text editors/IDEs
-AsciidocFX, Atom, and Brackets are text editors/IDEs that can read, edit, and live preview AsciiDoc documents. All three editors can interact with GitHub through a terminal emulator or a GUI.
+AsciidocFX, Atom, and Brackets are text editors/IDEs that can read, edit, and live preview AsciiDoc documents. All three editors can interact with GitHub through a terminal or a terminal emulator or a GUI.
 
-WARNING: Previews of citations in AsciiDoc documents do not currently work in Atom or Brackets. Previews math equation (LaTex math) in AsciiDoc documents does not currently work in Atom, but you can change the settings of the AsciiDoc Preview extension in Brackets to preview equations. +
+WARNING: Previews of citations in AsciiDoc documents do not currently work in Atom or Brackets. Previews of math equation (LaTex math) in AsciiDoc documents does not currently work in Atom, but you can change the settings of the AsciiDoc preview pane in Brackets to preview math equations. +
 
 
 == Links To Help Files
