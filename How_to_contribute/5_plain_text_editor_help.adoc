@@ -69,7 +69,7 @@ From the Welcome Page you can click on `Install a Package` or go to `File -> Set
 
 .Packages to install
 * asciidoc-assistant +
- Installs the following packages.
+ Installs the following packages:
 ** asciidoc-image-helper +
  Provides the ability to past images from the clipboard.
 ** asciidoc-preview +
@@ -79,7 +79,7 @@ From the Welcome Page you can click on `Install a Package` or go to `File -> Set
 ** language-asciidoc +
  Syntax highlighting and snippets for AsciiDoc.
 
-* Other packages you might want.
+* Other packages you might want
 ** markdown-preview-plus +
  To show an HTML preview of Markdown (`.md`) documents.
 ** atom-terminal +
