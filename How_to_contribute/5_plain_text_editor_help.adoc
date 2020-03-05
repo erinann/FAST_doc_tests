@@ -250,12 +250,12 @@ a|
 * Not all the shortcuts work
 
 a|
-* No live preview of citations and math equations
+* No live preview for citations and math equations
 * Synchronizing the live preview pane to the source pane does not work well
 
 
 a|
-* No live preview of citations
+* No live preview for citations
 * AsciiDoc live preview pane only docks at the bottom of the screen (but it can float)
 * Markdown live preview pane cannot move
 
@@ -266,11 +266,11 @@ a|
 * Sometimes you have to restart the program for settings to update
 
 a|
-* Closing the terminal from the Terminal-tab package can crash Atom if you do not exit the terminal first.
+* Closing the terminal from the Terminal-tab package can crash Atom if you do not exit the terminal first
 
 
 a|
-* Lots of pop-up boxes when using the GUI to push to a remove repository. It is somewhat annoying to keep clicking `OK`.
-* Potential issues with initially finding GitHub credentials (might be a Window problem).
+* Lots of pop-up boxes when using the GUI to push to a remove repository. It is somewhat annoying to keep clicking `OK`
+* Potential issues with initially finding GitHub credentials (might be a Window problem)
 * No internal spell checker - you have to install an extension with limited configurations
 |====================
