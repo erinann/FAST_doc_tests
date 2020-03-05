@@ -109,11 +109,11 @@ image:Atom_panes_working.png[] +
 {empty} +
 
 === Integration with Git and GitHub
-Atom comes bundled with a GUI for Git and GitHub. You have to supply your GitHub login credentials the first time push to GitHub. +
+Atom comes bundled with a GUI for Git and GitHub. You have to supply your GitHub login credentials the first time you push commits to GitHub with the GUI. +
 
 To work in a terminal, you have to install an external package. We suggest installing an external terminal package and working in Git from the terminal to start. This will help you get familiar the underlying Git functions.
 
-There are a number of Atom packages that give you access to a terminal. The simplest is `atom-terminal` which open your external terminal in the root directly of the project. `terminal-tab` opens a terminal within Atom that you can dock in different places, but the package can be a little flaky in that closing the terminal (clicking the `x` to close the tab) instead of exiting out of the terminal (typing `exit` at the command line) crashes Atom.
+There are a number of Atom packages that give you access to a terminal. The simplest is `atom-terminal` which opens your external terminal in the root directly of the project. `terminal-tab` opens a terminal within Atom that you can dock in different places, but the package can be a little flaky in that closing the terminal (clicking the `x` to close the tab) instead of exiting out of the terminal (typing `exit` at the command line) crashes Atom.
 
 Instructions for working with Git in a terminal are in the link:2_suggested_workflow.adoc[Suggested workflow to contribute to the ICES WGFAST convention documents] file.
 
@@ -270,7 +270,7 @@ a|
 
 
 a|
-* Lots of pop-up boxes when using the GUI to push to a remove repository. It is somewhat annoying to keep clicking `OK`
+* Lots of pop-up boxes when using the GUI to push to a remote repository. It is somewhat annoying to keep clicking `OK`
 * Potential issues with initially finding GitHub credentials (might be a Window problem)
 * No internal spell checker - you have to install an extension with limited configurations
 |====================
