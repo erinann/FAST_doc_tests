@@ -199,8 +199,15 @@ image:Brackets_commit_1.png[] +
 image:Brackets_commit_2.png[] +
 
 ==== Pushing to GitHub
-Push the commits to GitHub by clicking on the `Push` button. +
-image:Brackets_push.png[] +
+1. Push the commits to GitHub by clicking on the `Push` button. +
+image:Brackets_push_1.png[] +
+
+2. A dialog box will come up. +
+Make sure that you are pushing the correct branch of your remote repository, which will most likely be the current tracking branch (the one that is checked out). +
+You do not have to fill out your username and password if your credentials are managed elsewhere. +
+Click `OK`. +
+image:Brackets_push_2.png[]
+
 
 {empty} +
 
@@ -263,6 +270,7 @@ a|
 
 
 a|
-* Had a few Git authentication errors initially, and not exactly sure how they were fixed
+* Lots of pop-up boxes when using the GUI to push to a remove repository. It is somewhat annoying to keep clicking `OK`.
+* Potential issues with initially finding GitHub credentials (might be a Window problem).
 * No internal spell checker - you have to install an extension with limited configurations
 |====================
