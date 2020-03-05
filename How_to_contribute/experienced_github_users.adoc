@@ -29,10 +29,10 @@ The https://www.sourcetreeapp.com/[Sourcetree] program for Windows and Mac is a 
 == AsciiDoc tools
 === Real-time rendering of the document
 
-When editing the convention files, it is useful to see the rendered version of the documents as changes are made. Ways to achieve this are explained https://asciidoctor.org/docs/editing-asciidoc-with-live-preview/[here]. We find that
+When editing the convention files, it is useful to see the rendered version of the documents as changes are made. Ways to achieve this are explained at https://asciidoctor.org/docs/editing-asciidoc-with-live-preview/[Editing AsciiDoc with Live Preview]. We find that
 https://github.com/asciidoctor/asciidoctor-browser-extension[Asciidoctor.js Live Preview] works well, but note that it does not currently do the bibliography in the AcMeta document.
 
-The plain text editors, Atom and Brackets, are explained in the  link:plain_text_editor_help.adoc[Plain Text Editor help] file.
+Three of the modern text editors/IDEs listed at https://asciidoctor.org/docs/editing-asciidoc-with-live-preview/[Editing AsciiDoc with Live Preview], AsciidocFX, Atom and Brackets, are explained in the link:plain_text_editor_help.adoc[Text editors/IDEs help] file.
 
 === Off-line rendering of the document
 
