@@ -23,7 +23,7 @@ Contributions to any of the help documents are welcome. :smile: +
 These are a few terms you should be familiar with before jumping into the deep end of Git and GitHub.
 
 * *_Git_* - A type of version control system (software).
-* *_GitHub_* - An online (in the cloud) hosting service for Git repositories. 
+* *_GitHub_* - An online (in the cloud) hosting service for Git repositories.
 * *_Repository_* - Also called a "repo". A repository tracks all changes made to files in a project over time. Initializing a repository for a project creates a `.git` folder that stores the project's history. If you delete the `.git` folder, you delete the project's history.
 * *_Clone_* (n.) / *_Cloning a repo_* (v.) - A cloned repository is a complete copy of a repository. You usually clone a repository from GitHub (hosting service) to your local machine to work on project files locally.
 * *_Fork_* (n.) / *_Forking a repo_* (v.) - This is a special term used by GitHub and a few other hosting services. It is not a Git command. A fork is a cloned repository owned by someone else that you manage in your GitHub account. "Forking a repo" means to clone someone else's repository to your account. You are going to fork a copy of the `ices-eg/wg_WGFAST` repository to your own account to work on it independently before submitting any changes back to `ices-eg/wg_WGFAST`. `ices-eg` (ICES Expert Groups) is the team that owns the workspace. `wg_WGFAST` is the repository (project space) for the FAST working group.
@@ -146,7 +146,7 @@ You will have to add packages in Atom and extensions in Brackets to preview Asci
 
 * Other packages you might want.
 ** markdown-preview-plus +
- To show and HTML preview of Markdown (`.md`) documents.
+ To show an HTML preview of Markdown (`.md`) documents.
 ** terminal-tab +
  To use a Git terminal from within Atom. This package is a little flaky - closing the terminal within the editor crashes Atom.
 
@@ -154,11 +154,11 @@ You will have to add packages in Atom and extensions in Brackets to preview Asci
 
 .*Brackets*:
 * AsciiDoc Preview +
- Live preview for AsciiDoc documents.
-* Markdown Preview
- Live preview for Markdown documents.
-* Brackets Git +
- Integration of Git into Bracket.
+ Live preview of AsciiDoc documents.
+* Markdown Preview +
+ Live preview of Markdown documents.
+* Brackets-Git +
+ Integration of Git into Brackets.
 * Alice - Spell Checking +
  Adds offline spell checking capabilities to Brackets.
 * Alice Dictionaries +
@@ -193,14 +193,14 @@ $ git status
 On branch master
 Your branch is ahead of 'origin/master' by 2 commits.
   (use "git push" to publish your local commits)
-  
+
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
         modified:   How_to_contribute/1_suggested_setup.adoc
         modified:   How_to_contribute/2_suggested_workflow.adoc
         modified:   How_to_contribute/5_plain_text_editor_help.adoc
-        
+
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
         How_to_contribute/7_Atom.adoc
@@ -253,7 +253,7 @@ To https://github.com/erinann/FAST_doc_tests.git
 === Submit a Pull Request
 After all the edits have been pushed to the remote repository (GitHub), submit a pull request to `ices-eg/wg_WGFAST`. A pull request tells others about the changes you made (all the commits), allows the convention coordinators to approve or deny the changes, and provides an area to discuss the changes if needed. It is called a pull request because you are asking the upstream repository to pull the changes from your fork. +
 
-1. In GitHub, open your `wg_WGFAST` repository, and click on `Pull request`. 
+1. In GitHub, open your `wg_WGFAST` repository, and click on `Pull request`.
 ** If you want to see the differences between the documents in your forked repository and the upstream repository, click on `Compare`. Your additions will be highlighted in green and subtactions will be hightlighed in red.
 
 image:GitHub_PR_1.png[] +

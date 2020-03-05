@@ -1,0 +1,24 @@
+= Text editing to the left, preview to the right: this is the title
+:revnumber: 0.01
+:revdate: 2020-02-25
+:imagesdir: images\
+:toc: preamble
+:toclevels: 4
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+Here's a little premable.
+
+== Section Header
+Then let's add some text.
+
+== Image?
+Ok. Here's an image +
+image:editing_2.jpg[width = 100, height = 100]
+
+This image is in the `image` folder within in the  `How_to_contribute` folder. AsciiDoc knows where to look for it because of `:imagesdir:` setting above.
