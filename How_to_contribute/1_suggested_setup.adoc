@@ -35,12 +35,12 @@ If you prefer to work online (in GitHub), you will not need a text editor. Howev
 
 === Markup languages to learn (only a little)
 *AsciiDoc* - extension `.adoc` +
-AsciiDoc is a popular and flexible plain text markup language. Both convention documents are written in (or being translated to) AsciiDoc markup. GitHub automatically renders `.adoc` files into HTML (you are reading it now). +
+AsciiDoc is a popular and flexible plain text markup language. Both convention documents are written in (or being converted to) AsciiDoc markup. GitHub automatically renders `.adoc` files into HTML. If you are reading this file on GitHub, you are reading the HTML render of an AsciiDoc file. +
 
 *Markdown* - extension `.md` +
 Markdown is the most popular plain text markup language but it is not as flexible as AsciiDoc. You will see a couple documents in the `wg_WGFAST` repository with `.md` extensions (eg - `README.md`). These are written in Markdown. GitHub automatically renders Markdown files into HTML.
 
-AsciidocFX, Atom, and Brackets support AsciiDoc and Markdown and provide live previews for each format. +
+AsciidocFX, Atom, and Brackets can open, edit, and live preview AsciiDoc and Markdown files. +
 
 == Suggested order of setup
 If you do not have any of the software or accounts listed in the section above, this is the most painless way to get started.
