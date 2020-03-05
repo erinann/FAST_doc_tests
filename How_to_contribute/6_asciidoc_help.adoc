@@ -13,9 +13,10 @@ ifdef::env-github[]
 endif::[]
 
 These instructions are for people who have not used AsciiDoc markup before.
+*NOT a FIRST DRAFT!*
 
 == Why a lightweight markup?
-AsciiDoc is a lightweight markup language built around the idea that authors should spend their time writing, not messing around with finicky formatting issues. Simply put, writing in plain text syntax takes the friction out of writing because there is a consistency in that is easily lost in what-you-see-is-what-you-get (WYSIWYG) editors like Microsoft Word or OpenDocs. One linespace will always be just one linespace. Additionally, plain text can easily be translated to different outputs (HTML, HTML5, PDF, etc.) for different applications.
+AsciiDoc is a lightweight markup language built around the idea that authors should spend their time writing, not messing around with finicky formatting issues. Simply put, writing in plain text syntax takes some of the frustration out of writing. When you do not have to worry about inconsistent formatting dilemmas that constantly creep into what-you-see-is-what-you-get (WYSIWYG) editors like Microsoft Word or OpenDocs, writing is less distracting. One linespace will always be just one linespace. Also, plain text can easily be translated to different outputs (HTML, HTML5, PDF, etc.) for different applications. +
 
 == https://asciidoctor.org[AsciiDoc]
 image:AD_logo-fill-color-128.png[height = 40, width = 40] +
@@ -47,8 +48,8 @@ The link:experienced_github_users.adoc[A quick workflow for experienced Git and 
 == A few quick things to get you going
 .This is the header for the metadata convention document.
 ----
-ICES WGFAST Topic Group, TG-AcMeta        1
-:revnumber: 1.10                          2
+ICES WGFAST Topic Group, TG-AcMeta
+:revnumber: 1.10
 :revdate: 1 November 2016
 :toc: left
 :toclevels: 3
@@ -63,7 +64,18 @@ ICES WGFAST Topic Group, TG-AcMeta        1
 :bibtex-style: ices-journal-of-marine-science
 ----
 
-btn:[fork]
+`:attribute: _attribute value_`
+
+=== Vocabulary
+* What basic vocab needs to be explained?
+** [ ] Attributes
+** [ ] Macros
+** [ ] Sections
+** [ ] Blocks
+** [ ] Admonitions
+** [ ] Text formatting - punctuation
+** [ ] escaping punctuation
+** [ ] inline macros
 
 
 == Format Guides
