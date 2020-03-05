@@ -1,4 +1,4 @@
-Using this repo to check the rendering of files so I do not add a ridiculous amount of silly commits my fork of wg_WGFAST repo
+This repository is a clone of `https://github.com/ices-eg/wg_WGFAST` used to develop the `How_to_contribute` directory.
 
 # Working Group on Fisheries Acoustics, Science and Technology
 
