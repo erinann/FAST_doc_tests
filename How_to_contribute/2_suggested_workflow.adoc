@@ -47,8 +47,9 @@ Once you have installed Git and a text editor/IDE, set up your GitHub account, A
 
 [NOTE]
 ====
-Both Atom and Brackets provide GUIs for Git that allow you to work almost exclusively within those IDEs without using a terminal and Git commands. *We suggest that you learn Git from the command line first because it will give you a better understanding of Git's functionality.* This workflow is written for using Git commands in a terminal.
+Both Atom and Brackets provide GUIs for Git that allow you to work almost exclusively within those IDEs without using a terminal and Git commands. *We suggest that you learn Git from the command line first because it will give you a better understanding of Git's functionality.* This workflow is written to use Git commands in a terminal.
 ====
+{empty} +
 
 === Fork the ices-eg/wg_WGFAST repository
 * You only have to do this step once.
@@ -254,24 +255,25 @@ To https://github.com/erinann/FAST_doc_tests.git
 After all the edits have been pushed to the remote repository (GitHub), submit a pull request to `ices-eg/wg_WGFAST`. A pull request tells others about the changes you made (all the commits), allows the convention coordinators to approve or deny the changes, and provides an area to discuss the changes if needed. It is called a pull request because you are asking the upstream repository to pull the changes from your fork. +
 
 1. In GitHub, open your `wg_WGFAST` repository, and click on `Pull request`.
-** If you want to see the differences between the documents in your forked repository and the upstream repository, click on `Compare`. Your additions will be highlighted in green and subtactions will be hightlighed in red.
+** If you want to see the differences between the documents in your forked repository and the upstream repository, click on `Compare`. Your additions will be highlighted in green and subtractions will be highlighted in red.
 
 image:GitHub_PR_1.png[] +
 {empty} +
 
 [start=2]
-2. Make sure that the `master` branch of base repository (`ices-eg/wg_WGFAST`) pulls the changes from the correct branch of your repository. In most cases, it will be the `master` branch. Click on `Create pull request`. +
+2. Make sure that the `master` branch of the base repository (`ices-eg/wg_WGFAST`) pulls the changes from the correct branch of your repository. In most cases, it will be the `master` branch. Click on `Create pull request`. +
 
 image:GitHub_PR_2.png[] +
 {empty} +
 
 
 [start=3]
-3. Add a commit message.
-Place holder. Waiting to add image.
+3. Add a commit message and extra details in the text editor window, then click `Create pull request`. +
+
+image:GitHub_PR_3.png[] +
 {empty} +
 
-Once your pull request has been submitted, a convention coordinator will be notified and will review your edits. Your edits will either be merged into the `ices-eg/wg_WGFAST` master branch by a coordinator or a coordinator might reply back to you asking to clarify or update text. Only convention coordinators have the permissions to merge a pull request. +
+Once your pull request has been submitted, a convention coordinator will be notified and will review your edits. Your edits will either be merged into the `ices-eg/wg_WGFAST` master branch by a coordinator or a coordinator might reply back to you asking to clarify or update text. Only convention coordinators have permission to merge pull requests. +
 {empty} +
 
 == Updating your forked repository
