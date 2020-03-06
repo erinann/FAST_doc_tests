@@ -1,4 +1,4 @@
-= AsciiDoc Markup
+= AsciiDoc markup help
 :revnumber: 0.01
 :revdate: 2020-02-25
 :imagesdir: images\
@@ -20,7 +20,7 @@ All of the information in this help file comes directly from: +
 * https://asciidoctor.org/docs/asciidoc-syntax-quick-reference[AsciiDoc Syntax Quick Reference]
 * https://asciidoctor.org/docs/user-manual[Asciidoctor User Manual]
 
-.Point of clarification
+.*Point of clarification*
 *_Asciidoctor_* is the processor and publishing toolchain for converting AsciiDoc files to HTML, PDF and other formats. *_AsciiDoc_* is the markup syntax.
 
 == Why a lightweight markup?
@@ -74,7 +74,7 @@ Some of the formatting used in the WGFAST conventions:
 TIP: You can find a list of AsciiDoc Attributes and their descriptsions in https://asciidoctor.org/docs/user-manual/#attribute-catalog[_Appendix A: Catalog of Documents Attributes_] of the Asciidoctor User Manual.
 
 
-Below we will show you some of the basics of the *document header* with its attributes, *section titles*, *formatted text*, *breaks*, and *lists*. Please refer to the online documentation for detailed explanations of other AsciiDoc markup techniques.
+Below we will show some of the basics of the *document header* with its attributes, *section titles*, *formatted text*, *breaks*, and *lists*. Please refer to the online documentation for detailed explanations of other AsciiDoc markup.
 
 === Document header
 The document's title, authors, and attributes are set in the header.
@@ -100,7 +100,7 @@ ICES WGFAST Topic Group, TG-AcMeta    # <2>
 ----
 
 . The title, indicated by a single `=`.
-. The second line of the documents lists the author.
+. The second line of the document lists the author(s).
 . Attributes and their settings.
 
 ==== WGFAST Convention Attributes
@@ -192,6 +192,8 @@ Ruby is red.
 Python is green.
 Java is black.
 
+{empty} +
+
 .Thematic break (aka horizontal rule)
 ----
 before
@@ -206,6 +208,10 @@ before
 '''
 
 after
+
+
+{empty} +
+
 
 .Page break
 ----
@@ -224,6 +230,8 @@ after
 * Garfield
 * Brian Griffin
 
+{empty} +
+
 .Unordered, max nested
 ----
 * level 1
@@ -241,6 +249,8 @@ after
 ***** level 5
 * level 1
 
+{empty} +
+
 .Ordered, basic
 ----
 . Wake up
@@ -251,6 +261,8 @@ after
 . Wake up
 . Make coffee
 . Drink coffee
+
+{empty} +
 
 .Ordered, nested
 ----
@@ -269,8 +281,9 @@ after
 .. Steep until desired strength
 . Drink coffee
 
+
 == AsciiDoc vs. Markdown
-Markdown is probably more familiar to many people, especially if you work in R and use RMarkdown. So, why are we using AsciiDoc instead of Markdown? Many or the formatting options in Markdown are the same or similar in AsciiDoc, but AsciiDoc syntax is more concise and it is more flexible when creating table of contents, lists, table, and admonitions (tip, notes, warnings, etc.).
+Markdown is probably more familiar to many people, especially if you work in R and use RMarkdown. So, why are we using AsciiDoc instead of Markdown? Many or the formatting options in Markdown are the same or similar in AsciiDoc, but AsciiDoc syntax is more concise and it is more flexible when creating table of contents, lists, tables, and admonitions (tip, notes, warnings, etc.).
 
 === Comparison by example
 The table comparing AsciiDoc and Markdown syntax in this section was recreated from the https://asciidoctor.org/docs/user-manual/#comparison-by-example[1.5.3 Comparison by example] section of the https://asciidoctor.org/docs/user-manual/[Asciidoctor User Manual].
