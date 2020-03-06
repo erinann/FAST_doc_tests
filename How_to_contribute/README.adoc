@@ -67,7 +67,7 @@ WARNING: Previews of citations in AsciiDoc documents do not currently work in At
 - link:3_github_help.adoc[GitHub help] +
 - link:4_git_help.adoc[Git help]  +
 - link:5_plain_text_editor_help.adoc[Text editors/IDEs help]  +
-- link:6_asciidoc_help.adoc[AsciiDoc help]  +
+- link:6_asciidoc_help.adoc[AsciiDoc markup help]  +
 - link:experienced_github_users.adoc[A quick workflow for experienced Git, GitHub, and Asciidoc users] +
 {empty} +
 
