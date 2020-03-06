@@ -12,7 +12,7 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
-These instructions are for people who have not used AsciiDoc markup before.
+These instructions are for people who have not used AsciiDoc markup before. +
 *NOT a FIRST DRAFT!*
 
 == Why a lightweight markup?
@@ -33,10 +33,14 @@ AsciiDoc is two things:
 ____
 {empty} +
 
-=== Installing AsciiDoc
+
+=== Installing Asciidoctor
 Do not. +
 
 Unless you work in Ruby, like diving into the guts of your operating system, and you want to compile a backend on your machine, there is no need for you to install the Asciidoctor toolchain. The AsciiDoc extensions in Atom and Brackets work well to edit and preview the convention documents.
+
+.Point of clarification
+*_Asciidoctor_* is the processor and publishing toolchain for converting AsciiDoc files to HTML, PDF and other formats. *_AsciiDoc_* is the markup syntax. 
 
 [TIP]
 ====
@@ -44,6 +48,10 @@ If you use Windows 10 and you want to install the Asciidoctor toolchain, initiat
 
 The link:experienced_github_users.adoc[A quick workflow for experienced Git and GitHub users] document will get you started.
 ====
+
+.Point of clarification
+*_Asciidoctor_* is the processor and publishing toolchain for converting AsciiDoc files to HTML, PDF and other formats. *_AsciiDoc_* is the markup syntax. 
+
 
 == A few quick things to get you going
 .This is the header for the metadata convention document.
@@ -76,6 +84,15 @@ ICES WGFAST Topic Group, TG-AcMeta
 ** [ ] Text formatting - punctuation
 ** [ ] escaping punctuation
 ** [ ] inline macros
+** [ ] line break
+
+[%hardbreaks]
+Will this render with a hard break?
+Let's find out
+But where does it stop?
+
+looks like the hard line stops
+after one blank line
 
 
 == Format Guides
@@ -85,3 +102,413 @@ https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[AsciiDoc Syntax Qu
 
 == AsciiDoc vs. Markdown
 Markdown is probably more familiar to many people, especially if you work in R and use RMarkdown. So, why are we using AsciiDoc instead of Markdown? Many or the formatting options in Markdown are the same or similar in AsciiDoc, but AsciiDoc syntax is more concise and it is more flexible when creating table of contents, lists, table, and admonitions (tip, notes, warnings, etc.).
+
+This comparison table of AsciiDoc and Markdown syntax was recreated from   https://asciidoctor.org/docs/user-manual/#comparison-by-example[1.5.3 Comparison by example] section of the Asciidoctor User Manual.
+
+[#asciidoc-vs-markdown]
+.A selection of AsciiDoc language features compared to Markdown
+[cols="1,3,3"]
+|===
+|Language Feature |Markdown |AsciiDoc
+
+|Bold (constrained)
+a|
+[source,markdown]
+----
+**bold**
+----
+a|
+[source,asciidoc]
+----
+*bold*
+----
+
+|Bold (unconstrained)
+a|
+[source,markdown]
+----
+**b**old
+----
+a|
+[source,asciidoc]
+----
+**b**old
+----
+
+|Italic (constrained)
+a|
+[source,markdown]
+----
+*italic*
+----
+a|
+[source,asciidoc]
+----
+_italic_
+----
+
+|Italic (unconstrained)
+|_n/a_
+a|
+[source,asciidoc]
+----
+__i__talic
+----
+
+|Monospace (constrained)
+a|
+[source,markdown]
+----
+`monospace`
+----
+a|
+[source,asciidoc]
+----
+`monospace`
+----
+
+|Monospace (unconstrained)
+a|
+[source,markdown]
+----
+`m`onospace
+----
+a|
+[source,asciidoc]
+----
+``m``onospace
+----
+
+|Link with label
+a|
+[source,markdown]
+----
+[AsciiDoc](http://asciidoc.org)
+----
+a|
+[source,asciidoc]
+----
+http://asciidoc.org[AsciiDoc]
+----
+
+|Relative link
+a|
+[source,markdown]
+----
+[user guide](user-guide.html)
+----
+a|
+[source,asciidoc]
+----
+link:user-guide.html[user guide]
+xref:user-guide.adoc[user guide]
+----
+
+|File link
+a|
+[source,markdown]
+----
+[get the PDF]({% raw %}{{ site.url }}{% endraw %}/assets/mydoc.pdf)
+----
+a|
+[source,asciidoc]
+----
+link:{site-url}/assets/mydoc.pdf[get the PDF]
+----
+
+|Cross reference
+a|
+[source,markdown]
+----
+See link:#_usage[Usage].
+
+<h2 id="_usage">Usage</h2>
+----
+a|
+[source,asciidoc]
+----
+See <<_usage>>.
+
+== Usage
+----
+
+|Block ID / anchor
+a|
+[source,markdown]
+----
+<h2 id="usage">Usage</h2>
+----
+a|
+[source,asciidoc]
+----
+[#usage]
+== Usage
+----
+
+|Inline anchor
+|_n/a_
+a|
+[source,asciidoc]
+----
+. [[step-1]]Download the software
+----
+
+|Inline image w/ alt text
+a|
+[source,markdown]
+----
+![Logo](/images/logo.png)
+----
+a|
+[source,asciidoc]
+----
+image:logo.png[Logo]
+----
+
+|Block image w/ alt text
+|_n/a_
+a|
+[source,asciidoc]
+----
+image::logo.png[Logo]
+----
+
+|Section heading*
+a|
+[source,markdown]
+----
+## Heading 2
+----
+a|
+[source,asciidoc]
+----
+== Heading 2
+----
+
+|Blockquote*
+a|
+[source,markdown]
+----
+> Quoted text.
+>
+> Another paragraph in quote.
+----
+a|
+[source,asciidoc]
+----
+____
+Quoted text.
+
+Another paragraph in quote.
+____
+----
+
+|Literal block
+a|
+[source,markdown]
+----
+    $ gem install asciidoctor
+----
+a|
+.Indented (by 1 or more spaces)
+[source,asciidoc]
+----
+ $ gem install asciidoctor
+----
+
+.Delimited
+[source,asciidoc]
+----
+....
+$ gem install asciidoctor
+....
+----
+
+|Code block*
+a|
+[source,markdown]
+----
+```java
+public class Person {
+  private String name;
+  public Person(String name) {
+    this.name = name;
+  }
+}
+```
+----
+a|
+[source,asciidoc]
+....
+[source,java]
+----
+public class Person {
+  private String name;
+  public Person(String name) {
+    this.name = name;
+  }
+}
+----
+....
+
+|Unordered list
+a|
+[source,markdown]
+----
+* apples
+* orange
+  * temple
+  * navel
+* bananas
+----
+a|
+[source,asciidoc]
+----
+* apples
+* oranges
+** temple
+** navel
+* bananas
+----
+|Ordered list
+a|
+[source,markdown]
+----
+1. first
+2. second
+3. third
+----
+a|
+[source,asciidoc]
+----
+. first
+. second
+. third
+----
+
+|Thematic break (aka horizontal rule)*
+a|
+[source,markdown]
+----
+***
+
+* * *
+
+---
+
+- - -
+
+___
+
+_ _ _
+----
+a|
+[source,asciidoc]
+----
+'''
+----
+
+|Typographic quotes (aka "`smart quotes`")
+|Enabled through an extension switch, but offer little control in how they are applied.
+a|
+[source,asciidoc]
+----
+The `'90s popularized a new form of music known as "`grunge`" rock.
+Its influence extended well beyond music.
+----
+
+|Document header
+a|
+.Slapped on as "`front matter`"
+[source,markdown]
+----
+---
+layout: docs
+title: Writing posts
+prev_section: defining-frontmatter
+next_section: creating-pages
+permalink: /docs/writing-posts/
+---
+----
+a|
+.Native support!
+[source,asciidoc]
+----
+= Writing posts
+:awestruct-layout: base
+:showtitle:
+:prev_section: defining-frontmatter
+:next_section: creating-pages
+----
+
+|Admonitions
+|_n/a_
+a|
+[source,asciidoc]
+----
+TIP: You can add line numbers to source listings by adding the word `numbered` in the attribute list after the language name.
+----
+
+|Sidebars
+|_n/a_
+a|
+[source,asciidoc]
+----
+.Lightweight Markup
+****
+Writing languages that let you type less and express more.
+****
+----
+
+|Block titles
+|_n/a_
+a|
+[source,asciidoc]
+----
+.Grocery list
+* Milk
+* Eggs
+* Bread
+----
+
+|Includes
+|_n/a_
+a|
+[source,asciidoc]
+----
+\include::intro.adoc[]
+----
+
+|URI reference
+a|
+[source,markdown]
+----
+Go [Home][home].
+
+[home]: https://example.org
+----
+a|
+[source,asciidoc]
+----
+:home: https://example.org
+
+Go {home}[Home].
+----
+
+|Custom CSS classes
+|_n/a_
+a|
+[source,asciidoc]
+----
+[.path]_Gemfile_
+----
+|===
+
+{asterisk} Asciidoctor also supports the Markdown syntax for this language feature.
+
+You can see that AsciiDoc has the following advantages over Markdown:
+
+* AsciiDoc uses the same number of markup characters or less when compared to Markdown in nearly all cases.
+* AsciiDoc uses a consistent formatting scheme (i.e., it has consistent patterns).
+* AsciiDoc can handle all permutations of nested inline (and block) formatting, whereas Markdown often falls down.
+* AsciiDoc handles cases that Markdown doesn't, such as a proper approach to inner-word markup, source code blocks and block-level images.
