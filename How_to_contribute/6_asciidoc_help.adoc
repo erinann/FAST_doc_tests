@@ -13,10 +13,18 @@ ifdef::env-github[]
 endif::[]
 
 These instructions are for people who have not used AsciiDoc markup before. +
-*NOT a FIRST DRAFT!*
+
+All of the information in this help file comes directly from: +
+
+* https://asciidoctor.org/docs/asciidoc-writers-guide[AsciiDoc Writer's Guide]
+* https://asciidoctor.org/docs/asciidoc-syntax-quick-reference[AsciiDoc Syntax Quick Reference]
+* https://asciidoctor.org/docs/user-manual[Asciidoctor User Manual]
+
+.Point of clarification
+*_Asciidoctor_* is the processor and publishing toolchain for converting AsciiDoc files to HTML, PDF and other formats. *_AsciiDoc_* is the markup syntax.
 
 == Why a lightweight markup?
-AsciiDoc is a lightweight markup language built around the idea that authors should spend their time writing, not messing around with finicky formatting issues. Simply put, writing in plain text syntax takes some of the frustration out of writing. When you do not have to worry about inconsistent formatting dilemmas that constantly creep into what-you-see-is-what-you-get (WYSIWYG) editors like Microsoft Word or OpenDocs, writing is less distracting. One linespace will always be just one linespace. Also, plain text can easily be translated to different outputs (HTML, HTML5, PDF, etc.) for different applications. +
+AsciiDoc is a lightweight markup language built around the idea that authors should spend their time writing, not messing around with finicky formatting issues. When you have to worry about inconsistent formatting that constantly creeps into what-you-see-is-what-you-get (WYSIWYG) editors like Microsoft Word or OpenDocs, writing becomes frustrating and more time consuming than it should be. Simply put, writing in plain text takes some of the frustration out of writing by creating consistent formats. One linespace will always be just one linespace. Also, plain text can easily be translated to different outputs (HTML, HTML5, PDF, etc.) for different applications. +
 
 == https://asciidoctor.org[AsciiDoc]
 image:AD_logo-fill-color-128.png[height = 40, width = 40] +
@@ -35,12 +43,10 @@ ____
 
 
 === Installing Asciidoctor
-Do not. +
+Do not! +
 
-Unless you work in Ruby, like diving into the guts of your operating system, and you want to compile a backend on your machine, there is no need for you to install the Asciidoctor toolchain. The AsciiDoc extensions in Atom and Brackets work well to edit and preview the convention documents.
+Unless you work in Ruby, like diving into the guts of your operating system, and want to compile a backend on your computer, there is no need for you to install the Asciidoctor toolchain. The AsciidocFX, Atom, and Brackets text editors/IDEs work well for editing and previewing the convention documents.
 
-.Point of clarification
-*_Asciidoctor_* is the processor and publishing toolchain for converting AsciiDoc files to HTML, PDF and other formats. *_AsciiDoc_* is the markup syntax. 
 
 [TIP]
 ====
@@ -49,61 +55,228 @@ If you use Windows 10 and you want to install the Asciidoctor toolchain, initiat
 The link:experienced_github_users.adoc[A quick workflow for experienced Git and GitHub users] document will get you started.
 ====
 
-.Point of clarification
-*_Asciidoctor_* is the processor and publishing toolchain for converting AsciiDoc files to HTML, PDF and other formats. *_AsciiDoc_* is the markup syntax. 
+
+== AsciiDoc basics
+If you have not used AsciiDoc markup before, it's a good idea to open thep https://asciidoctor.org/docs/asciidoc-writers-guide/[AsciiDoc Writer's Guide'] and read through it with one of the  `.adoc` files open in your text editor/IDE. Honestly, the AsciiDoc Writer's guide is well done.
+{empty} +
+
+Some of the formatting used in the WGFAST conventions:
+
+* Attributes (globally set in the document header, but can be modified inline)
+* Section titles (heading, including the document title)
+* Lists
+* Breaks
+* Formatted text
+* Tables
+* Included files
 
 
-== A few quick things to get you going
-.This is the header for the metadata convention document.
+TIP: You can find a list of AsciiDoc Attributes and their descriptsions in https://asciidoctor.org/docs/user-manual/#attribute-catalog[_Appendix A: Catalog of Documents Attributes_] of the Asciidoctor User Manual.
+
+
+Below we will show you some of the basics of the *document header* with its attributes, *section titles*, *formatted text*, *breaks*, and *lists*. Please refer to the online documentation for detailed explanations of other AsciiDoc markup techniques.
+
+=== Document header
+The document's title, authors, and attributes are set in the header.
+
+.This is the beginning of metadata convention document (acmeta.adoc) as of 2020-03-06.
 ----
-ICES WGFAST Topic Group, TG-AcMeta
-:revnumber: 1.10
-:revdate: 1 November 2016
-:toc: left
-:toclevels: 3
-:doctype: book
-:xrefstyle: short
-:source-highlighter: highlightjs
-:highlightjsdir: highlight
-:sectnumslevels: 4
-:stem: latexmath
-:eqnums:
-:bibtex-file: references.bib
-:bibtex-style: ices-journal-of-marine-science
+= A metadata convention for processed acoustic data from active acoustic systems    # <1>
+ICES WGFAST Topic Group, TG-AcMeta    # <2>
+:revnumber: 1.10                               ---------
+:revdate: 1 November 2016                               |
+:toc: left                                              |
+:toclevels: 3                                           |
+:doctype: book                                          |
+:xrefstyle: short                                       |
+:source-highlighter: highlightjs                        | ---  # <3>
+:highlightjsdir: highlight                              |
+:sectnumslevels: 4                                      |
+:stem: latexmath                                        |
+:eqnums:                                                |
+:bibtex-file: references.bib                            |
+:bibtex-style: ices-journal-of-marine-science  ---------
+
 ----
 
-`:attribute: _attribute value_`
+. The title, indicated by a single `=`.
+. The second line of the documents lists the author.
+. Attributes and their settings.
 
-=== Vocabulary
-* What basic vocab needs to be explained?
-** [ ] Attributes
-** [ ] Macros
-** [ ] Sections
-** [ ] Blocks
-** [ ] Admonitions
-** [ ] Text formatting - punctuation
-** [ ] escaping punctuation
-** [ ] inline macros
-** [ ] line break
+==== WGFAST Convention Attributes
+* Revision number: `:revnumber: 1.10`
+* Revision date: `:revdate: 1 November 2016`
+* Position of the Table of Contents: `:toc: left`
+* Levels of the TOC to show: `:toclevels: 3`
+* Document type: `doctype: book`
+* Reference style: `:xrefstyle: short`
+* Syntax highlighter: `:source-highlighter: highlightjs`
+* Location of the highlight.js source code: `:highlightjsdir: highlight`
+* Set the number of section levels: `:sectnumslevels: 4`
+* Mathematical processor: `:stem: latexmath`
+* Control equation numbering: `:eqnums:`
+* Bibliography file: `:bibtex-file: references.bib`
+* Citation and bibliography style `:bibtex-style: ices-journal-of-marine-science`
+
+
+=== Section titles
+.Book doctype section headers
+
+----
+= Document Title (Level 0)
+
+== Section Level 1
+
+=== Section Level 2
+
+==== Section Level 3
+
+===== Section Level 4
+
+====== Section Level 5
+
+= Section Level 0
+----
+
+=== Formatted text
+.Bold, Italic, and Monospace
+----
+bold *constrained* & **un**constrained
+
+italic _constrained_ & __un__constrained
+
+bold italic *_constrained_* & **__un__**constrained
+
+monospace `constrained` & ``un``constrained
+
+monospace bold `*constrained*` & ``**un**``constrained
+
+monospace italic `_constrained_` & ``__un__``constrained
+
+monospace bold italic `*_constrained_*` & ``**__un__**``constrained
+----
+
+bold *constrained* & **un**constrained
+
+italic _constrained_ & __un__constrained
+
+bold italic *_constrained_* & **__un__**constrained
+
+monospace `constrained` & ``un``constrained
+
+monospace bold `*constrained*` & ``**un**``constrained
+
+monospace italic `_constrained_` & ``__un__``constrained
+
+monospace bold italic `*_constrained_*` & ``**__un__**``constrained
+
+=== Breaks
+.Hard line break
+----
+The yellow banana slug, +
+rustled through the leaves until a +
+ravenous raccoon appeared.
 
 [%hardbreaks]
-Will this render with a hard break?
-Let's find out
-But where does it stop?
+Ruby is red.
+Python is green.
+Java is black.
+----
 
-looks like the hard line stops
-after one blank line
+The yellow banana slug +
+rustled through the leaves until a +
+ravenous raccoon appeared.
 
+[%hardbreaks]
+Ruby is red.
+Python is green.
+Java is black.
 
-== Format Guides
-https://asciidoctor.org/docs/asciidoc-writers-guide[AsciiDoc Writer's Guide] +
-https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[AsciiDoc Syntax Quick Reference] +
-{empty} +
+.Thematic break (aka horizontal rule)
+----
+before
+
+'''
+
+after
+----
+
+before
+
+'''
+
+after
+
+.Page break
+----
+<<<
+----
+
+=== Lists
+.Unordered, basic (can use * or -)
+----
+* Snoopy
+* Garfield
+* Brian Griffin
+----
+
+* Snoopy
+* Garfield
+* Brian Griffin
+
+.Unordered, max nested
+----
+* level 1
+** level 2
+*** level 3
+**** level 4
+***** level 5
+* level 1
+----
+
+* level 1
+** level 2
+*** level 3
+**** level 4
+***** level 5
+* level 1
+
+.Ordered, basic
+----
+. Wake up
+. Make coffee
+. Drink coffee
+----
+
+. Wake up
+. Make coffee
+. Drink coffee
+
+.Ordered, nested
+----
+. Wake up
+. Make coffee
+.. Put medium ground coffee in French press
+.. Pour boiling water into French press
+.. Steep until desired strength
+. Drink coffee
+----
+
+. Wake up
+. Make coffee
+.. Put medium ground coffee in French press
+.. Pour boiling water into French press
+.. Steep until desired strength
+. Drink coffee
 
 == AsciiDoc vs. Markdown
 Markdown is probably more familiar to many people, especially if you work in R and use RMarkdown. So, why are we using AsciiDoc instead of Markdown? Many or the formatting options in Markdown are the same or similar in AsciiDoc, but AsciiDoc syntax is more concise and it is more flexible when creating table of contents, lists, table, and admonitions (tip, notes, warnings, etc.).
 
-This comparison table of AsciiDoc and Markdown syntax was recreated from   https://asciidoctor.org/docs/user-manual/#comparison-by-example[1.5.3 Comparison by example] section of the Asciidoctor User Manual.
+=== Comparison by example
+The table comparing AsciiDoc and Markdown syntax in this section was recreated from the https://asciidoctor.org/docs/user-manual/#comparison-by-example[1.5.3 Comparison by example] section of the https://asciidoctor.org/docs/user-manual/[Asciidoctor User Manual].
+
+The following table shows the AsciiDoc syntax as it compares to Markdown.
+Since AsciiDoc supports a broader range of syntax than Markdown, this side-by-side comparison focuses mainly on areas where the syntax overlaps.
 
 [#asciidoc-vs-markdown]
 .A selection of AsciiDoc language features compared to Markdown
