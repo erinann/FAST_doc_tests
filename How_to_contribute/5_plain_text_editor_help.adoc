@@ -122,12 +122,14 @@ Instructions for working with Git in a terminal are in the link:2_suggested_work
 2. Open the terminal when you need to stage, commit, and push to GitHub.
 
 ==== Staging and commits from within Atom (GUI)
-1. Open the Git panel, right-click on the file and choose `Stage`. +
-2. Enter a useful commit message to let people know what changes you made, and click `Commit to master`. +
+. Open the Git panel, right-click on the file and choose `Stage`. +
+. Enter a useful commit message to let people know what changes you made, and click `Commit to master`. +
+.. Click on the square in the lower, right corner of the commit message text box to open the message editor if you need to add a commit message more than 50 characters long.
 {empty} +
 image:Atom_stage.png[]
 image:Atom_commit.png[] +
 {empty} +
+
 
 ==== Pushing to GitHub
 Click on the `Push` button. In this example, three commits will be pushed to GitHub. +
@@ -262,7 +264,7 @@ a|
 
 | *Quirks*
 a|
-* Scrolling in the source pane does not work most of the time
+* Scrolling in the source pane jumps no matter what scroll rate is set
 * Sometimes you have to restart the program for settings to update
 
 a|
