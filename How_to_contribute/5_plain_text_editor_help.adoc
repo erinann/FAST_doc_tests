@@ -126,6 +126,8 @@ Instructions for working with Git in a terminal are in the link:2_suggested_work
 . Enter a useful commit message to let people know what changes you made, and click `Commit to master`. +
 .. Click on the square in the lower, right corner of the commit message text box to open the message editor if you need to add a commit message more than 50 characters long. +
 
+I need to add some text and save it so. 
+
 {empty} +
 image:Atom_stage.png[]
 image:Atom_commit.png[] +
