@@ -53,7 +53,7 @@ Once you have installed Git and a text editor/IDE, set up your GitHub account, A
 Both Atom and Brackets provide GUIs for Git that allow you to work almost exclusively within those IDEs without using a terminal and Git commands. *We suggest that you learn Git from the command line first because it will give you a better understanding of Git's functionality.* This workflow is written to use Git commands in a terminal.
 ====
 {empty} +
-Silly things I do not need. 
+ 
 === Fork the ices-eg/wg_WGFAST repository
 * You only have to do this step once.
 - Sign into https://github.com[GitHub] and navigate to the ICES Expert Working Group - wg_WGFAST repository at https://github.com/ices-eg/wg_WGFAST.
