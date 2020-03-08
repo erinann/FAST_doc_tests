@@ -13,10 +13,13 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
+[.text-center]
+*Welcome!*
 
-Welcome!
+If you have experience with and are comfortable using Git and GitHub, skip this file and read through link:experienced_github_users.adoc[A quick workflow for experienced Git, GitHub, and Asciidoc users] to learn how to contribute to the WGFAST convention documents. 
 
-If you have experience with and are comfortable using Git and GitHub, head over to link:experienced_github_users.adoc[A quick workflow for experienced Git, GitHub, and Asciidoc users] for an overview of the workflow to contribute to the WGFAST convention documents. The rest of you, please keep reading.
+[.text-center]
+The rest of you, please keep reading.
 
 
 == Where do I start?
