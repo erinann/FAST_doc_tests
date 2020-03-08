@@ -114,11 +114,11 @@ Receiving objects: 100% (551/551), 728.31 KiB | 2.13 MiB/s, done.
 Resolving deltas: 100% (316/316), done.
 ----
 
-The above command created a folder called `wg_WGFAST` (the name of the remote repository) in the `research_projects` directory on erinann's computer, then copied all the files and change histories from the remote `wg_WGFAST` repository into the `wg_WGFAST` folder, creating the local repository. +
+The above `git clone` command created a folder called `wg_WGFAST` (the name of the remote repository) in the `research_projects` directory on erinann's computer, then copied all the files and change histories from the remote `wg_WGFAST` repository into the `wg_WGFAST` folder, creating the local repository. +
 {empty} +
 
 
-=== Add the repository to a workspace in your text editor/IDE
+=== Add the local repository to a workspace in your text editor/IDE
 * You only have to do this step once. +
 
 Now that the repository is on your computer you have add it to a workspace in your text editor/IDE.
@@ -180,13 +180,13 @@ See the link:5_plain_text_editor_help.adoc[Plain Text Editor help] file if you n
 {empty} +
 
 === Stage and commit
-After you have made a series of edits, save the document, stage it (`git add`), and commit it to your local repository with a useful commit message. Staging tells Git which files in your working directory have changed and should be committed to the repository. You can continue to edit staged files. It is best practice to commit changes often to keep a record of your work. For example, if you finish working on an introduction section, save it and commit the document. +
+After you have made some edits, save the document, stage it (`git add`), and commit it to your local repository with a useful commit message. Staging files does two things. First, it tells Git which files to track. Second, once a file is being tracked, staging the file tells Git that the file has changed can be committed to the repository. You can continue to edit staged files. It is best practice to commit changes often to keep a record of your work. Each commit is a snapshot of the repository at that time. Building a series of commits creates a change log for the project. +
 
 You can see what files have changed with `git status`.
 
 TIP: Commit early and often!
 
-If you closed the Git terminal, open it and navigate to the working directory of the forked repository. Check to see what files have changed. +
+If you closed the Git terminal, open it and navigate to the working directory of your local repository. Check to see what files have changed. +
 ----
 $ cd Documents/research_projects/wg_WGFAST
 $ git status
@@ -212,18 +212,19 @@ Untracked files:
 no changes added to commit (use "git add" and/or "git commit -a")
 ----
 
-In this output example, two commits have been made locally but not pushed to the remote repository (GitHub), three files have been modified but not staged, and two files have been added to the project folder but not staged yet so changes are not being tracked.
+In this output example, we are working on the master branch of the local repository. Two commits have not been pushed to the remote repository (GitHub), three files have been modified but not staged, and two files have been added to the project folder but not staged so changes are not being tracked.
 
 
-.Example: Stage and commit all changed files
+.Example: Stage and commit all changed files (subject line only)
 ----
 $ git add .
 $ git commit -m "Citation updates to acmeta.adoc and ref.bib"
 ----
-The `.` in `$ git add .` tells Git to add all changes in the working directory to the staged area. Nothing is added to the repository until you run a commit. Git requites a non-empty message accompany the commit. +
+The `.` in `$ git add .` tells Git to add all changes in the working directory to the staged area. Nothing is added to the local repository until you run a commit. Git requites a non-empty message with the commit. +
 
 `-m` in `$git commit -m "Citation updates to acmeta.adoc and ref.bib"` adds the commit message that has to be surrounded by quotes.
 
+TIP: Commit messages with `-m` should be a short (50 characters or less) and concise subject line.
 
 .Example: Stage and commit an individual file (`acmeta.adoc`)
 ----
@@ -231,17 +232,44 @@ $ git add AcMeta/acmeta.adoc
 $ git commit -m "Update Section 6.5"
 ----
 
-This commit was run in the root directory, `wg_WGFAST`. Notice that `AcMeta` was added to the path because `acmeta.adoc` is in the `AcMeta` folder.
-
+Because this commit was run in the root folder, `wg_WGFAST`, and `acmeta.adoc` resides in the `AcMeta` folder, the full path was listed.
 {empty} +
+
+==== Useful commit messages
+Do not do this. :wink:
+
+.https://xkcd.com/1296/
+image::https://imgs.xkcd.com/comics/git_commit.png[https://xkcd.com/1296/]
+
+Good commit messages help speed up the reviewing process and help future maintainers (including future you) find out why a particular change was made. Every commit message should have a short and concise subject line (see <<Stage and commit>>), but sometimes we need to add more information to the commit message to explain the changes. If you run into a situation where you need more than 50 characters for a commit message, you can write the commit message in the text editor linked to Git.
+
+----
+$ git commit
+----
+`git commit` will open the text editor you configured when you installed Git, and you will probably see a message in the terminal about waiting for the editor to close the file. In the text editor, use the first line to write the subject line, leave a blank line between the subject line and the body, and write the rest of the commit message. Each line should not be more than 72 characters long.
+
+.Seven commonly accepted rules on how to write a Git commit message
+. Limit the subject line to 50 characters.
+. Capitalize only the first letter in the subject line.
+. Do not put a period at the end of the subject line.
+. Put a blank line between the subject line and the body.
+. Wrap the body at 72 characters.
+. Use the imperative mood.
+. Describe what was done and why, but not how.
 
 
 === Push edits to GitHub
-Pushing to GitHub is how you update the remote repository. After you finish editing the document and committed the changes, push all commits to your forked repository. +
+Pushing to GitHub is how you update your remote repository. After you finish editing the document and committed the changes, push all commits to your remote repository. +
 
 ----
 $ git push
 ----
+The above command usually implies the form `git push [remote-name] [branch-name]`.
+
+----
+$ git push origin master
+----
+
 
 .Potential output
 ----
