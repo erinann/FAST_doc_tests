@@ -197,7 +197,7 @@ image:Brackets_stage.png[] +
 
 2. Commit files by clicking on the `Commit` button... +
 image:Brackets_commit_1.png[] +
-  add a commit message, and click `OK`. +
+  add a commit message, and click `OK`. If you need to add more information than 50 characters will allow, click on the `EXTENDED` button in the upper, right corner to extend the text box. +
 image:Brackets_commit_2.png[] +
 
 ==== Pushing to GitHub
