@@ -222,7 +222,8 @@ $ git commit -m "Citation updates to acmeta.adoc and ref.bib"
 ----
 The `.` in `$ git add .` tells Git to add all changes in the working directory to the staged area. Nothing is added to the local repository until you run a commit. Git requites a non-empty message with the commit. +
 
-`-m` in `$git commit -m "Citation updates to acmeta.adoc and ref.bib"` adds the commit message that has to be surrounded by quotes.
+`-m` in `$git commit -m "Citation updates to acmeta.adoc and ref.bib"` adds the commit message that has to be surrounded by quotes. +
+{empty} +
 
 TIP: Commit messages with `-m` should be a short (50 characters or less) and concise subject line.
 
@@ -232,21 +233,25 @@ $ git add AcMeta/acmeta.adoc
 $ git commit -m "Update Section 6.5"
 ----
 
-Because this commit was run in the root folder, `wg_WGFAST`, and `acmeta.adoc` resides in the `AcMeta` folder, the full path was listed.
+WARNING: Do not forget to add the full path to files that are not in the root directory. +
 {empty} +
 
+
 ==== Useful commit messages
+
 Do not do this. :wink:
 
 .https://xkcd.com/1296/
 image::https://imgs.xkcd.com/comics/git_commit.png[https://xkcd.com/1296/]
+{empty} +
 
-Good commit messages help speed up the reviewing process and help future maintainers (including future you) find out why a particular change was made. Every commit message should have a short and concise subject line (see <<Stage and commit>>), but sometimes we need to add more information to the commit message to explain the changes. If you run into a situation where you need more than 50 characters for a commit message, you can write the commit message in the text editor linked to Git.
+Good commit messages help speed up the reviewing process and help future maintainers (including future you) find out why a particular change was made. Every commit message should have a short and concise subject line (see <<Stage and commit>>), but sometimes we need to add more information to the commit message to explain the changes. If you run into a situation where you need more than 50 characters for a commit message, you can write the commit message in the text editor linked to Git. +
 
 ----
 $ git commit
 ----
-`git commit` will open the text editor you configured when you installed Git, and you will probably see a message in the terminal about waiting for the editor to close the file. In the text editor, use the first line to write the subject line, leave a blank line between the subject line and the body, and write the rest of the commit message. Each line should not be more than 72 characters long.
+`git commit` will open the text editor you configured when you installed Git, and you will probably see a message in the terminal about waiting for the editor to close the file before it will continue. In the text editor, use the first line to write the subject line, leave a blank line between the subject line and the body, then swrite the rest of the commit message. Each line should not be more than 72 characters long. +
+
 
 .Seven commonly accepted rules on how to write a Git commit message
 . Limit the subject line to 50 characters.
@@ -256,10 +261,11 @@ $ git commit
 . Wrap the body at 72 characters.
 . Use the imperative mood.
 . Describe what was done and why, but not how.
+{empty} +
 
 
 === Push edits to GitHub
-Pushing to GitHub is how you update your remote repository. After you finish editing the document and committed the changes, push all commits to your remote repository. +
+Pushing to GitHub is how you update your remote repository. After you finish editing the document and have committed the changes, push all commits to your remote repository. +
 
 ----
 $ git push
