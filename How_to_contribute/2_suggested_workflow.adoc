@@ -25,7 +25,7 @@ These are a few terms you should be familiar with before using Git and GitHub.
 * *_GitHub_* - An online (in the cloud) hosting service for Git repositories.
 * *_Repository_* - Also called a "repo". A repository tracks all changes made to files in a project over time. Initializing a repository for a project creates a `.git` folder that stores the project's history. If you delete the `.git` folder, you delete the record of all changes to the project files.
 * *_Clone_* (n.) / *_Cloning a repo_* (v.) - A clone of a repository is a complete (files and change histories) copy of a repository. You usually clone a repository from GitHub (hosting service) to your computer to work on project files locally.
-* *_Fork_* (n.) / *_Forking a repo_* (v.) - This is a special term used by GitHub and a few other hosting services. It is not a Git command. A fork is a cloned repository owned by someone else that you manage in your GitHub account. You are going to fork the `ices-eg/wg_WGFAST` repository to your own GitHub account to work on files independently before submitting any changes back to the `ices-eg/wg_WGFAST` repository. 
+* *_Fork_* (n.) / *_Forking a repo_* (v.) - This is a special term used by GitHub and a few other hosting services. It is not a Git command. A fork is a cloned repository owned by someone else that you manage in your GitHub account. You are going to fork the `ices-eg/wg_WGFAST` repository to your own GitHub account to work on files independently before submitting any changes back to the `ices-eg/wg_WGFAST` repository.
 * *_Upstream repository_* - The repository you fork from.
 * *_Remote repository_* - A repository on GitHub or another hosting service.
 * *_Local repository_* - A repository on your computer.
@@ -68,7 +68,7 @@ TIP: Forking and cloning both create a copy of a repository, but forking is not 
 Once the repository is forked to your GitHub account you can either <<Editing documents in GitHub, edit the documents directly in GitHub>> or clone the repository to your computer and work locally. *We suggest cloning the repository to your local computer unless you are only going to fix a few typographical errors.*
 {empty} +
 
-=== Clone the forked repository to your local machine
+=== Clone the forked repository to your local computer
 * You only have to do this step once.
 ** Click on the repository to open it.
 ** Click on the clone button. Use `Clone with HTTPS`.
@@ -97,7 +97,7 @@ TIP: In most terminals you can type the first few characters of the folder and u
 {empty} +
 
 [start=2]
-2. Clone the forked repository to your local machine. +
+2. Clone the forked repository to your local computer. +
 Format: `git clone https://github.com/_YOUR-USERNAME_/_YOUR-REPOSITORY_.git` +
 
 .Example: Cloning a repository
@@ -114,7 +114,7 @@ Receiving objects: 100% (551/551), 728.31 KiB | 2.13 MiB/s, done.
 Resolving deltas: 100% (316/316), done.
 ----
 
-The above command puts a folder called `wg_WGFAST` in the `research_projects` directory on erinann's computer with all the files in the wg_WGFAST repository. +
+The above command created a folder called `wg_WGFAST` (the name of the remote repository) in the `research_projects` directory on erinann's computer, then copied all the files and change histories from the remote `wg_WGFAST` repository into the `wg_WGFAST` folder, creating the local repository. +
 {empty} +
 
 
@@ -126,7 +126,7 @@ Now that the repository is on your computer you have add it to a workspace in yo
 *AsciidocFX*: Click on the image:ADFX_folder_icon.png[] and navigate to the folder. +
 {empty} +
 
-*Atom*: `File > Add Project Folder...` or `Ctrl + Shift + A` and navigate to the folder. +
+*Atom*: `File > Add Project Folder...` or `Ctrl + Shift + A` and navigate to the folder. + 
 {empty} +
 
 *Brackets*: `File > Open Folder...` or `Ctrl + Alt + A` and navigate to the folder. +
@@ -387,4 +387,4 @@ image:GitHub_edit_4.png[] +
 If you cloned the remote repository to your computer and made edits directly in GitHub, you will have to pull those edits to your local repository (computer) before you can push any changes from your local repository back to the remote (GitHub) repository.
 
 [start=5]
-5. Submit a <<Submit a Pull Request, pull request>> to send your edits to the `ices-eg/wg_WGFAST` repository. 
+5. Submit a <<Submit a Pull Request, pull request>> to send your edits to the `ices-eg/wg_WGFAST` repository.
