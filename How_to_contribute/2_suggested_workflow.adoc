@@ -17,7 +17,6 @@ This workflow is to help contributors who have not used Git or GitHub get starte
 
 If you work regularly with Git and GitHub, please read through link:experienced_github_users.adoc[A quick workflow for experienced Git and GitHub users]. +
 
-Contributions to any of the help documents are welcome. :smile: +
 
 == Jargon
 These are a few terms you should be familiar with before jumping into the deep end of Git and GitHub.
@@ -25,8 +24,8 @@ These are a few terms you should be familiar with before jumping into the deep e
 * *_Git_* - A type of version control system (software).
 * *_GitHub_* - An online (in the cloud) hosting service for Git repositories.
 * *_Repository_* - Also called a "repo". A repository tracks all changes made to files in a project over time. Initializing a repository for a project creates a `.git` folder that stores the project's history. If you delete the `.git` folder, you delete the project's history.
-* *_Clone_* (n.) / *_Cloning a repo_* (v.) - A cloned repository is a complete copy of a repository. You usually clone a repository from GitHub (hosting service) to your local machine to work on project files locally.
-* *_Fork_* (n.) / *_Forking a repo_* (v.) - This is a special term used by GitHub and a few other hosting services. It is not a Git command. A fork is a cloned repository owned by someone else that you manage in your GitHub account. "Forking a repo" means to clone someone else's repository to your account. You are going to fork a copy of the `ices-eg/wg_WGFAST` repository to your own account to work on it independently before submitting any changes back to `ices-eg/wg_WGFAST`. `ices-eg` (ICES Expert Groups) is the team that owns the workspace. `wg_WGFAST` is the repository (project space) for the FAST working group.
+* *_Clone_* (n.) / *_Cloning a repo_* (v.) - A cloned repository is a complete copy of a repository. You usually clone a repository from GitHub (hosting service) to your local computer to work on project files locally.
+* *_Fork_* (n.) / *_Forking a repo_* (v.) - This is a special term used by GitHub and a few other hosting services. It is not a Git command. A fork is a cloned repository owned by someone else that you manage in your GitHub account. You are going to fork a copy of the `ices-eg/wg_WGFAST` repository to your own account to work on files independently before submitting any changes back to the `ices-eg/wg_WGFAST` repository. `ices-eg` (ICES Expert Groups) is the team that owns the workspace. `wg_WGFAST` is the repository (project space) for the FAST working group.
 * *_Upstream repository_* - The repository you fork from.
 * *_Remote repository_* - A repository on GitHub or another hosting service.
 * *_Branch_* - Branches of a repository are isolated development areas. You create a branch to work on part of a project without affecting the entire project. Every repository has one default branch, usually called `master`, and can have multiple other branches. You merge branches using a pull request.
@@ -60,16 +59,16 @@ image:fork_page.png[]
 {empty} +
 {empty} +
 
-TIP: Forking and cloning both create a copy of a repository, but forking is not a Git function. Forking is only done in GitHub and other hosting services. You fork a repository from another account to work on a copy of that project without affecting the original project. After forking a repository, you can clone it to your local machine to work on it locally.
+TIP: Forking and cloning both create a copy of a repository, but forking is not a Git function. Forking is only done in GitHub and other hosting services. You fork a repository from another account to work on a copy of that project without affecting the original project. After forking a repository, you can clone it to your local computer to work on it locally.
 
-Once the repository is forked to your account you can either <<Editing documents in GitHub, edit the documents directly in GitHub>> or clone the repository to your computer and work locally. *We suggest cloning the repository to your local machine unless you are only going to fix a few typographical errors.*
+Once the repository is forked to your GitHub account you can either <<Editing documents in GitHub, edit the documents directly in GitHub>> or clone the repository to your computer and work locally. *We suggest cloning the repository to your local computer unless you are only going to fix a few typographical errors.*
 {empty} +
 
 === Clone the forked repository to your local machine
 * You only have to do this step once.
 ** Click on the repository to open it.
 ** Click on the clone button. Use `Clone with HTTPS`.
-** Click on the clipboard buttom to save the URL to the clipboard.
+** Click on the clipboard button to save the URL to the clipboard.
 
 //
 
@@ -111,14 +110,14 @@ Receiving objects: 100% (551/551), 728.31 KiB | 2.13 MiB/s, done.
 Resolving deltas: 100% (316/316), done.
 ----
 
-The above command puts a folder called `wg_WGFAST` in the `research_projects` directory on erinann's local machine with all the files in the wg_WGFAST repository. +
+The above command puts a folder called `wg_WGFAST` in the `research_projects` directory on erinann's computer with all the files in the wg_WGFAST repository. +
 {empty} +
 
 
 === Add the repository to a workspace in your text editor/IDE
 * You only have to do this step once. +
 
-Now that the repository is on your local machine you have add it to a workspace in your text editor/IDE.
+Now that the repository is on your computer you have add it to a workspace in your text editor/IDE.
 
 *AsciidocFX*: Click on the image:ADFX_folder_icon.png[] and navigate to the folder. +
 {empty} +
@@ -166,7 +165,7 @@ You will have to add packages in Atom and extensions in Brackets to preview Asci
  Provides dictionary data for the Alice spell checker. +
  {empty} +
 
-NOTE: Citation preview does not currently work in Atom or Brackets. Math equation (LaTex math) preview does not currently work in Atom, but you can change the settings of the AsciiDoc Preview extension in Brackets to preview equations. +
+NOTE: Citation preview does not currently work in Atom or Brackets. Math equation (LaTex math) preview does not currently work in Atom, but you can change the settings of the AsciiDoc Preview extension in Brackets to preview math equations. +
 {empty} +
 
 === Edit
@@ -177,7 +176,7 @@ See the link:5_plain_text_editor_help.adoc[Plain Text Editor help] file if you n
 {empty} +
 
 === Stage and commit
-After you have made a series of edits, save the document, stage it (`git add` command), and commit it to your local repository with a useful commit message. Staging tells Git which files in your working directory have changed and should be committed to the repository. You can continue to edit staged files. It is best practice to commit changes often to keep a record of your work. For example, if you finish working on an introduction section, save it and commit the document. +
+After you have made a series of edits, save the document, stage it (`git add`), and commit it to your local repository with a useful commit message. Staging tells Git which files in your working directory have changed and should be committed to the repository. You can continue to edit staged files. It is best practice to commit changes often to keep a record of your work. For example, if you finish working on an introduction section, save it and commit the document. +
 
 You can see what files have changed with `git status`.
 
@@ -209,7 +208,7 @@ Untracked files:
 no changes added to commit (use "git add" and/or "git commit -a")
 ----
 
-In this example, two commits have been made locally but not pushed to the remote repository (GitHub), three files have been modified but not staged, and two files have been added to the project but not staged.
+In this output example, two commits have been made locally but not pushed to the remote repository (GitHub), three files have been modified but not staged, and two files have been added to the project folder but not staged yet so changes are not being tracked.
 
 
 .Example: Stage and commit all changed files
@@ -217,6 +216,10 @@ In this example, two commits have been made locally but not pushed to the remote
 $ git add .
 $ git commit -m "Citation updates to acmeta.adoc and ref.bib"
 ----
+The `.` in `$ git add .` tells Git to add all changes in the working directory to the staged area. Nothing is added to the repository until you run a commit. Git requites a non-empty message accompany the commit. +
+
+`-m` in `$git commit -m "Citation updates to acmeta.adoc and ref.bib"` adds the commit message that has to be surrounded by quotes.
+
 
 .Example: Stage and commit an individual file (`acmeta.adoc`)
 ----
@@ -224,7 +227,7 @@ $ git add AcMeta/acmeta.adoc
 $ git commit -m "Update Section 6.5"
 ----
 
-CAUTION: Notice that you have to add the `AcMeta` folder to the path.
+This commit was run in the root directory, `wg_WGFAST`. Notice that `AcMeta` was added to the path because `acmeta.adoc` is in the `AcMeta` folder.
 
 {empty} +
 
@@ -252,7 +255,7 @@ To https://github.com/erinann/FAST_doc_tests.git
 {empty} +
 
 === Submit a Pull Request
-After all the edits have been pushed to the remote repository (GitHub), submit a pull request to `ices-eg/wg_WGFAST`. A pull request tells others about the changes you made (all the commits), allows the convention coordinators to approve or deny the changes, and provides an area to discuss the changes if needed. It is called a pull request because you are asking the upstream repository to pull the changes from your fork. +
+After all the edits have been pushed to the remote repository (GitHub), submit a pull request to `ices-eg/wg_WGFAST`. A pull request tells others about the changes you made (all the commits), allows the convention coordinators to approve or deny your changes, and provides an area to discuss the changes if needed. It is called a pull request because you are asking the upstream repository to pull the changes from your fork. +
 
 1. In GitHub, open your `wg_WGFAST` repository, and click on `Pull request`.
 ** If you want to see the differences between the documents in your forked repository and the upstream repository, click on `Compare`. Your additions will be highlighted in green and subtractions will be highlighted in red.
@@ -349,7 +352,7 @@ $ git merge upstream/master
 == Editing documents in GitHub
 Editing large parts of the convention documents directly in GitHub is **not** recommended unless you are an expert in GitHub and AsciiDoc markup. +
 {empty} +
-The easiest way to edit a few typographical errors, if you do not want to clone the repository to your local machine, is to edit the document directly in GitHub. +
+The easiest way to edit a few typographical errors, if you do not want to clone the repository to your local computer, is to edit the document directly in GitHub. +
 
 
 1. After <<Fork the ices-eg/wg_WGFAST repository, forking>> the `ices-eg/wg_WGFAST` repository to your GitHub account, open the repository and click on the file you would like to edit.
@@ -361,9 +364,11 @@ image:GitHub_edit_1.png[] +
 {empty} +
 {empty} +
 image:GitHub_edit_2.png[] +
+
+CAUTION: If you installed a live preivew AsciiDoc browser extension make sure it is turned off. +
+
 {empty} +
-{empty} +
-3. Edit the document. You can preview the changes before committing's them by clicking the `Preview changes` button.
+3. Edit the document. You can preview the changes before committing them by clicking the `Preview changes` button.
 {empty} +
 {empty} +
 image:GitHub_edit_3.png[] +
@@ -375,7 +380,7 @@ image:GitHub_edit_4.png[] +
 {empty} +
 
 [CAUTION]
-If you cloned the repository on your local machine but made edits directly in GitHub, you will have to pull those edits to the copy on your local machine before you can push any changes back to the GitHub repository.
+If you cloned the remote repository to your computer and made edits directly in GitHub, you will have to pull those edits to your local repository (computer) before you can push any changes from your local repository back to the remote (GitHub) repository.
 
 [start=5]
-5. Submit a <<Submit a Pull Request, pull request>> to submit your edits to the `ices-eg/wg_WGFAST` repository.
+5. Submit a <<Submit a Pull Request, pull request>> to send your edits to the `ices-eg/wg_WGFAST` repository.
