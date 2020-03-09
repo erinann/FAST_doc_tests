@@ -14,7 +14,7 @@ ICES WGFAST Topic Group, TG-AcMeta
 :bibtex-file: references.bib
 :bibtex-style: ices-journal-of-marine-science
 
-SUPERFICIAL EDITS TO TEST
+SUPERFICIAL EDITS TO TEST +
 International Council for the Exploration of the Sea +
 Conseil International pour l’Exploration de la Mer
 
