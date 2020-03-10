@@ -4,7 +4,7 @@ Compiling feedback before putting documents in WGFAST repo.
 
 <hr>
 
-At commit 4a587a65043a0454d1e260489b38bf59e05e60d2
+At commit 4a587a65043a0454d1e260489b38bf59e05e60d2  
 From MP:
 1. Make it less intimidating for those who have never used Git, especially for non-native English speakers.
 - [ ] Addressed
