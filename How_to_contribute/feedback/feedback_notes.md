@@ -7,7 +7,7 @@ Compiling feedback before putting documents in WGFAST repo.
 At commit 4a587a65043a0454d1e260489b38bf59e05e60d2  
 From MP:
 1. Make it less intimidating for those who have never used Git, especially for non-native English speakers.
-- [ ] Addressed
+- [x] Addressed
 
 2. Add:
     - The advantages of version control without jargon.
@@ -27,4 +27,4 @@ From MP:
 From: WL  
 At commit 199a9092
 1. Add branching to workflow
-- [ ] Addressed
+- [x] Addressed

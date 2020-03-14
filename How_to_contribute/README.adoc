@@ -1,7 +1,7 @@
 = How to contribute to the AcMeta and SONAR-netCDF4 documents
 Erin LaBrecque
-:revnumber: 0.01
-:revdate: 2020-02-25
+:revnumber: 0.02
+:revdate: 2020-03-14
 :imagesdir: images\
 :toc: preamble
 :toclevels: 4
@@ -16,26 +16,38 @@ endif::[]
 [.text-center]
 *Welcome!*
 
-If you have experience with and are comfortable using Git and GitHub, skip this file and read through link:experienced_github_users.adoc[A quick workflow for experienced Git, GitHub, and Asciidoc users] to learn how to contribute to the WGFAST convention documents. 
+If you have experience with and are comfortable using Git and GitHub, skip this file and read through link:experienced_github_users.adoc[A quick workflow for experienced Git, GitHub, and Asciidoc users] to learn how to contribute to the WGFAST convention documents.
 
 [.text-center]
-The rest of you, please keep reading.
+The rest of you, do not panic! +
+
+We realize that learning Git workflows and commands is probably not what you thought of when you thought of contributing to the WGFAST convention documents. Don't worry. We have created several help files to get you up and running with the least amount of friction. You concentrate on contributing to the WGFAST convention documents and we will take care of the technical stuff.
+
+You might be thinking that using a Git workflow to edit the WGFAST convention documents is a bit overkill. It is a text document, not software. Yes, Git is widely used in tech industries to track source code changes and develop software, and it has a lot of terminology that can be confusing if you are not familiar with it. But at its core, Git is an open-source and well developed distributed version control system - it tracks all changes in a project from multiple contributors. That is why we are using it. +
+
+.A few things to keep in mind:
+. You cannot delete, erase, destroy, implode, explode, or generally mess up the master documents in any way. They are safe in the `ices-eg/wg_WGFAST` repository behind permissions that you cannot change.
+. Your terminal will not bite you - you don't have to be afraid of it. Unless you somehow get into your systems operating files, you cannot do too much damage.
+. If you do not want to work from the command line in a terminal, okay. We found two text edits that have Git/GitHub integration and worked out how to use their GUIs.
 
 
-== Where do I start?
-=== Here
+Please keep reading. :smile:
+
+
+== Q: Where do I start?
+=== A: Here
+1. Read the rest of this page. This is a README file. Each folder in the `ices-eg/wg_WFAST` repository has an associated README file with information on the other files in that folder.
+2. Read through the  link:1_suggested_setup.adoc[Suggested setup to contribute to the ICES WGFAST convention documents]. (EL: Add step between 2 and 3 with jargon and graphic?)
+3. Read through the link:2_suggested_workflow.adoc[Suggested workflow to contribute to the ICES WGFAST convention documents Part 1 - ]. (EL - Possibly going to split this into three: AsciiDocFX with terminal, Atom GUI, Brackets GUI.)
+4. Read the individual help files when needed.
+
 .Help
-If you still have questions about _how_ to contribute to the convention documents after reading through the files in the "How to contribute" folder, please submit your questions in an https://github.com/ices-eg/wg_WGFAST/issues[issue] and mention `@erinann`. +
+If you still have questions about _how_ to contribute to the convention documents after reading through the help files in the "How to contribute" folder, please submit your questions in an https://github.com/ices-eg/wg_WGFAST/issues[issue] and mention `@erinann`. +
 {empty} +
 
 .Contribute to the help documents
 These help files are a work in progress. Comments and suggestions are welcomed and encouraged! Please submit an https://github.com/ices-eg/wg_WGFAST/issues[issue] with your comments and mention `@erinann`.
 
-=== What's next?
-1. Read the rest of this page. This is a README file. Each folder in the `ices-eg_wg_WFAST` repository has an associated README file with information on the files in that folder.
-2. Read through the  link:1_suggested_setup.adoc[Suggested setup to contribute to the ICES WGFAST convention documents].
-3. Read through the link:2_suggested_workflow.adoc[Suggested workflow to contribute to the ICES WGFAST convention documents].
-4. Read the individual help files when needed.
 
 [NOTE]
 ====
@@ -49,7 +61,7 @@ As of this writing, there are three folders within the wg_WGFAST repository. +
 Links to all the help files are at the bottom of this document.
 
 == Git and GitHub
-If you do not know what Git commits are, or if you think "forking a repository" refers to dueling with cutlery, please read through the suggested setup, suggested workflow, Git, and GitHub help files before attempting to contribute. We will not make you a Git or GitHub expert, but we will get you sorted enough to know how to stage commits, push those commits to your remote repository, pull updates from an upstream repository, and submit pull requests in order to contribute to the convention documents.
+If you do not know what Git commits are, or if you think "forking a repository" refers to dueling with cutlery, do not worry. We will not make you a Git or GitHub expert, but we will get you sorted enough to know how to stage commits, push those commits to your remote repository, pull updates from an upstream repository, and submit pull requests in order to contribute to the convention documents.
 
 == AsciiDoc markup
 If you do not know what a markup language is (specifically AsciiDoc markup) or how to preview markup documents, please read though the suggested setup, text editors/IDEs, and AsciiDoc help files. Again, we will not make you an expert in these things, but we will get you editing with as little pain as possible.
