@@ -17,14 +17,16 @@ From MP:
 - [ ] Addressed
 
 3. Reassure people that they will not break their computer, GitHub or Git by using the terminal.
-- [ ] Addressed
+- [x] Addressed
 
 4. Reassure people that even if they mess up a Git command, do not worry - there's a copy on GitHub.
-- [ ] Addressed
+- [x] Addressed
 
 <hr>
 
 From: WL  
 At commit 199a9092
-1. Add branching to workflow
+1. Add branching to workflow in Advanced workflow
 - [x] Addressed
+2. Add branching to general workflow
+- [ ] Addressed
