@@ -43,31 +43,29 @@ You might be thinking that using a Git workflow to edit the WGFAST convention do
 3. Read through the link:2_suggested_workflow.adoc[Suggested workflow to contribute to the ICES WGFAST convention documents]. (EL - Possibly going to split this into three: AsciiDocFX with terminal, Atom GUI, Brackets GUI.)
 4. Read the individual help files when needed.
 
-Links to all the help files are at the bottom of this document, or you can click on a document's link at the top of this page.
-
-
-.Help
-If you still have questions about _how_ to contribute to the convention documents after reading through the help files in the "How to contribute" folder, please submit your questions in an https://github.com/ices-eg/wg_WGFAST/issues[issue] and mention `@erinann`. +
-{empty} +
+Links to all the help files are at the bottom of this document, or you can click on a document's link at the top of this page. +
 
 === The `ices-eg/wg_WGFAST` repository
-`wg_WGFAST` is a repository hosted by `ices-eg` on GitHub. A repository is a permanent record of a project's development.
+`wg_WGFAST` is a repository owned by `ices-eg` on GitHub. A repository is a permanent record of a project's development.
 
-https://github.com/ices-eg[`ices-eg`] is the ICES Expert Groups' GitHub account. It is a "Workspaces for ICES expert groups to archive code and case-specific methods". https://github.com/ices-eg/wg_WGFAST[`wg_WGFAST`] is the repository for the working group on Fisheries Acoustics, Science and Technology.
+https://github.com/ices-eg[`ices-eg`] is the ICES Expert Groups' GitHub account. It is an account of "Workspaces for ICES expert groups to archive code and case-specific methods". https://github.com/ices-eg/wg_WGFAST[`wg_WGFAST`] is the repository for the working group on Fisheries Acoustics, Science and Technology.
 
-.There are three folders within the wg_WGFAST repository. +
+.There are three folders within the wg_WGFAST repository
 . `How_to_contribute`: Contains help files on how to contribute to the convention documents. You are in this folder.
 . `AcMeta` - Contains the _A metadata convention for processed acoustic data from active acoustic systems_ document and supporting files.
 . `SONAR-netCDR` - Contains the `docs` subfolder with the _The SONAR-netCDF4 convention for sonar data, Version 1.1_ document and supporting files, and the `src` subfolder with MATLAB code.
+
+=== Help
+If you still have questions about _how_ to contribute to the convention documents after reading through the help files in the "How to contribute" folder, please open an https://github.com/ices-eg/wg_WGFAST/issues[issue] and submit your questions there. Mention `@erinann` in the isssue.
 
 
 == Git and GitHub
 If you do not know what Git commits are, or if you think "forking a repository" refers to dueling with cutlery, do not worry. We will not make you a Git or GitHub expert, but we will get you sorted enough to know how to stage commits, push those commits to your remote repository, pull updates from an upstream repository, and submit pull requests in order to contribute to the convention documents.
 
 == AsciiDoc markup
-If you do not know what a markup language is (specifically AsciiDoc markup) or how to preview markup documents, please read though the suggested setup, text editors/IDEs, and AsciiDoc help files. Again, we will not make you an expert in these things, but we will get you editing with as little pain as possible.
+If you do not know what a markup language is (specifically AsciiDoc markup) or how to preview markup documents, do not worry. Again, we will not make you an expert in these things, but we will get you editing with as little pain as possible.
 
-CAUTION: Live previewing AsciiDoc markup documents with a browser extension was not easy to set up. Compiling the documents (also called "creating backends" (HTML, PDF, DocBook, etc.) on your computer was even harder. Unless you know Ruby and RVM and are deeply familiar with your operating system, do not try these things.
+CAUTION: Setting up live preview of AsciiDoc markup documents with a browser extension was not easy. Compiling the documents (also called "creating backends" (HTML, PDF, DocBook, etc.) on a computer was even harder. Unless you know Ruby and RVM and are deeply familiar with your operating system, do not try these things.
 
 TIP: In lieu of installing browser extensions, the Asciidoctor toolchain, and all the dependencies, we recommend using a text editor/IDE that can edit and provide live previews of AsciiDoc documents. *AsciidocFX*, *Atom*, or *Brackets* are three suggested text editors/IDEs.
 
@@ -85,6 +83,7 @@ NOTE: Previews of citations in AsciiDoc documents do not currently work in Atom 
 - link:4_git_help.adoc[Git help]  +
 - link:5_plain_text_editor_help.adoc[Text editors/IDEs help]  +
 - link:6_asciidoc_help.adoc[AsciiDoc markup help]  +
+- link:Git_and_GitHub_terminology.adoc[Git and GitHub terminology]
 - link:experienced_github_users.adoc[A quick workflow for experienced Git, GitHub, and Asciidoc users] +
 {empty} +
 
@@ -100,5 +99,6 @@ NOTE: The help files are written in AsciiDoc (.adoc) markup. If you want to take
 4_git_help.adoc -> Git help +
 5_plain_text_editor_help.adoc -> Text editors/IDEs help +
 6_asciidoc_help.adoc -> AsciiDoc help +
+Git_and_GitHub_terminology.adoc -> Git and GitHub terminology +
 experienced_github_users.adoc -> A quick workflow for experienced Git, GitHub, and Asciidoc users +
 README.adoc -> How to contribute to the AcMeta and SONAR-netCDF4 documents +
