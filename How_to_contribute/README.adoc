@@ -39,8 +39,8 @@ You might be thinking that using a Git workflow to edit the WGFAST convention do
 
 === Next
 1. Read the rest of this page. This is a README file. Each folder in the `ices-eg/wg_WFAST` repository has an associated README file with information on the other files in that folder.
-2. Read through the  link:1_suggested_setup.adoc[Suggested setup to contribute to the ICES WGFAST convention documents]. (EL: Add step between 2 and 3 with jargon and graphic?)
-3. Read through the link:2_suggested_workflow.adoc[Suggested workflow to contribute to the ICES WGFAST convention documents]. (EL - Possibly going to split this into three: AsciiDocFX with terminal, Atom GUI, Brackets GUI.)
+2. Read through the  link:1_suggested_setup.adoc[Suggested setup to contribute to the ICES WGFAST convention documents].
+3. Read through the link:2_suggested_workflow.adoc[Suggested workflow to contribute to the ICES WGFAST convention documents].
 4. Read the individual help files when needed.
 
 Links to all the help files are at the bottom of this document, or you can click on a document's link at the top of this page. +
@@ -84,6 +84,8 @@ NOTE: Previews of citations in AsciiDoc documents do not currently work in Atom 
 - link:5_plain_text_editor_help.adoc[Text editors/IDEs help]  +
 - link:6_asciidoc_help.adoc[AsciiDoc markup help]  +
 - link:Git_and_GitHub_terminology.adoc[Git and GitHub terminology]
+- link:Atom_Git_GUI.adoc[How to use Git/GitHub GUI in Atom]
+- link:Brackets_Git_GUI.adoc[How to use Git/GitHub GUI in Brackets]
 - link:experienced_github_users.adoc[A quick workflow for experienced Git, GitHub, and Asciidoc users] +
 {empty} +
 
@@ -91,14 +93,17 @@ NOTE: The help files are written in AsciiDoc (.adoc) markup. If you want to take
 
 {empty} +
 
-
-.*File name -> Document name*
-1_suggested_setup.adoc -> Suggested setup to contribute to the ICES WGFAST convention documents +
-2_suggested_workflow.adoc -> Suggested workflow to contribute to the ICES WGFAST convention documents +
-3_github_help.adoc -> GitHub help +
-4_git_help.adoc -> Git help +
-5_plain_text_editor_help.adoc -> Text editors/IDEs help +
-6_asciidoc_help.adoc -> AsciiDoc help +
-Git_and_GitHub_terminology.adoc -> Git and GitHub terminology +
-experienced_github_users.adoc -> A quick workflow for experienced Git, GitHub, and Asciidoc users +
-README.adoc -> How to contribute to the AcMeta and SONAR-netCDF4 documents +
+.Filename -> Document name
+[cols=2, width="90%", options = header]
+|====================
+|Filename |Document name
+|1_suggested_setup.adoc | Suggested setup to contribute to the ICES WGFAST convention documents
+|2_suggested_workflow.adoc |Suggested workflow to contribute to the ICES WGFAST convention documents
+|3_github_help.adoc | GitHub help
+|4_git_help.adoc | Git help
+|5_plain_text_editor_help.adoc |Text editors/IDEs help
+|6_asciidoc_help.adoc |AsciiDoc help
+|Git_and_GitHub_terminology.adoc| Git and GitHub terminology
+|Atom_Git_GUI.adoc |How to use Git/GitHub GUI in Atom
+|Brackets_Git_GUI.adoc | How to use Git/GitHub GUI in Brackets |experienced_github_users.adoc | A quick workflow for experienced Git, GitHub, and Asciidoc users
+|README.adoc |How to contribute to the AcMeta and SONAR-netCDF4 documents

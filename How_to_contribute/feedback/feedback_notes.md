@@ -12,9 +12,9 @@ From MP:
 2. Add:
     - The advantages of version control without jargon.
     - Create workflows with no terminal
-      - Atom (me: what about Loom video link of a step-by-step process?)
-      - Brackets (me: what about Loom video link of a step-by-step process?)
-- [ ] Addressed
+      - Atom (me: what about Loom video link of a step-by-step process? Not now. Will reassess after getting feedback on written files.)
+      - Brackets (me: what about Loom video link of a step-by-step process? Not now. Will reassess after getting feedback on written files.)
+- [x] Addressed
 
 3. Reassure people that they will not break their computer, GitHub or Git by using the terminal.
 - [x] Addressed
@@ -29,4 +29,4 @@ At commit 199a9092
 1. Add branching to workflow in Advanced workflow
 - [x] Addressed
 2. Add branching to general workflow
-- [ ] Addressed
+- [x] Addressed

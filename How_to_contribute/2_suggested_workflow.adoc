@@ -236,7 +236,7 @@ $ git commit -m "Citation updates to acmeta.adoc and ref.bib"
 ----
 The `.` in `$ git add .` tells Git to add all changes in the working directory to the staged area. Nothing is added to the local repository until you run a commit. Git requites a non-empty message with the commit. +
 
-`-m` in `$git commit -m "Citation updates to acmeta.adoc and ref.bib"` is flag that adds the commit message. Commit messages have to be surrounded by quotes. +
+`-m` in `$git commit -m "Citation updates to acmeta.adoc and ref.bib"` is the flag that adds the commit message. Commit messages must be surrounded by quotes. +
 {empty} +
 
 TIP: Commit messages with `-m` should be a short (50 characters or less) and concise subject line.
@@ -247,9 +247,8 @@ $ git add AcMeta/acmeta.adoc
 $ git commit -m "Update Section 6.5"
 ----
 
-WARNING: Do not forget to add the full pathname to files which are not in the root directory. +
+WARNING: Do not forget to add the full pathname to files that are not in the root directory. +
 {empty} +
-
 
 ==== Useful commit messages
 
