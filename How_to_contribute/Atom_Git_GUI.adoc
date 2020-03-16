@@ -54,7 +54,7 @@ Open a file and edit it. +
 
 To open the AsciiDoc live preview pane, use `Ctrl+Shift+A` (Linux/Windows) or `cmd+shift+A` (macOS). The AsciiDoc packages have to be installed.
 
-If you would like more room to view the live preview pane, you can close the Git and GitHub panels
+If you would like more room to view the live preview pane, you can close the Git and GitHub panels.
 {empty} +
 
 === Stage and commit

@@ -110,7 +110,7 @@ You now have a copy of the forked repository on your computer, but what happens 
 
 .Add upstream
 ----
-$ git add upstream https://github.com/ices-eg/wg_WGFAST
+$ git remote add upstream https://github.com/ices-eg/wg_WGFAST
 ----
 
 .Verify that the upstream repository was added by viewing the list of tracked remote repositories
