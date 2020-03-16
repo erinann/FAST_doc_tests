@@ -60,9 +60,9 @@ If you would like more room to view the live preview pane, you can close the Git
 === Stage and commit
 1. To stage file(s), open the Git panel, right-click on the file(s) you want to stage and choose `Stage`. If you want to stage all the files, click on `Stage All`.
 2. Enter a useful commit message to let people know what changes you made, and click `Commit to master`. +
-Or, if you need to add a commit message more than 50 characters long, click on the square in the lower, right corner of the commit message text box to open the message editor. Do not forget to follow best practices when writing commit messages. +
-{empty} +
+Or, if you need to add a commit message more than 50 characters long, click on the square in the lower, right corner of the commit message text box to open the message editor. +
 
+_Please follow best practices when writing commit messages_. +
 image:Atom_GUI_stage.png[]
 image:Atom_GUI_commit.png[] +
 {empty} +
