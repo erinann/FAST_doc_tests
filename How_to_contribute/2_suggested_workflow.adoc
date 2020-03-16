@@ -18,26 +18,27 @@ This workflow is to help contributors who have not used Git or GitHub get starte
 If you work regularly with Git and GitHub, please read through link:experienced_github_users.adoc[A quick workflow for experienced Git and GitHub users]. +
 
 == Workflow
-Once you have installed Git and a text editor/IDE, set up your GitHub account, you are ready to contribute to the WGFAST convention documents! Let's Go! +
+Once you have installed Git and a text editor/IDE, set up your GitHub account, you are ready to contribute to the WGFAST convention documents. Let's Go! +
 {empty} +
 
 
 We are going to use a workflow called *_Fork-Branch-Pull Request_*. A list and graphical explanation of Git and GitHub terminology used in this workflow is in the link:Git_and_GitHub_terminology.adoc[Git and GitHub terminology] file.
 
 .A few things to remember
-. This document might seem overwhelming at first. Do not worry. You can get through it. Take it one step at a time.
-.. You do not have to go through all the help files at once.
-. If you have questions or if anything is unclear, open an open an https://github.com/ices-eg/wg_WGFAST/issues[issue] and submit your question(s). Add `@erinann` and I will be notified of your issue.
-. You cannot break anything in the `ices-eg/wg_WGFAST` repository.
+. This document might seem overwhelming at first. Do not worry. You can get through it. Take it one step at a time. You do not have to go through all the help files at once.
+. If you have questions or if anything is unclear, open an https://github.com/ices-eg/wg_WGFAST/issues[issue] and submit your question(s). Add `@erinann` to the issue and I will be notified.
+. You cannot break anything in the `ices-eg/wg_WGFAST` repository. Permissions are set so only the convention coordinators can wreak any havoc.
 . If you crash your remote repository beyond repair, do not worry. Delete it and fork another one.
-. If would would like to practice your Git skills before working on the `wg_WGFAST` repository, fork https://github.com/erinann/FAST_doc_tests and have a go!
+. If you would like to practice your Git skills before working on the `wg_WGFAST` repository, fork https://github.com/erinann/FAST_doc_tests and have a go!
 . All Git commands start with `git`.
-.. You will notice that some Git commands have `-<letter>` after them. Example, `git remote -v`. The `-v` is a flag. If you work in MATLAB, R, or Python, think of flags as arguments for functions.
+. You will notice that some Git commands have `-<letter>` after them. Example, `git remote -v`. The `-v` is a flag. If you work in MATLAB, R, or Python, think of flags as arguments for functions.
 
 
 [NOTE]
 ====
-Both Atom and Brackets provide GUIs for Git that allow you to work almost exclusively within those IDEs without using a terminal and Git commands. *We suggest that you learn Git from the command line first because it will give you a better understanding of Git's functionality.* This workflow is written to use Git commands in a terminal.
+*We recommend that you learn Git from the command line first because it will give you a better understanding of Git's functionality.* This workflow is written to use Git commands in a terminal.
+
+If you cannot get comfortable working at a command line, link:Atom_Git_GUI.adoc[How to use Git/GitHub GUI in Atom] and link:Brackets_Git_GUI.adoc[How to use Git/GitHub GUI in Brackets] show you how to use the Atom and Brackets Git/GitHub GUIs. If you decide to use the GUIs, *please still read through this file as it provides an overview of the entire workflow*.
 ====
 {empty} +
 
@@ -56,7 +57,7 @@ TIP: Forking and cloning both create a copy of a repository, but forking is not 
 Once the repository is forked to your GitHub account you can either <<Editing documents in GitHub, edit the documents directly in GitHub>> or clone the repository to your computer and work locally. *We suggest cloning the repository to your computer unless you are only going to fix a few typographical errors.*
 {empty} +
 
-=== Clone the forked repository to your local computer
+=== Clone the forked repository to your computer
 * You only have to do this step once.
 ** Click on the repository to open it.
 ** Click on the clone button. Use `Clone with HTTPS`.
@@ -85,7 +86,7 @@ TIP: In most terminals you can type the first few characters of the folder and u
 {empty} +
 
 [start=2]
-2. Clone the forked repository to your local computer. +
+2. Clone the forked repository to your computer. +
 Format: `git clone https://github.com/_YOUR-USERNAME_/_YOUR-REPOSITORY_.git` +
 
 .Example: Cloning a repository
@@ -102,18 +103,31 @@ Receiving objects: 100% (551/551), 728.31 KiB | 2.13 MiB/s, done.
 Resolving deltas: 100% (316/316), done.
 ----
 
-The above `git clone` command created a folder called `wg_WGFAST` (the name of the remote repository) in the `research_projects` directory on erinann's computer, then copied all the files and change histories from the `master` branch of the remote `wg_WGFAST` repository into the `wg_WGFAST` folder, creating the local repository. +
+The above `git clone` command created a folder called `wg_WGFAST` (the name of the remote repository) in the `research_projects` directory on erinann's computer, then created the local repository by coping all the files and change histories from the `master` branch of the remote `wg_WGFAST` repository into the `wg_WGFAST` folder. +
 {empty} +
 
 === Add the upstream repository
-You now have a copy of the forked repository on your computer, but what happens if there are changes in the upstream repository? How do you get those changes to your local repository? Remember, the upstream repository is the repository you forked from. You need to tell Git what the upstream repository is in order to pull changes from it. This is called "adding the upstream remote repository".
+You now have a copy of the forked repository on your computer, but what happens if there are changes in the upstream repository? How do you get those changes to your local repository? Remember, the upstream repository is the repository you forked from. The remote repository is in your GitHub account. The local repository is the repository on your computer. You need to tell Git what the upstream repository is in order to pull changes from it. This is called "adding the upstream repository" or "adding a remote".
 
-.Add upstream
+.List the current configured remote repository for your fork. +
+----
+$ git remote -v
+----
+
+.Output
+----
+origin  https://github.com/erinann/wg_WGFAST.git (fetch)
+origin  https://github.com/erinann/wg_WGFAST.git (push)
+----
+The above output says that erinann's local repository can fetch changes from and push changes to a remote called _origin_ (the forked repository in erinann's GitHub account). +
+{empty} +
+
+.Add the upstream remote
 ----
 $ git remote add upstream https://github.com/ices-eg/wg_WGFAST
 ----
 
-.Verify that the upstream repository was added by viewing the list of tracked remote repositories
+.Verify that the upstream repository was added
 ----
 $ git remote -v
 ----
@@ -124,12 +138,11 @@ origin  https://github.com/erinann/wg_WGFAST.git (fetch)
 origin  https://github.com/erinann/wg_WGFAST.git (push)
 upstream        https://github.com/ices-eg/wg_WGFAST (fetch)
 upstream        https://github.com/ices-eg/wg_WGFAST (push)
-
 ----
+The above output says that erinann's local repository can fetch changes from and push changes to a remote called _origin_ (the forked repository in erinann's GitHub account), and the upstream remote (the ICES Expert Groups `wg_WGFAST` repository in GitHub). +
+{empty} +
 
-The above output says that erinann's local repository can fetch and push changes from and to the _origin_ remote (the forked repository in erinann's GitHub account), and the upstream remote (the ICES Expert Groups `wg_WGFAST` repository in GitHub).
-
-Now that you have the upstream repository set, when you work on the convention files in the future you can update your forked repository. See the <<Updating your forked repository, Updating your forked repository>>. +
+Now that the upstream repository is set, when the `ices-eg/wg_WGFAST` repository is updated you can pull those updates to your local repository. See the <<Updating your forked repository, Updating your forked repository>>. +
 {empty} +
 
 
@@ -164,19 +177,17 @@ Now that the repository is on your computer, add it to a workspace in your text 
 
 .*AsciidocFX*: +
 . Click on the image:ADFX_folder_icon.png[] and navigate to the folder.
-. Open the terminal. The active branch will be in parentheses at the end of the path.
+. Open the terminal. The active branch will be in parentheses at the end of the pathname.
 {empty} +
 
 .*Atom*: +
 . `File > Add Project Folder...` and navigate to the folder.
-.. or `Ctrl + Shift + A` and navigate to the folder.
 . Look in the lower-right corner. There should be four icons: Branch, Publish (or Push), GitHub, and Git. Your branch name should be listed next to the branch icon. If it is not, click on the icon to open and drop down menu and select your working branch. +
 image:Atom_branch_check.png[] +
 {empty} +
 
 .*Brackets*: The _Brackets-Git_ extension has to be installed
 . `File > Open Folder...` and navigate to the folder.
-.. or `Ctrl + Alt + A` and navigate to the folder. +
 . Look in the upper-left corner below the File Menu bar. You  should see the branch icon and your branch name. If your working branch is not listed, click on the down arrow and select your working branch. +
 image:Brackets_branch_check.png[] +
 {empty} +
@@ -191,12 +202,13 @@ NOTE: Citation preview does not currently work in Atom or Brackets. Math equatio
 === Edit
 Open an AsciiDoc document in AsciidocFX, Atom, or Brackets and start editing. +
 image:editing_2.jpg[height=150, width=150] +
+{empty} +
 
-See the link:5_plain_text_editor_help.adoc[Plain Text Editor help] file if you need help using the text editors/IDEs. +
+See the link:5_plain_text_editor_help.adoc[Text editors/IDEs help] file if you need help using the text editors/IDEs or the link:6_asciidoc_help.adoc[AsciiDoc markup help] file if you need help with the markup. +
 {empty} +
 
 === Stage and commit
-After you have made edits, save the document, stage it (`git add`), and commit it to your local repository with a useful commit message. Staging files does two things. First, it tells Git which files to track. Second, once a file is being tracked, staging the file allows the changes to be committed to the repository. It is best practice to commit changes often to keep a record of your work. Each commit is a snapshot of the repository at that time. Building a series of commits creates a change log for the project. +
+After you have made edits, save the document, stage it, and commit it to your local repository with a useful commit message. Staging files does two things. First, it tells Git which files to track. Second, once a file is being tracked, staging the file allows the changes to be committed to the repository. It is best practice to commit changes often. Each commit is a snapshot of the repository at that time. Building a series of commits creates a change log for the project. +
 
 TIP: ALWAYS save your document before staging it! Commit early and often!
 
@@ -226,7 +238,7 @@ Untracked files:
 no changes added to commit (use "git add" and/or "git commit -a")
 ----
 
-In this output example, we are working on the `EL_doc_edits` branch of the local repository. Two commits have not been pushed to the remote repository (GitHub), three files have been modified but not staged, and two files have been added to the project folder but not staged so changes are not being tracked.
+In this output example, we are working on the `EL_doc_edits` branch of the local repository. Two commits have not been pushed to the remote repository, three files have been modified but not staged, and two files have been added to the project folder but not staged so changes are not being tracked.
 
 
 .Example: Stage and commit all changed files (subject line message only)
