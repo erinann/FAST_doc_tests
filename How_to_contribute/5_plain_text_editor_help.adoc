@@ -1,7 +1,7 @@
 = Text editors/IDEs help
 Erin LaBrecque
-:revnumber: 0.01
-:revdate: 2020-02-25
+:revnumber: 0.02
+:revdate: 2020-03-16
 :imagesdir: images\
 :toc: preamble
 :toclevels: 4
@@ -95,7 +95,7 @@ NOTE: If asciidoc-assistant failed to install any of its dependencies, you will 
 ==== Useful shortcuts
 * `Ctrl+Shift+P` (Linux/Windows) or `cmd+shift+P` (macOS). Opens the Command Pallet where you can find and run available commands.
 * `Ctrl+Shift+A` (Linux/Windows) or `cmd+shift+A` (macOS). Opens AsciiDoc live preview. +
-* `Ctrl+Shift+M` (Linux/Windows) or `cmd+shift+M` (macOS). Opens AsciiDoc live preview. +
+* `Ctrl+Shift+M` (Linux/Windows) or `cmd+shift+M` (macOS). Opens Markdown live preview. +
 {empty} +
 
 === Panes
@@ -111,36 +111,16 @@ image:Atom_panes_working.png[] +
 === Integration with Git and GitHub
 Atom comes bundled with a GUI for Git and GitHub. You have to supply your GitHub login credentials the first time you push commits to GitHub with the GUI. +
 
-To work in a terminal, you have to install an external package. We suggest installing an external terminal package and working in Git from the terminal to start. This will help you get familiar the underlying Git functions.
-
-There are a number of Atom packages that give you access to a terminal. The simplest is `atom-terminal` which opens your external terminal in the root directly of the project. `terminal-tab` opens a terminal within Atom that you can dock in different places, but the package can be a little flaky in that closing the terminal (clicking the `x` to close the tab) instead of exiting out of the terminal (typing `exit` at the command line) crashes Atom.
+To work in a terminal, you have to install an external package. There are a number of Atom packages that give you access to a terminal. The simplest is `atom-terminal` which opens your external terminal in the root directly of the project. `terminal-tab` opens a terminal within Atom that you can dock in different places, but the package can be a little flaky - closing the terminal by clicking the `x` to close the tab instead of exiting out of the terminal (typing `exit` at the command line) crashes Atom.
 
 Instructions for working with Git in a terminal are in the link:2_suggested_workflow.adoc[Suggested workflow to contribute to the ICES WGFAST convention documents] file.
 
 ==== Git terminal from Atom
-1. Open the settings of the terminal package you installed an make sure the path to the terminal is correct.
+1. Open the settings of the terminal package you installed and make sure the path to your terminal is correct.
 2. Open the terminal when you need to stage, commit, and push to GitHub.
 
-==== Staging and commits from within Atom (GUI)
-If this is the first time you are accessing GitHub through Atom, you will have to get an authentication token. Open the GitHub pane and follow the directions.
-
-image:Atom_GitHub_token.png[] +
-{empty} +
-
-. To stage file(s), open the Git panel, right-click on the file(s) you want to stage and choose `Stage`. If you want to stage all the files, click on `Stage All`.
-. Enter a useful commit message to let people know what changes you made, and click `Commit to master`. +
-.. Or, if you need to add a commit message more than 50 characters long, click on the square in the lower, right corner of the commit message text box to open the message editor. +
-
-{empty} +
-image:Atom_stage.png[]
-image:Atom_commit.png[] +
-{empty} +
-
-
-==== Pushing to GitHub
-Click on the `Push` button. In this example, three commits will be pushed to GitHub. +
-image:Atom_push.png[] +
-{empty} +
+==== Git/GitHub GUI in Atom
+Please see link:Atom_Git_GUI.adoc[How to use Git/GitHub GUI in Atom]
 
 
 == http://brackets.io/[Brackets]
@@ -190,34 +170,16 @@ _For more on the available features of of each extension, please visit their web
 
 
 === Integration with Git and GitHub
-After installing the Brackets-Git extension, you can stage, commit, and push to your remote repository by using Git commands in a terminal or you can use the GUI.
+After installing the Brackets-Git extension, you can clone, branch, stage, commit, and push to your remote repository by using Git commands in a terminal or you can use the GUI.
 
 ==== Git terminal from Brackets
 1. First make sure the path your terminal is correct. Go to `File -> Git Settings... -> Git Configuration`.
 2. Click on the Git icon on the right side, then click on the terminal icon in the Git pane to open your terminal.
 
-==== Staging and commits from Brackets (GUI)
-1. Stage files by clicking on the check box next to the file name or stage all files by clicking on the check box next the `Commit` button. +
-image:Brackets_stage.png[] +
-{empty} +
+Instructions for working with Git in a terminal are in the link:2_suggested_workflow.adoc[Suggested workflow to contribute to the ICES WGFAST convention documents] file.
 
-2. Commit files by clicking on the `Commit` button... +
-image:Brackets_commit_1.png[] +
-  add a commit message, and click `OK`. If you need to add more information than 50 characters will allow, click on the `EXTENDED` button in the upper, right corner to extend the text box. +
-image:Brackets_commit_2.png[] +
-
-==== Pushing to GitHub
-1. Push the commits to GitHub by clicking on the `Push` button. +
-image:Brackets_push_1.png[] +
-
-2. A dialog box will come up. +
-Make sure that you are pushing the correct branch of your remote repository, which will most likely be the current tracking branch (the one that is checked out). +
-You do not have to fill out your username and password if your credentials are managed elsewhere. +
-Click `OK`. +
-image:Brackets_push_2.png[]
-
-
-{empty} +
+==== Git/GitHub GUI in Brackets
+Please see link:Brackets_Git_GUI.adoc[How to use Git/GitHub GUI in Brackets]
 
 == Pro, Cons, Quirks
 .Windows only

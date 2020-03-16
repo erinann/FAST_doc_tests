@@ -1,0 +1,48 @@
+= How to use Git/GitHub GUI in Brackets
+Erin LaBrecque
+:revnumber: 0.02
+:revdate: 2020-03-16
+:imagesdir: images\
+:toc: preamble
+:toclevels: 4
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+
+These are basic instructions on how to use the Git/GitHub GUI in Brackets.
+
+*The Brackets-Git extension needs to be installed.*
+
+== Git/GitHub GUI in Brackets
+
+=== Clone
+
+
+=== New branch
+
+=== Edit files
+
+=== Stage and commit
+1. Stage files by clicking on the check box next to the file name or stage all files by clicking on the check box next the `Commit` button. +
+image:Brackets_stage.png[] +
+{empty} +
+
+2. Commit files by clicking on the `Commit` button... +
+image:Brackets_commit_1.png[] +
+  add a commit message, and click `OK`. If you need to add more information than 50 characters will allow, click on the `EXTENDED` button in the upper, right corner to extend the text box. +
+image:Brackets_commit_2.png[] +
+
+=== Pushing to GitHub
+1. Push the commits to GitHub by clicking on the `Push` button. +
+image:Brackets_push_1.png[] +
+
+2. A dialog box will come up. +
+Make sure that you are pushing the correct branch of your remote repository, which will most likely be the current tracking branch (the one that is checked out). +
+You do not have to fill out your username and password if your credentials are managed elsewhere. +
+Click `OK`. +
+image:Brackets_push_2.png[]

@@ -1,0 +1,61 @@
+= How to use Git/GitHub GUI in Atom
+Erin LaBrecque
+:revnumber: 0.02
+:revdate: 2020-03-16
+:imagesdir: images\
+:toc: preamble
+:toclevels: 4
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+These are basic instructions on how to use the Git/GitHub GUI in Atom.
+
+
+== Git/GitHub GUI in Atom
+If this is the first time you are accessing GitHub through Atom, you will have to get an authentication token. Open the GitHub pane and follow the directions.
+
+image:Atom_GitHub_token.png[] +
+{empty} +
+
+
+=== Clone
+1. Open the GitHub pane by clicking on the GitHub tab.
+2. Click on "Clone an existing GitHub repository". +
+image:Atom_GUI_clone_1.png[] +
+
+
+3. Go to your forked repository in GitHub and copy the HTTPS address to the clipboard to clone the repo. See <<2_suggested_workflow.adoc#Clone the forked repository to your local computer,Clone the forked repository to your local computer>> in the Suggested Workflow file.
+4. In Atom, add the HTTPS address to "Clone from". +
+Your user name will replace "erinann" in the GitHub address you add.
+5. Add the full pathname to the directory where you want to your local repository to live. Make sure that the name of the final folder name is "wg_WGFAST". +
+Note: There is no "Browse" option to add a full pathname. You have to type it in or copy and paste.
+6. Click on "Clone"
+
+
+image:Atom_GUI_clone_2.png[]
+
+
+=== New branch
+
+=== Edit files
+
+=== Stage and commit
+
+. To stage file(s), open the Git panel, right-click on the file(s) you want to stage and choose `Stage`. If you want to stage all the files, click on `Stage All`.
+. Enter a useful commit message to let people know what changes you made, and click `Commit to master`. +
+.. Or, if you need to add a commit message more than 50 characters long, click on the square in the lower, right corner of the commit message text box to open the message editor. +
+
+{empty} +
+
+{empty} +
+
+
+=== Pushing to GitHub
+Click on the `Push` button. In this example, three commits will be pushed to GitHub. +
+
+{empty} +
