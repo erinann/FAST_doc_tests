@@ -106,6 +106,8 @@ Resolving deltas: 100% (316/316), done.
 The above `git clone` command created a folder called `wg_WGFAST` (the name of the remote repository) in the `research_projects` directory on erinann's computer, then created the local repository by coping all the files and change histories from the `master` branch of the remote `wg_WGFAST` repository into the `wg_WGFAST` folder. +
 {empty} +
 
+You need to enter the repository before start working on it. This can be achieved by typing `cd wg_WGFAST` and change the working directory.
+
 === Add the upstream repository
 You now have a copy of the forked repository on your computer, but what happens if there are changes in the upstream repository? How do you get those changes to your local repository? Remember, the upstream repository is the repository you forked from. The remote repository is in your GitHub account. The local repository is the repository on your computer. You need to tell Git what the upstream repository is in order to pull changes from it. This is called "adding the upstream repository" or "adding a remote".
 
