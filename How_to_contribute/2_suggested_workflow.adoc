@@ -38,7 +38,7 @@ We are going to use a workflow called *_Fork-Branch-Pull Request_*. A list and g
 ====
 *We recommend that you learn Git from the command line first because it will give you a better understanding of Git's functionality.* This workflow is written to use Git commands in a terminal.
 
-If you cannot get comfortable working at a command line, link:Atom_Git_GUI.adoc[How to use Git/GitHub GUI in Atom] and link:Brackets_Git_GUI.adoc[How to use Git/GitHub GUI in Brackets] show you how to use the Atom and Brackets Git/GitHub GUIs. If you decide to use the GUIs, *please still read through this file as it provides an overview of the entire workflow*.
+If you cannot get comfortable working at a command line, link:Atom_Git_GUI.adoc[How to use Git/GitHub GUI in Atom] and link:Brackets_Git_GUI.adoc[How to use Git/GitHub GUI in Brackets] will show you how to use the Atom and Brackets Git/GitHub GUIs. If you decide to use the GUIs, *please still read through this file as it provides an overview of the entire workflow*.
 ====
 {empty} +
 
@@ -73,7 +73,9 @@ image:clone_button.png[] +
 
 //
 
-1. Open the Git terminal and use the `cd` command to navigate to the directory (folder) you want to copy the repository to.  +
+1. Open the Git terminal and use the navigate to the directory (folder) you want to copy the repository to.  +
+
+`cd` is the command for "change directory". +
 
 .Example: Changing working directory
 ----
@@ -97,21 +99,27 @@ $ git clone https://github.com/erinann/wg_WGFAST.git
 .Output
 ----
 Cloning into 'wg_WGFAST'...
-remote: Enumerating objects: 551, done.
-remote: Total 551 (delta 0), reused 0 (delta 0), pack-reused 551
-Receiving objects: 100% (551/551), 728.31 KiB | 2.13 MiB/s, done.
-Resolving deltas: 100% (316/316), done.
+remote: Enumerating objects: 92, done.
+remote: Counting objects: 100% (92/92), done.
+remote: Compressing objects: 100% (71/71), done.
+remote: Total 666 (delta 25), reused 84 (delta 20), pack-reused 574
+Receiving objects: 100% (666/666), 4.37 MiB | 4.91 MiB/s, done.
+Resolving deltas: 100% (341/341), done.
 ----
+The output means that a directory called `wg_WGFAST` was created on the computer and the remote repository (all files and change histories on GitHub) was copied to it. This action created the local repository. +
 
-The above `git clone` command created a folder called `wg_WGFAST` (the name of the remote repository) in the `research_projects` directory on erinann's computer, then created the local repository by coping all the files and change histories from the `master` branch of the remote `wg_WGFAST` repository into the `wg_WGFAST` folder. +
+[start=3]
+3. After the local repository is on your computer, change directories again to enter it by typing `cd wg_WGFAST`. You have to be in the local repository to work on it. When you are in the repository, the branch name will be in parentheses at the end of the pathname.
+
+.Example in Git Bash terminal, Windows 10
+image:BASH_terminal_git_clone.png[] +
 {empty} +
 
-You need to enter the repository before start working on it. This can be achieved by typing `cd wg_WGFAST` and change the working directory.
 
 === Add the upstream repository
 You now have a copy of the forked repository on your computer, but what happens if there are changes in the upstream repository? How do you get those changes to your local repository? Remember, the upstream repository is the repository you forked from. The remote repository is in your GitHub account. The local repository is the repository on your computer. You need to tell Git what the upstream repository is in order to pull changes from it. This is called "adding the upstream repository" or "adding a remote".
 
-.List the current configured remote repository for your fork. +
+.List the current configured remote repository +
 ----
 $ git remote -v
 ----
@@ -128,6 +136,7 @@ The above output says that erinann's local repository can fetch changes from and
 ----
 $ git remote add upstream https://github.com/ices-eg/wg_WGFAST
 ----
+Git does not produce output for this command.
 
 .Verify that the upstream repository was added
 ----
