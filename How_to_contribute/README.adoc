@@ -57,8 +57,8 @@ https://github.com/ices-eg[`ices-eg`] is the ICES Expert Groups' GitHub account.
 . `How_to_contribute`: Contains help files on how to contribute to the conventions. You are in this folder.
 . `AcMeta` - Contains the _A metadata convention for processed acoustic data from active acoustic systems_ document and supporting files.
 . `SONAR-netCDR` - Contains the `docs` subfolder with the _The SONAR-netCDF4 convention for sonar data, Version 1.1_ document and supporting files, and the `src` subfolder with MATLAB code.
-. `SISP_formatted` - Contains the latest HTML file of the metadata convention. You can view this file in your web browser by going https://htmlpreview.github.io/?https://github.com/ices-gists/wg_WGFAST/blob/master/SISP_formatted/TG-AcMeta.html[here].
-. `.github/workflows` - Contains the `.yml` for a GitHub Action to build the HTML and put it in `SISP_formatted`. Do not touch this file, please. +
+. `Formatted_docs` - Contains the latest HTML file of the metadata convention. You can view this file in your web browser by going https://htmlpreview.github.io/?https://github.com/ices-gists/wg_WGFAST/blob/master/Formatted_docs/TG-AcMeta.html[here].
+. `.github/workflows` - Contains the `.yml` for a GitHub Action to build the HTML and put it in `Formatted_docs`. Do not touch this file, please. +
 {empty} +
 
 
